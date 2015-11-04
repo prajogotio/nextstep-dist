@@ -117,7 +117,6 @@ socket.on('initial_values', function(msg){
 });
 
 socket.on('turn', function(msg){
-	console.log("turn : ", msg['userid']);
 	state.currentTurn = msg['userid'];
 	if (client.userid == state.currentTurn){
 		state.requestToStartCurrentTurn = true;
@@ -148,7 +147,7 @@ function setPlayerTurnActive() {
 			clearInterval(state.countdown);
 		} else {
 			state.timePenalty = Math.floor(Math.floor(now - state.turnStartTime)/1000);
-			document.getElementById("clock").innerHTML = Math.floor(200.0 - (now-state.turnStartTime)/100)/10;
+			document.getElementById("clock").innerHTML = Math.floor(21.0 - (now-state.turnStartTime)/1000);
 		}
 	}, 1000/30);
 }
@@ -186,7 +185,6 @@ socket.on("player_use_item", function(msg) {
 
 
 function endOfTurn() {
-	console.log('end_of_turn');
 	socket.emit('end_of_turn', state.timePenalty);
 }
 

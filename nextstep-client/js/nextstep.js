@@ -71,7 +71,8 @@ var CONST = {
 	ITEM_SLOT_WIDTH : 200,
 	ITEM_HEALTH_UP_EFFECT : 500,
 	SNAPSHOT_TIMEFRAME : 100,
-	X_ERROR_TOLERANCE : 4,
+	X_ERROR_TOLERANCE : 0.5*1,
+	SLOWDOWN_CONSTANT : 0.5,
 };
 
 function initialize() {
@@ -109,6 +110,7 @@ function startGame() {
 		relay();
 		if (!state.player[CONST.MAIN_PLAYER].isAlive) {
 			announceDeath();
+			state.hasMoved = true;
 		}
 		if (state.requestToStartCurrentTurn) {
 			if (state.bullets.length == 0 && state.explosions.length == 0) {
@@ -270,7 +272,7 @@ function updatePlayers() {
 				client.currentRoom.member[i].currentSnapshot.obsolete = true;
 			} else {
 				state.player[i].orientation = state.player[i].x < client.currentRoom.member[i].currentSnapshot.x ? 1 : -1;
-				state.player[i].thrust = CONST.PLAYER_SPEED * state.player[i].orientation;
+				state.player[i].thrust = CONST.SLOWDOWN_CONSTANT * CONST.PLAYER_SPEED * state.player[i].orientation;
 				if (state.player[i].angle != client.currentRoom.member[i].currentSnapshot.angle) {
 					state.player[i].command[(state.player[i].angle - client.currentRoom.member[i].currentSnapshot.angle > 0 ? "ADJUST_ANGLE_DOWN":"ADJUST_ANGLE_UP")] = true;
 				}
