@@ -42,7 +42,9 @@ class NextStepNamespace(BaseNamespace):
 			'owner' : self,
 			'type' : 'duel',
 			'member' : {id(self):self},
-			'delay_accumulated' : 0
+			'delay_accumulated' : 0,
+			'status' : 'ready',
+			'stack' : []
 		}
 		self.current_room = NextStepNamespace._room[NextStepNamespace._room_counter]
 		self._broadcast('room_created', {'room_title': room_title, 'room_id': self.current_room['room_id'], 'owner': self.username, 'ownerid': id(self)})
@@ -65,6 +67,11 @@ class NextStepNamespace(BaseNamespace):
 	def on_exit_room(self):
 		if not self.current_room:
 			return
+		if self.current_room['status'] == 'playing':
+			self.remove_from_stack()
+			self.sort_stack()
+			self.broadcast_delay_stack();
+
 		del self.current_room['member'][id(self)]
 		if self.is_room_owner():
 			if len(self.current_room['member']):
@@ -82,8 +89,10 @@ class NextStepNamespace(BaseNamespace):
 	def on_join_room(self, room_id):
 		if self.current_room:
 			self.on_exit_room()
+		if NextStepNamespace._room[room_id]['status'] == 'playing':
+			self.emit('join_failure', {'room_id' : room_id, 'status': 'Room is already playing.'})
 		if not NextStepNamespace._room[room_id]:
-			self.emit('join_failure', {'room_id' : room_id})
+			self.emit('join_failure', {'room_id' : room_id, 'status': 'Room is not found.'})
 			return
 		room = NextStepNamespace._room[room_id]
 		self.current_room = room
@@ -97,15 +106,17 @@ class NextStepNamespace(BaseNamespace):
 
 	def on_start_game(self):
 		room = self.current_room
+		room['status'] = 'playing'
 		room['stack'] = [{'user':s, 'delay':0} for s in room['member'].itervalues()]
 		room['owner'].emit('initialize')
-		#self._broadcast_room('turn', {'userid': id(room['stack'][0]['user'])})
 
 	def on_initialize(self, data):
 		self._broadcast_room('initial_values', data)
 
 	def on_turn_request(self):
 		room = self.current_room
+		if self == room['stack'][0]['user']:
+			room['delay_accumulated'] = 0
 		self.emit('turn', {'userid': id(room['stack'][0]['user'])})
 
 	def on_end_of_turn(self, time_penalty):
@@ -117,24 +128,40 @@ class NextStepNamespace(BaseNamespace):
 				continue
 			ud['delay'] += room['delay_accumulated']
 			break
-		room['delay_accumulated'] = 0
+		self.sort_stack()
+		self.broadcast_delay_stack()
+		
+		self._broadcast_room('turn', {'userid': id(s[0]['user'])})
 
+	def broadcast_delay_stack(self):
+		room = self.current_room
+		s = room['stack']
+		delay_stack = {}
+		for ud in s:
+			delay_stack[id(ud['user'])] = ud['delay']
+		self._broadcast_room('delay_stack', {'data':delay_stack})
+
+	def sort_stack(self):
+		room = self.current_room
+		s = room['stack']
 		for i in xrange(len(s)):
 			j = i
 			while j > 0 and s[j]['delay'] < s[j-1]['delay']:
 				s[j], s[j-1] = s[j-1], s[j]
 				j -= 1
 
-
-		self._broadcast_room('turn', {'userid': id(s[0]['user'])})
-
 	def on_current_snapshot(self, snapshot):
 		self._broadcast_room('snapshot', {'userid':id(self), 'snapshot':snapshot})
 
 	def on_player_death(self):
+		self.remove_from_stack()
+		self._broadcast_room('death', {'userid': id(self)})
+
+	def remove_from_stack(self):
+		if not self.current_room:
+			return
 		v = [s for s in self.current_room['stack'] if s['user'] != self]
 		self.current_room['stack'] = v
-		self._broadcast_room('death', {'userid': id(self)})
 
 	def on_player_shoot(self, shoot_info):
 		room = self.current_room;
@@ -146,7 +173,6 @@ class NextStepNamespace(BaseNamespace):
 		room = self.current_room;
 		if self == room['stack'][0]['user']:
 			self.current_room['delay_accumulated'] += 100
-
 		self._broadcast_room('player_use_item', {'userid': id(self), 'item_info': item_info})
 
 	def _broadcast(self, event, msg):

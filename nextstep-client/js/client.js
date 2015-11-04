@@ -32,6 +32,8 @@ socket.on('room_created', function(msg){
 				id : client.userid,
 			}],
 			hashed_member : {},
+			status : 'ready',
+			exitedMember : []
 		}
 		client.currentRoom.hashed_member[client.userid] = client.currentRoom.member[0];
 	}
@@ -63,6 +65,8 @@ socket.on('joined_room', function(msg) {
 		owner : msg['ownerid'],
 		member : msg['member'],
 		hashed_member : {},
+		status : 'ready',
+		exitedMember : [],
 	}
 	for (var i = 0; i < client.currentRoom.member.length; ++i){
 		client.currentRoom.hashed_member[client.currentRoom.member[i]['id']] = client.currentRoom.member[i];
@@ -79,9 +83,9 @@ socket.on('initialize', function(msg){
 	// perform initializing job based on terrain
 	for (var i = 0; i < client.currentRoom.member.length; ++i) {
 		var color = "rgb(" + Math.floor(Math.random()*255) + "," + Math.floor(Math.random()*255) + "," + Math.floor(Math.random() * 255) + ')';
-		state.player.push(new Player(200 + 300 * i, 0, color, client.currentRoom.member[i].name));
+		state.player.push(new Player(300 + 300 * i, 0, color, client.currentRoom.member[i].name));
 		data.push({
-			'x': 200+300*i,
+			'x': 300+300*i,
 			'y': 0,
 			'color':color,
 			'username':client.currentRoom.member[i].name,
@@ -113,36 +117,41 @@ socket.on('initial_values', function(msg){
 });
 
 socket.on('turn', function(msg){
+	console.log("turn : ", msg['userid']);
 	state.currentTurn = msg['userid'];
 	if (client.userid == state.currentTurn){
-		state.viewMode["LOCKED_PLAYER_VIEW_MODE"] = true;
-		state.player[CONST.MAIN_PLAYER].command["USE_ITEM"] = {
-			use : false,
-		}
-		state.player[CONST.MAIN_PLAYER].usedItem = false;
-		state.hasMoved = false;
-		state.turnStartTime = Date.now();
-		state.timePenalty = 0;
-		state.usedItem = false;
-		state.countdown = setInterval(function() {
-			if (state.hasMoved) {
-				clearInterval(state.countdown);
-				return;
-			}
-			var now = Date.now();
-			if (now - state.turnStartTime >= 20000) {
-				state.hasMoved = true;
-				state.timePenalty = 20;
-				clearInterval(state.countdown);
-			} else {
-				state.timePenalty = Math.floor(Math.floor(now - state.turnStartTime)/1000);
-				document.getElementById("clock").innerHTML = Math.floor(200.0 - (now-state.turnStartTime)/100)/10;
-			}
-		}, 1000/30);
+		state.requestToStartCurrentTurn = true;
 	} else {
 		document.getElementById("clock").innerHTML = "";
 	}
 });
+
+function setPlayerTurnActive() {
+	state.viewMode["LOCKED_PLAYER_VIEW_MODE"] = true;
+	state.player[CONST.MAIN_PLAYER].command["USE_ITEM"] = {
+		use : false,
+	}
+	state.player[CONST.MAIN_PLAYER].usedItem = false;
+	state.hasMoved = false;
+	state.turnStartTime = Date.now();
+	state.timePenalty = 0;
+	state.usedItem = false;
+	state.countdown = setInterval(function() {
+		if (state.hasMoved) {
+			clearInterval(state.countdown);
+			return;
+		}
+		var now = Date.now();
+		if (now - state.turnStartTime >= 20000) {
+			state.hasMoved = true;
+			state.timePenalty = 20;
+			clearInterval(state.countdown);
+		} else {
+			state.timePenalty = Math.floor(Math.floor(now - state.turnStartTime)/1000);
+			document.getElementById("clock").innerHTML = Math.floor(200.0 - (now-state.turnStartTime)/100)/10;
+		}
+	}, 1000/30);
+}
 
 
 socket.on('snapshot', function(msg) {
@@ -177,5 +186,32 @@ socket.on("player_use_item", function(msg) {
 
 
 function endOfTurn() {
+	console.log('end_of_turn');
 	socket.emit('end_of_turn', state.timePenalty);
 }
+
+function announceDeath() {
+	socket.emit('player_death');
+}
+
+socket.on('delay_stack', function(msg) {
+	client.currentRoom.stack = msg.data;
+});
+
+socket.on('exit_room', function(msg) {
+	if (client.currentRoom.status == 'playing') {
+		client.currentRoom.hashed_member[msg['userid']].player.isAlive = false;
+		if (state.currentTurn == msg['userid']) {
+			socket.emit('turn_request');
+		}
+		client.currentRoom.exitedMember.push(msg['userid']);
+	} else {
+		var tmp = [];
+		for(var i = 0; i < client.currentRoom.member.length; ++i){
+			if (client.currentRoom.member[i].id != msg['userid']) tmp.push(client.currentRoom.member[i]);
+		}
+		client.currentRoom.member = tmp;
+		delete client.currentRoom.hashed_member[msg['userid']];
+	}
+});
+

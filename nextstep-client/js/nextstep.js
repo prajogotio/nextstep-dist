@@ -27,6 +27,8 @@ var state = {
 	hasMoved : true,
 	countdown : null,
 	turnStartTime : 0,
+	requestToStartCurrentTurn : false,
+	timePenalty : 0,
 };
 
 var CONST = {
@@ -97,6 +99,7 @@ function spawnPlayers() {
 
 
 function startGame() {
+	client.currentRoom.status = 'playing';
 	//spawnPlayers();
 	registerEventListener();
 
@@ -104,7 +107,15 @@ function startGame() {
 		update();
 		render();
 		relay();
-		if (state.currentTurn == client.userid && state.hasMoved) {
+		if (!state.player[CONST.MAIN_PLAYER].isAlive) {
+			announceDeath();
+		}
+		if (state.requestToStartCurrentTurn) {
+			if (state.bullets.length == 0 && state.explosions.length == 0) {
+				state.requestToStartCurrentTurn = false;
+				setPlayerTurnActive();
+			}
+		} else if (state.currentTurn == client.userid && state.hasMoved) {
 			if (state.bullets.length == 0 && !state.player[CONST.MAIN_PLAYER].command["ANOTHER_SHOOT"]) endOfTurn();
 		}
 	}, CONST.TIME_DELTA);
@@ -268,6 +279,7 @@ function updatePlayers() {
 		state.player[i].commandHandler(state);
 		state.player[i].movementUpdate();
 	}
+
 }
 
 function updateBullets() {

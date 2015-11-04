@@ -24,6 +24,7 @@ function Player(x, y, color, name) {
 	this.command = {};
 	this.power = 0;
 	this.isAlive = true;
+	this.renderable = true;
 
 	this.itemSlot = ["dual", "power", "health"];
 
@@ -37,6 +38,7 @@ Player.prototype.bufferCaption = function() {
 }
 
 Player.prototype.render = function(g) {
+	if(!this.renderable) return;
 	var theta = Math.atan2(this.dir[1], this.dir[0]);
 
 	g.save();
@@ -50,7 +52,7 @@ Player.prototype.render = function(g) {
 	g.restore();
 
 	this.renderNameCaption(g);
-	this.renderHealthBar(g);
+	if (this.isAlive) this.renderHealthBar(g);
 	g.restore();
 }
 
@@ -194,6 +196,8 @@ Player.prototype.bulletFactory = function(x, y, v) {
 }
 
 Player.prototype.movementUpdate = function() {
+	if (!this.renderable) return;
+
 	var temp = {
 		x : this.x,
 		y : this.y,
@@ -218,6 +222,11 @@ Player.prototype.movementUpdate = function() {
 	}
 
 	if (this.y - temp.y < this.PLAYER_VERTICAL_MOVEMENT_LIMIT) setPlayerState(this, temp);
+
+	if (this.y > CONST.WORLD_WIDTH) {
+		this.isAlive = false;
+		this.renderable = false;
+	}
 }
 
 Player.prototype.receiveDamage = function(damage) {
