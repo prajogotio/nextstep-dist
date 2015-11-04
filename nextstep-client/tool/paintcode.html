@@ -1,0 +1,67 @@
+<html>
+<head>
+	<style>
+	body {
+		background-color: black;
+	}
+	#log {
+		background-color: white;
+		position: relative;
+		margin-top: 30px;
+	}
+	</style>
+</head>
+<body>
+	<canvas id="disp" width="200" height="60">
+	</canvas>
+	<div id="log">
+	</div>
+	<script>
+		var canvas = document.getElementById("disp");
+		var buffer = document.createElement("canvas");
+		buffer.width = canvas.width;
+		buffer.height = canvas.height;
+		var g = canvas.getContext("2d");
+		var bg = buffer.getContext("2d");
+		var points = [];
+		canvas.addEventListener("mousedown", function(e) {
+			var x = e.pageX-canvas.offsetLeft;
+			var y = e.pageY-canvas.offsetTop;
+			points.push([x,y]);
+		});
+		document.addEventListener("keydown", function(e) {
+			if (e.which == 65) {
+				bg.fillStyle = "white";
+				bg.lineWidth = "1";
+				bg.beginPath();
+				printLog("g.moveTo("+points[0][0]+","+points[0][1]+");");
+				bg.moveTo(points[0][0], points[0][1]);
+				for (var i = 1; i < points.length; ++i) {
+					printLog("g.lineTo("+points[i][0]+","+points[i][1]+");");
+					bg.lineTo(points[i][0], points[i][1]);
+				}
+				bg.closePath();
+				bg.fill();
+				bg.stroke();
+				points = [];
+			}
+		})
+		var timer = setInterval(function() {
+			g.fillStyle = "#fff";
+			g.fillRect(0, 0, canvas.width, canvas.height);
+			
+			g.drawImage(buffer, 0, 0, canvas.width, canvas.height, 0, 0, canvas.width, canvas.height);
+
+			g.fillStyle = "#f00";
+			var size = 4;
+			for (var i = 0; i < points.length; ++i) g.fillRect(points[i][0]-size/2, points[i][1]-size/2,size, size);
+
+			g.strokeStyle = "red";
+		}, 1000/60);
+
+		function printLog(str) {
+			document.getElementById("log").innerHTML += str + "<br>";
+		}
+	</script>
+</body>
+</html>
