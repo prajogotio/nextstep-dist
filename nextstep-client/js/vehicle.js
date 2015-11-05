@@ -122,7 +122,7 @@ Player.prototype.renderShoutout = function(g){
 	g.fillStyle = "rgba(255,255,255,0.85)";
 	g.translate(40, -this.bufferedShoutout.height - 50)
 	g.fillRect(-4, 0, this.bufferedShoutout.width+8, this.bufferedShoutout.height);
-	g.drawImage(this.bufferedShoutout, 0, 0, this.bufferedShoutout.width, this.bufferedShoutout.height, 0, 0, this.bufferedShoutout.width, this.bufferedShoutout.height);
+	g.drawImage(this.bufferedShoutout, 0, 0, this.bufferedShoutout.width, this.bufferedShoutout.height, 4, 0, this.bufferedShoutout.width, this.bufferedShoutout.height);
 	g.strokeRect(-4, 0, this.bufferedShoutout.width+8, this.bufferedShoutout.height);
 	g.restore();
 }
