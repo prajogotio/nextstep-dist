@@ -29,10 +29,14 @@ class NextStepNamespace(BaseNamespace):
 		self.username = username
 		self._broadcast('enter', username)
 		self.emit('userid', {'userid' : id(self), 'username': username})
-		self.emit('users',
-			[{'name':ns.username, 'id':id(ns)}
-			 for ns in NextStepNamespace._registry.values()
-			 if ns.username is not None])
+		#self.emit('users',
+		#	[{'name':ns.username, 'id':id(ns)}
+		#	 for ns in NextStepNamespace._registry.values()
+		#	 if ns.username is not None])
+		self.emit('rooms',
+			[{'room_id':r['room_id'], 'room_title':r['room_title']}
+			 for r in NextStepNamespace._room.values()
+			 if r['status'] is 'ready'])
 
 	def on_create_room(self, room_title):
 		NextStepNamespace._room_counter += 1
@@ -79,9 +83,10 @@ class NextStepNamespace(BaseNamespace):
 				self.current_room['owner'] = new_owner
 				new_owner.emit('appointed_owner')
 				self._broadcast('room_info_update', {'owner': new_owner.username, 'userid': id(new_owner)})
-			else:
-				del NextStepNamespace._room[self.current_room['room_id']]
-				self._broadcast('room_destroyed', {'room_id': self.current_room['room_id']})
+
+		if not len(self.current_room['member']):
+			del NextStepNamespace._room[self.current_room['room_id']]
+			self._broadcast('room_destroyed', {'room_id': self.current_room['room_id']})
 		self._broadcast_room('exit_room', {'username':self.username, 'userid':id(self)})
 		self.current_room = None
 
@@ -113,6 +118,7 @@ class NextStepNamespace(BaseNamespace):
 
 	def on_initialize(self, data):
 		self._broadcast_room('initial_values', data)
+		self._broadcast_room('turn', {'userid': id(self.current_room['stack'][0]['user'])})
 
 	def on_turn_request(self):
 		room = self.current_room
@@ -120,18 +126,19 @@ class NextStepNamespace(BaseNamespace):
 			room['delay_accumulated'] = 0
 		self.emit('turn', {'userid': id(room['stack'][0]['user'])})
 
-	def on_end_of_turn(self, time_penalty):
+	def on_end_of_turn(self, msg):
 		room = self.current_room
-		room['delay_accumulated'] += time_penalty * 10
+		room['delay_accumulated'] += msg['time_penalty'] * 10
 		s = room['stack']
 		for ud in s:
 			if ud['user'] is not self:
 				continue
 			ud['delay'] += room['delay_accumulated']
 			break
+		room['delay_accumulated'] = 0;
 		self.sort_stack()
 		self.broadcast_delay_stack()
-		
+		self._broadcast_room('force_update', {'userid': id(self), 'state': msg})
 		self._broadcast_room('turn', {'userid': id(s[0]['user'])})
 
 	def broadcast_delay_stack(self):
@@ -173,7 +180,7 @@ class NextStepNamespace(BaseNamespace):
 	def on_player_use_item(self, item_info):
 		room = self.current_room;
 		if self == room['stack'][0]['user']:
-			self.current_room['delay_accumulated'] += 100
+			self.current_room['delay_accumulated'] += 200
 		self._broadcast_room('player_use_item', {'userid': id(self), 'item_info': item_info})
 
 	def on_message(self, msg):

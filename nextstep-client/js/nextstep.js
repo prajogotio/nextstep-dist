@@ -79,7 +79,8 @@ var CONST = {
 	X_ERROR_TOLERANCE : 0.5*1,
 	SLOWDOWN_CONSTANT : 0.5,
 	MESSAGE_FLOOD_LIMIT : 1000,
-	MAX_MESSAGE_DISPLAY : 10
+	MAX_MESSAGE_DISPLAY : 10,
+	START_DELAY: 10,
 };
 
 function initialize() {
@@ -581,7 +582,7 @@ function renderPlayers() {
 	for(var i = 0; i < state.player.length; ++i) {
 		state.player[i].render(state.g);
 	}
-	renderPointer(client.currentRoom.hashed_member[state.currentTurn].player);
+	if (state.currentTurn != -1) renderPointer(client.currentRoom.hashed_member[state.currentTurn].player);
 }
 
 function renderPointer(player) {

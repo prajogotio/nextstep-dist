@@ -1,5 +1,7 @@
 var socket = io.connect('/nextstep')
-var client = {}
+var client = {
+	roomList : [],
+}
 function login(username){
 	socket.emit('login', username)
 }
@@ -14,6 +16,12 @@ socket.on('userid', function(msg){
 	client.userid = msg['userid'];
 });
 
+socket.on('rooms', function(msg) {
+	for (var i = 0; i < msg.length; ++i) {
+		client.roomList.push({title: msg[i].room_title, id: msg[i].room_id});
+	}
+	renderRooms();
+})
 
 function createRoom(roomTitle){
 	socket.emit('create_room', roomTitle);
@@ -21,6 +29,11 @@ function createRoom(roomTitle){
 
 socket.on('room_created', function(msg){
 	console.log("a room is created: " + msg['room_title'] + "[" + msg['room_id'] + "]");
+	client.roomList.push({
+		id : msg['room_id'],
+		title : msg['room_title'],
+	});
+	renderRooms();
 	if (msg['ownerid'] == client.userid) {
 		console.log("you are the owner of the room");
 		client.currentRoom = {
@@ -39,6 +52,13 @@ socket.on('room_created', function(msg){
 	}
 });
 
+function renderRooms() {
+	var div = "";
+	for (var i = 0; i < client.roomList.length;++i){ 
+		div += "<div class='room_item' onclick='joinRoom(" + client.roomList[i].id + ")'><div class='room_id'>"+client.roomList[i].id+"</div><div class='room_title'>"+client.roomList[i].title+"</div></div>"
+	}
+	document.getElementById("room_list").innerHTML = div + '<div style="clear:both;"></div>';
+}
 
 function joinRoom(roomId){
 	socket.emit('join_room', roomId);
@@ -113,13 +133,12 @@ socket.on('initial_values', function(msg){
 		}
 	} 
 	startGame();
-	socket.emit('turn_request');
 });
 
 socket.on('turn', function(msg){
 	state.currentTurn = msg['userid'];
 	if (client.userid == state.currentTurn){
-		state.startDelay = 200;
+		state.startDelay = CONST.START_DELAY;
 		state.requestToStartCurrentTurn = true;
 	} else {
 		document.getElementById("clock").innerHTML = "";
@@ -160,7 +179,7 @@ socket.on('snapshot', function(msg) {
 	var member = client.currentRoom.hashed_member[msg['userid']];
 	member.currentSnapshot = msg.snapshot;
 	member.currentSnapshot.obsolete = false;
-	member.suggestedThrust = Math.max(CONST.PLAYER_SPEED * CONST.SLOWDOWN_CONSTANT, (Math.abs(member.player.x - member.currentSnapshot.x - 1)/CONST.SNAPSHOT_TIMEFRAME)) * (member.player.x < member.currentSnapshot.x ? 1 : -1);
+	member.suggestedThrust = Math.abs(member.player.x - member.currentSnapshot.x - 1)/CONST.SNAPSHOT_TIMEFRAME * (member.player.x < member.currentSnapshot.x ? 1 : -1);
 });
 
 socket.on('player_shoot', function(msg){
@@ -190,7 +209,16 @@ socket.on("player_use_item", function(msg) {
 
 
 function endOfTurn() {
-	socket.emit('end_of_turn', state.timePenalty);
+	socket.emit('end_of_turn', {
+		time_penalty: state.timePenalty,
+		x: state.player[CONST.MAIN_PLAYER].x,
+		y: state.player[CONST.MAIN_PLAYER].y,
+		v: state.player[CONST.MAIN_PLAYER].v,
+		dir: state.player[CONST.MAIN_PLAYER].dir,
+		angle: state.player[CONST.MAIN_PLAYER].angle,
+		orientation: state.player[CONST.MAIN_PLAYER].orientation,
+		hp: state.player[CONST.MAIN_PLAYER].hp,
+	});
 }
 
 function announceDeath() {
@@ -253,3 +281,67 @@ function renderMessage() {
 }
 
 
+
+
+
+
+function registerListenerForLoginScreen() {
+	var loginInput = document.getElementById("login_input");
+	loginInput.focus();
+
+	function validateAndSubmit() {
+		var username = loginInput.value;
+		if (username.trim() == "") {
+			loginInput.style.setProperty("border", "3px solid red");
+			loginInput.focus();
+			return;
+		}
+		login(username);
+		document.getElementById("login_layer").style.setProperty("display", "none");
+	}
+
+	document.getElementById("login_start_button").addEventListener("click", function() {
+		validateAndSubmit();
+	});
+	document.getElementById("login_input").addEventListener("keydown", function(e) {
+		if (e.which == 13) {
+			validateAndSubmit();
+			e.preventDefault();
+			return false;
+		}
+	})
+
+}
+
+function exitRoom() {
+	socket.emit('exit_room');
+	client.currentRoom = {};
+}
+
+socket.on('room_destroyed', function(msg) {
+	console.log('room['+msg['room_id']+'] destroyed');
+	var tmp = [];
+	for (var i = 0; i < client.roomList.length; ++i) {
+		if (client.roomList[i].id != msg['room_id']) {
+			tmp.push(client.roomList[i]);
+		}
+	}
+	client.roomList = tmp;
+	renderRooms();
+});
+
+
+socket.on('force_update', function(msg) {
+	if (msg['userid'] == client.userid) return;
+	var m = client.currentRoom.hashed_member[msg['userid']];
+	var p = m.player;
+	p.x = msg.state.x;
+	p.y = msg.state.y;
+	p.v = msg.state.v
+	p.hp = msg.state.hp;
+	p.dir = msg.state.dir
+	p.orientation = msg.state.orientation;
+	p.angle = msg.state.angle;
+	p.thrust = 0;
+	m.currentSnapshot.obsolete = true;
+});
