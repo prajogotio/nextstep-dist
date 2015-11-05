@@ -25,6 +25,7 @@ function Player(x, y, color, name) {
 	this.power = 0;
 	this.isAlive = true;
 	this.renderable = true;
+	this.shoutoutDelta = 0;
 
 	this.itemSlot = ["dual", "power", "health"];
 
@@ -53,6 +54,7 @@ Player.prototype.render = function(g) {
 
 	this.renderNameCaption(g);
 	if (this.isAlive) this.renderHealthBar(g);
+	this.renderShoutout(g);
 	g.restore();
 }
 
@@ -109,6 +111,20 @@ Player.prototype.renderHealthBar = function(g) {
 	g.fillRect(-w/2, offset, w, h);
 	g.fillStyle = "green";
 	g.fillRect(-w/2, offset, w * this.hp / this.MAX_HEALTH_POINT, h);
+}
+
+Player.prototype.renderShoutout = function(g){
+	if (this.shoutoutDelta <= 0) return;
+	this.shoutoutDelta--;
+	g.save();
+	g.strokeStyle = "black";
+	g.lineWidth = 1;
+	g.fillStyle = "rgba(255,255,255,0.85)";
+	g.translate(40, -this.bufferedShoutout.height - 50)
+	g.fillRect(-4, 0, this.bufferedShoutout.width+8, this.bufferedShoutout.height);
+	g.drawImage(this.bufferedShoutout, 0, 0, this.bufferedShoutout.width, this.bufferedShoutout.height, 0, 0, this.bufferedShoutout.width, this.bufferedShoutout.height);
+	g.strokeRect(-4, 0, this.bufferedShoutout.width+8, this.bufferedShoutout.height);
+	g.restore();
 }
 
 Player.prototype.commandHandler = function(state) {
@@ -240,6 +256,34 @@ Player.prototype.receiveDamage = function(damage) {
 		this.isAlive = false;
 	}
 	createDamageEffect(this.x, this.y-20, damage);
+}
+
+Player.prototype.setShoutout = function(msg) {
+	this.shoutoutDelta = 300;
+	this.lastMessage = msg;
+	state.g.font = "21px Arial";
+	var w = state.g.measureText(msg).width;
+	var cw = w/msg.length;
+	var MAX_WIDTH = 250;
+	var EXPECTED_LINEHEIGHT = 21 * 1.2;
+	var charperline = Math.floor(MAX_WIDTH/cw);
+	var y = 0;
+	this.bufferedShoutout = document.createElement("canvas");
+	this.bufferedShoutout.width = Math.min(w, MAX_WIDTH) + 8;
+	this.bufferedShoutout.height = Math.ceil(w/MAX_WIDTH)* EXPECTED_LINEHEIGHT;
+	var g = this.bufferedShoutout.getContext("2d");
+	g.font = "21px Arial";
+	g.fillStyle = "black";
+	g.textBaseline = "top";
+	for(var i = 0; i < msg.length; i += charperline) {
+		var t = msg.substring(i, Math.min(msg.length,i+charperline));
+		if (i+charperline < msg.length) {
+			var c = msg[i+charperline];
+			if (c != ' ' && c != '.') t += '-';
+		}
+		g.fillText(t, 0, y);
+		y += EXPECTED_LINEHEIGHT;
+	}
 }
 
 function Bullet(x, y, v) {

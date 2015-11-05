@@ -229,6 +229,7 @@ function sendMessage(msg) {
 	state.lastMessageTime = now;
 	state.messageQueue.push({id: client.userid, name:client.username ,'msg': msg});
 	socket.emit('message', msg);
+	state.player[CONST.MAIN_PLAYER].setShoutout(msg);
 	renderMessage();
 }
 
@@ -239,6 +240,7 @@ socket.on('message', function(msg) {
 		name: client.currentRoom.hashed_member[msg['userid']].name,
 		'msg': msg['msg'],
 	});
+	client.currentRoom.hashed_member[msg['userid']].player.setShoutout(msg['msg']);
 	renderMessage();
 });
 
