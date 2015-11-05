@@ -119,6 +119,7 @@ socket.on('initial_values', function(msg){
 socket.on('turn', function(msg){
 	state.currentTurn = msg['userid'];
 	if (client.userid == state.currentTurn){
+		state.startDelay = 200;
 		state.requestToStartCurrentTurn = true;
 	} else {
 		document.getElementById("clock").innerHTML = "";
@@ -143,6 +144,8 @@ function setPlayerTurnActive() {
 		var now = Date.now();
 		if (now - state.turnStartTime >= 20000) {
 			state.hasMoved = true;
+			state.player[CONST.MAIN_PLAYER].thrust = 0;
+			state.player[CONST.MAIN_PLAYER].command = {};
 			state.timePenalty = 20;
 			clearInterval(state.countdown);
 		} else {
@@ -154,8 +157,10 @@ function setPlayerTurnActive() {
 
 
 socket.on('snapshot', function(msg) {
-	client.currentRoom.hashed_member[msg['userid']].currentSnapshot = msg.snapshot;
-	client.currentRoom.hashed_member[msg['userid']].currentSnapshot.obsolete = false;
+	var member = client.currentRoom.hashed_member[msg['userid']];
+	member.currentSnapshot = msg.snapshot;
+	member.currentSnapshot.obsolete = false;
+	member.suggestedThrust = Math.max(CONST.PLAYER_SPEED * CONST.SLOWDOWN_CONSTANT, (Math.abs(member.player.x - member.currentSnapshot.x - 1)/CONST.SNAPSHOT_TIMEFRAME)) * (member.player.x < member.currentSnapshot.x ? 1 : -1);
 });
 
 socket.on('player_shoot', function(msg){
@@ -212,4 +217,37 @@ socket.on('exit_room', function(msg) {
 		delete client.currentRoom.hashed_member[msg['userid']];
 	}
 });
+
+
+function sendMessage(msg) {
+	var now = Date.now();
+	if (now - state.lastMessageTime < CONST.MESSAGE_FLOOD_LIMIT) {
+		state.messageQueue.push({id: -1, name: 'SYSTEM', 'msg' : 'MESSAGE FLOODING'});
+		return;
+	}
+	if (msg.trim() == "") return;
+	state.lastMessageTime = now;
+	state.messageQueue.push({id: client.userid, name:client.username ,'msg': msg});
+	socket.emit('message', msg);
+	renderMessage();
+}
+
+socket.on('message', function(msg) {
+	if (msg['userid'] == client.userid) return;
+	state.messageQueue.push({
+		id: msg['userid'], 
+		name: client.currentRoom.hashed_member[msg['userid']].name,
+		'msg': msg['msg'],
+	});
+	renderMessage();
+});
+
+function renderMessage() {
+	var disp = "";
+	for (var i = Math.max(0, state.messageQueue.length - CONST.MAX_MESSAGE_DISPLAY); i < state.messageQueue.length; ++i){
+		disp += "<div style='background-color:rgba(0,0,0,0.6);color:white'><b><i>"+state.messageQueue[i].name + "</i></b>: <span style='font-weight:lighter'>" + state.messageQueue[i].msg + "</span><br/></div>";
+	}
+	document.getElementById("message_display").innerHTML = disp;
+}
+
 

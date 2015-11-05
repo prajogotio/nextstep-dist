@@ -89,11 +89,11 @@ class NextStepNamespace(BaseNamespace):
 	def on_join_room(self, room_id):
 		if self.current_room:
 			self.on_exit_room()
-		if NextStepNamespace._room[room_id]['status'] == 'playing':
-			self.emit('join_failure', {'room_id' : room_id, 'status': 'Room is already playing.'})
-		if not NextStepNamespace._room[room_id]:
+		if not room_id in NextStepNamespace._room:
 			self.emit('join_failure', {'room_id' : room_id, 'status': 'Room is not found.'})
 			return
+		if NextStepNamespace._room[room_id]['status'] == 'playing':
+			self.emit('join_failure', {'room_id' : room_id, 'status': 'Room is already playing.'})
 		room = NextStepNamespace._room[room_id]
 		self.current_room = room
 		room['member'][id(self)] = self
@@ -102,9 +102,10 @@ class NextStepNamespace(BaseNamespace):
 			{ 'room_id' : room_id, 'room_title' : room['room_title'], 'ownerid': id(room['owner']),'member': [{'name': ns.username, 'id' : id(ns)}
 			  for ns in self.current_room['member'].values()] })
 
-
-
 	def on_start_game(self):
+		if not self.current_room:
+			self.emit('start_game_failure')
+			return
 		room = self.current_room
 		room['status'] = 'playing'
 		room['stack'] = [{'user':s, 'delay':0} for s in room['member'].itervalues()]
@@ -121,7 +122,7 @@ class NextStepNamespace(BaseNamespace):
 
 	def on_end_of_turn(self, time_penalty):
 		room = self.current_room
-		room['delay_accumulated'] += time_penalty * 20
+		room['delay_accumulated'] += time_penalty * 10
 		s = room['stack']
 		for ud in s:
 			if ud['user'] is not self:
@@ -174,6 +175,9 @@ class NextStepNamespace(BaseNamespace):
 		if self == room['stack'][0]['user']:
 			self.current_room['delay_accumulated'] += 100
 		self._broadcast_room('player_use_item', {'userid': id(self), 'item_info': item_info})
+
+	def on_message(self, msg):
+		self._broadcast_room('message', {'userid':id(self), 'msg':msg})
 
 	def _broadcast(self, event, msg):
 		for s in NextStepNamespace._registry.values():

@@ -29,6 +29,11 @@ var state = {
 	turnStartTime : 0,
 	requestToStartCurrentTurn : false,
 	timePenalty : 0,
+	startDelay : 200,
+	listenerRegistered : false,
+	chatFocused : false,
+	messageQueue : [],
+	lastMessageTime : 0,
 };
 
 var CONST = {
@@ -70,9 +75,11 @@ var CONST = {
 	MAX_ITEM_BAR_SLOTS : 3,
 	ITEM_SLOT_WIDTH : 200,
 	ITEM_HEALTH_UP_EFFECT : 500,
-	SNAPSHOT_TIMEFRAME : 100,
+	SNAPSHOT_TIMEFRAME : 80,
 	X_ERROR_TOLERANCE : 0.5*1,
 	SLOWDOWN_CONSTANT : 0.5,
+	MESSAGE_FLOOD_LIMIT : 1000,
+	MAX_MESSAGE_DISPLAY : 10
 };
 
 function initialize() {
@@ -102,7 +109,10 @@ function spawnPlayers() {
 function startGame() {
 	client.currentRoom.status = 'playing';
 	//spawnPlayers();
-	registerEventListener();
+	if (!state.listenerRegistered) {
+		registerEventListener();
+		state.listenerRegistered = true;
+	}
 
 	state.timer = setInterval(function(){
 		update();
@@ -113,12 +123,18 @@ function startGame() {
 			state.hasMoved = true;
 		}
 		if (state.requestToStartCurrentTurn) {
+			if (state.startDelay > 0) {
+				state.startDelay--;
+				return;
+			}
 			if (state.bullets.length == 0 && state.explosions.length == 0) {
 				state.requestToStartCurrentTurn = false;
 				setPlayerTurnActive();
 			}
 		} else if (state.currentTurn == client.userid && state.hasMoved) {
-			if (state.bullets.length == 0 && !state.player[CONST.MAIN_PLAYER].command["ANOTHER_SHOOT"]) endOfTurn();
+			if (state.bullets.length == 0 && !state.player[CONST.MAIN_PLAYER].command["ANOTHER_SHOOT"]) {
+				endOfTurn();
+			}
 		}
 	}, CONST.TIME_DELTA);
 
@@ -165,6 +181,9 @@ function registerEventListener() {
 		state.mouseOffset = computeMouseOffset(e);
 	});
 	addEventListener("keydown", function(e) {
+		if (e.which == 13 && !state.chatFocused) {
+			document.getElementById('chat_input').focus();
+		}
 		var isPlayerTurn = (state.currentTurn == client.userid);
 		if (state.hasMoved) isPlayerTurn = false;
 		if(e.which == 37) {
@@ -179,7 +198,7 @@ function registerEventListener() {
 			state.player[CONST.MAIN_PLAYER].command["ADJUST_ANGLE_UP"] = true;
 		} else if (e.which == 40) {
 			state.player[CONST.MAIN_PLAYER].command["ADJUST_ANGLE_DOWN"] = true;
-		} else if (e.which == 32 && isPlayerTurn) {
+		} else if (e.which == 32 && isPlayerTurn && !state.chatFocused) {
 			if(!state.player[CONST.MAIN_PLAYER].command["CHARGING_POWER"]) {
 				state.player[CONST.MAIN_PLAYER].command["CHARGE_POWER"] = true;
 			}
@@ -191,7 +210,7 @@ function registerEventListener() {
 			"CHARGING_POWER" : state.player[CONST.MAIN_PLAYER].command["CHARGING_POWER"],
 			"CHARGE_POWER" : state.player[CONST.MAIN_PLAYER].command["CHARGE_POWER"]
 		};
-		if (e.which == 32 && !state.hasMoved) {
+		if (e.which == 32 && !state.hasMoved && !state.chatFocused) {
 			state.hasMoved = true;
 			state.player[CONST.MAIN_PLAYER].command["SHOOT"] = true;
 			state.player[CONST.MAIN_PLAYER].command["CHARGING_POWER"] = false;
@@ -208,6 +227,35 @@ function registerEventListener() {
 			});
 		}
 	});
+
+	document.getElementById("chat_input").addEventListener('focus', function(e) {
+		if (!state.chatFocused){
+			state.chatFocused = true;
+			document.getElementById("chat_ui_notif").style.setProperty("display", "block")
+		}
+	});
+
+	document.getElementById("chat_input").addEventListener('focusout', function(e) {
+		state.chatFocused = false;
+		document.getElementById("chat_ui_notif").style.setProperty("display", "none");
+	});
+
+	document.getElementById("chat_input").addEventListener("keydown", function(e) {
+		if (e.which == 13) {
+			document.getElementById("chat_input").blur();
+			sendMessage(document.getElementById("chat_input").value);
+			document.getElementById("chat_input").value = "";
+			e.stopPropagation();
+			return false;
+		}
+		if (document.getElementById("chat_input").value.length >= 100 && e.which != 8) {
+			e.preventDefault();
+			return false;
+		} 
+	});
+
+
+
 }
 
 function onControlBar(e) {
@@ -272,7 +320,7 @@ function updatePlayers() {
 				client.currentRoom.member[i].currentSnapshot.obsolete = true;
 			} else {
 				state.player[i].orientation = state.player[i].x < client.currentRoom.member[i].currentSnapshot.x ? 1 : -1;
-				state.player[i].thrust = CONST.SLOWDOWN_CONSTANT * CONST.PLAYER_SPEED * state.player[i].orientation;
+				state.player[i].thrust = client.currentRoom.member[i].suggestedThrust;
 				if (state.player[i].angle != client.currentRoom.member[i].currentSnapshot.angle) {
 					state.player[i].command[(state.player[i].angle - client.currentRoom.member[i].currentSnapshot.angle > 0 ? "ADJUST_ANGLE_DOWN":"ADJUST_ANGLE_UP")] = true;
 				}
@@ -570,7 +618,7 @@ function renderControlBar() {
 	g.save();
 	g.fillStyle = CONST.CONTROL_BAR_COLOR;
 	g.lineWidth = 3;
-	g.fillRect((state.display.width - CONST.CONTROL_BAR_WIDTH)/2, state.display.height - CONST.CONTROL_BAR_HEIGHT, CONST.CONTROL_BAR_WIDTH, CONST.CONTROL_BAR_HEIGHT);
+	g.fillRect((state.display.width - CONST.CONTROL_BAR_WIDTH - 4)/2, state.display.height - CONST.CONTROL_BAR_HEIGHT - 30, CONST.CONTROL_BAR_WIDTH + 4, CONST.CONTROL_BAR_HEIGHT + 30);
 	renderPowerBar();
 	renderWindCompass();
 	renderAngleBar();
