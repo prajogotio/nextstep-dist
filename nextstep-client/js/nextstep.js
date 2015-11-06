@@ -39,7 +39,7 @@ var state = {
 	lastMessageTime : 0,
 	isGamePlaying : false,
 	backgroundColor: "white",
-	terrainAssetName: "lindbulm",
+	terrainAssetName: "crepes",
 	terrainBitsName : "green_terrain_bits",
 
 };
@@ -102,7 +102,6 @@ function initialize() {
 
 
 function initializeAsset() {
-	state.backgroundColor = state.backgroundColor;
 	state.terrainBuffer = terrainAssets.get(state.terrainAssetName);
 	state.terrainData = state.terrainBuffer.getContext("2d").getImageData(0, 0, state.terrainBuffer.width, state.terrainBuffer.height);
 }

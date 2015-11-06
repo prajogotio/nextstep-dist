@@ -273,25 +273,30 @@
 		}
 		.room_item {
 			width:330px;
-			background-color:rgba(122,122,122,0.8);
+			background-color:rgba(244,244,244,0.8);
 			min-height:120px;
-			color:white;
+			color:black;
 			float:left;
 			margin:8px;
 			border-radius:20px;
 			overflow:hidden;
 			cursor:pointer;
 		}
-		.room_id,.room_title {
+		.room_id,.room_title, .room_type, .room_size {
 			font-family:helvetica;
 			font-weight:lighter;
 			padding-left:20px;
 			padding-top:8px;
 			font-size:20px;
 		}
-		.room_id {
-			background-color:rgba(0,30,144,0.8);
+		.room_id, .room_title {
+			padding-left:10px;
 			padding-bottom:8px;
+			float:left;
+			max-width:240px;
+		}
+		.room_header_wrapper {
+			background-color:rgba(200,230,144,0.8);
 		}
 		#lobby_side_logo {
 			transform: rotate(-90deg);

@@ -1,5 +1,4 @@
-import os
-
+import os, random, time
 from socketio import socketio_manage
 from socketio.server import SocketIOServer
 from socketio.namespace import BaseNamespace
@@ -54,6 +53,7 @@ class NextStepNamespace(BaseNamespace):
 			'status' : 'ready',
 			'stack' : [],
 			'room_size' : msg['room_size'],
+			'wind_change_delta' : 5,
 		}
 		self.current_room = NextStepNamespace._room[NextStepNamespace._room_counter]
 		self._broadcast('room_created', {'room_title': msg['room_title'], 'room_id': self.current_room['room_id'], 'owner': self.username, 'ownerid': id(self), 'room_size': msg['room_size'], 'game_type': msg['game_type']})
@@ -155,7 +155,9 @@ class NextStepNamespace(BaseNamespace):
 		if room['room_size'] != len(room['member']):
 			return
 		room['status'] = 'playing'
-		room['stack'] = [{'user':s, 'delay':0} for s in room['member'].itervalues()]
+		room['stack'] = [{'user':s, 'delay':0, 'has_moved':False} for s in room['member'].itervalues()]
+		random.seed(int(time.time()))
+		random.shuffle(room['stack'])
 		room['owner'].emit('initialize')
 
 	def on_initialize(self, data):
@@ -177,13 +179,24 @@ class NextStepNamespace(BaseNamespace):
 		s = room['stack']
 		for ud in s:
 			if ud['user'] is not self:
+				if ud['has_moved']:
+					ud['delay'] -= 20 # waiting time discount
 				continue
 			ud['delay'] += room['delay_accumulated']
-			break
+			ud['has_moved'] = True
 		room['delay_accumulated'] = 0;
 		self.sort_stack()
 		self.broadcast_delay_stack()
 		self._broadcast_room('force_update', {'userid': id(self), 'state': msg})
+
+		#wind
+		room['wind_change_delta'] -= 1;
+		if room['wind_change_delta'] <= 0:
+			room['wind_change_delta'] = 15
+			power = random.randint(0,10)
+			angle = random.randint(0,360)
+			self._broadcast_room('wind_change', {'angle': angle, 'power': power});
+
 		if s:
 			self._broadcast_room('turn', {'userid': id(s[0]['user'])})
 

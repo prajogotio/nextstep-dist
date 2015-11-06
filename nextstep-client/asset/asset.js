@@ -270,6 +270,64 @@ var gameAsset = (function() {
 	g.restore();
 
 
+	// hot terrain bits
+	asset["hot_terrain_bits"] = {
+		offsetX : 0,
+		offsetY : 240,
+		width : 40,
+		height : 40,
+	}
+	g.save();
+	g.fillStyle = "#EB3725";
+	g.lineWidth = 3;
+	g.translate(0, 240);
+	g.clearRect(0,0,40, 40);
+	g.beginPath();
+	g.moveTo(13,9);
+	g.lineTo(7,17);
+	g.lineTo(5,26);
+	g.lineTo(12,32);
+	g.lineTo(20,32);
+	g.lineTo(26,36);
+	g.lineTo(33,31);
+	g.lineTo(32,19);
+	g.lineTo(33,9);
+	g.lineTo(24,8);
+	g.closePath();
+	g.fill();
+	g.stroke();
+	g.restore();
+
+
+
+	// snowy terrain bits
+	asset["snowy_terrain_bits"] = {
+		offsetX : 50,
+		offsetY : 240,
+		width : 40,
+		height : 40,
+	}
+	g.save();
+	g.fillStyle = "#E8FFEE";
+	g.lineWidth = 3;
+	g.translate(50, 240);
+	g.clearRect(0,0,40, 40);
+	g.beginPath();
+	g.moveTo(13,9);
+	g.lineTo(7,17);
+	g.lineTo(5,26);
+	g.lineTo(12,32);
+	g.lineTo(20,32);
+	g.lineTo(26,36);
+	g.lineTo(33,31);
+	g.lineTo(32,19);
+	g.lineTo(33,9);
+	g.lineTo(24,8);
+	g.closePath();
+	g.fill();
+	g.stroke();
+	g.restore();
+
 
 	// audio
 	asset["lobby"] = {

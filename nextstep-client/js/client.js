@@ -69,7 +69,7 @@ socket.on('room_created', function(msg){
 function renderRooms() {
 	var div = "";
 	for (var i = 0; i < client.roomList.length;++i){ 
-		div += "<div class='room_item' onclick='joinRoom(" + client.roomList[i].id + ")'><div class='room_id'>"+client.roomList[i].id+"</div><div class='room_title'>"+client.roomList[i].title+"</div><div class='room_type'>"+client.roomList[i].gameType+"</div><div class='room_size'>"+client.roomList[i].roomSize+"</div></div>"
+		div += "<div class='room_item' onclick='joinRoom(" + client.roomList[i].id + ")'><div class='room_header_wrapper'><div class='room_id'>"+client.roomList[i].id+"</div><div class='room_title'>"+client.roomList[i].title+"</div><div style='clear:both;'></div></div><div class='room_type'><i>Type</i>: <b>"+client.roomList[i].gameType+"</b></div><div class='room_size'><i>Size</i>: <b>"+client.roomList[i].roomSize+"</b></div></div>"
 	}
 	document.getElementById("room_list").innerHTML = div + '<div style="clear:both;"></div>';
 }
@@ -117,12 +117,25 @@ function startGameSession() {
 socket.on('initialize', function(msg){
 	var data = [];
 	// perform initializing job based on terrain
-	var GAP = (2500 - 275 * 2)/client.currentRoom.member.length;
+	var offset = 310;
+	var GAP = (2500 - offset * 2)/8;
+	var samples = [];
+	for (var i = 0; i < 8; ++i) {
+		samples.push(i*GAP + offset + (Math.random() - 1) * 30);
+	}
 	for (var i = 0; i < client.currentRoom.member.length; ++i) {
 		var color = "rgb(" + Math.floor(Math.random()*255) + "," + Math.floor(Math.random()*255) + "," + Math.floor(Math.random() * 255) + ')';
-		state.player.push(new Player(275 + GAP * i, 0, color, client.currentRoom.member[i].name));
+		var chosen_i = Math.floor(Math.random() * samples.length);
+		if (chosen_i == samples.length) chosen_i = samples.length-1;
+		var chosen_x = samples[chosen_i];
+		if (chosen_i != samples.length-1) {
+			samples[chosen_i] = samples[samples.length-1];
+		}
+		samples.pop();
+
+		state.player.push(new Player(chosen_x, 0, color, client.currentRoom.member[i].name + (client.currentRoom.member[i].team ? " [" + client.currentRoom.member[i].team + "]": "")));
 		data.push({
-			'x': 275+GAP*i,
+			'x': chosen_x,
 			'y': 0,
 			'color':color,
 			'username':client.currentRoom.member[i].name + (client.currentRoom.member[i].team ? " [" + client.currentRoom.member[i].team + "]": ""),
@@ -396,8 +409,8 @@ function registerListenerForLobbyScreen() {
 			return;
 		}
 		title.style.border = 'none';
-
-		createRoom(t, lobbyScreenState.gameType, lobbyScreenState.roomSize);
+		title.value = '';
+		createRoom(t.substring(0, 40), lobbyScreenState.gameType, lobbyScreenState.roomSize);
 		document.getElementById('create_room_form').style.setProperty('display', 'none');
 	});
 
@@ -467,9 +480,7 @@ socket.on("winner", function(msg) {
 	}
 });
 
-
-
-
-function announceLoser() {
-
-}
+socket.on('wind_change', function(msg) {
+	setWind(msg['angle'], msg['power']);
+	addSystemMessage('[NOTICE] WIND HAS CHANGED.');
+})
