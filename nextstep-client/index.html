@@ -398,6 +398,107 @@
 			border: 5px solid yellow;
 		}
 
+		#room_layer_wrapper {
+			width : 80%;
+			left : 10%;
+			top: 6%;
+			position:absolute;
+			font-size: 20px;
+		}
+
+		#room_member_list {
+			float:left;
+		}
+		#room_info {
+			float:right;
+			border: 1px solid rgba(0,0,0,0.4);
+			border-radius: 14px;
+			width: 380px;
+			font-family: helvetica;
+			overflow:hidden;
+			background-color:rgba(244,244,244,0.8);
+		}
+
+		#room_title_info {
+			text-align: center;
+			background-color: rgba(0,0,0,0.7);
+			color: white;
+			padding:10px;
+		}
+
+		#game_type_info, #room_size_info {
+			padding:10px;
+		}
+
+		#room_swap_team_button, #room_start_game_button, #room_exit_room_button {
+			border: 1px solid rgba(0,0,0,0.4);
+			width:100px;
+			padding:10px;
+			border-radius: 10px;
+			font-size:18px;
+			margin : 2px;
+			cursor:pointer;
+			background-color:rgba(21,130, 241, 0.8);
+			color:white;
+			float:right;
+			text-align:center;
+		}
+
+		#room_start_game_button {
+			background-color:rgba(21,211, 80, 0.8);
+		}
+
+		#room_exit_room_button {
+			background-color:rgba(211,70, 80, 0.8);
+		}
+
+		#room_member_list {
+			max-height:540px;
+			overflow:scroll;
+		}
+
+		.room_member_list_item {
+			background-color:rgba(211,0,0,0.8);
+			overflow:hidden;
+			width:400px;
+			margin:8px;
+			border-radius:20px;
+			font-size:16px;
+			font-family:helvetica;
+		}
+
+		.room_member_username {
+			background-color: rgba(0,0,0,0.4);
+			color:white;
+			padding:8px;
+			width:300px;
+			float:left;
+		}
+
+		.room_member_team {
+			padding:8px;
+			float:right;
+		}
+
+		#waiting_room_chat_wrapper {
+			margin-top:20px;
+			background-color:rgba(0,0,0,0.4);
+		}
+
+		#waiting_room_chat_display {
+			background-color:white;
+			height:250px;
+			font-size:16px;
+		}
+
+		#waiting_room_chat_input {
+			width:100%;
+			border:1px solid rgba(0,0,0,0.5);
+			margin-bottom:8px;
+			font-size:16px;
+		}
+
+
 
 	</style>
 </head>
@@ -489,6 +590,42 @@
 	<div id="room_layer">
 		<div id="room_loading">
 			Entering room...
+		</div>
+		<div id="room_layer_wrapper">
+			<div id="room_info">
+				<div id="room_title_info">
+					Welcome to the game friends
+				</div>
+				<div id="game_type_info">
+					Game Type: Team
+				</div>
+				<div id="room_size_info">
+					Room Size: 2/4
+				</div>
+				<div>
+					<div id="room_start_game_button">
+						Start Game
+					</div>
+					<div id="room_swap_team_button">
+						Swap Team
+					</div>
+					<div id="room_exit_room_button">
+						Exit Room
+					</div>
+					<div style="clear:both"></div>
+				</div>
+				<div id="waiting_room_chat_wrapper">
+					<div id="waiting_room_chat_display">
+						Testing here
+					</div>
+					<input id="waiting_room_chat_input">
+				</div>
+			</div>
+			
+			<div id="room_member_list">
+				
+			</div>
+			<div style="clear:both"></div>
 		</div>
 	</div>
 </body>

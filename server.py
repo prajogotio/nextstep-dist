@@ -78,8 +78,7 @@ class NextStepNamespace(BaseNamespace):
 			if len(self.current_room['member']):
 				new_owner = self.current_room['member'].itervalues().next()
 				self.current_room['owner'] = new_owner
-				new_owner.emit('appointed_owner')
-				self._broadcast('room_info_update', {'owner': new_owner.username, 'userid': id(new_owner)})
+				self._broadcast('new_room_owner', {'userid': id(new_owner)})
 
 		if not len(self.current_room['member']):
 			del NextStepNamespace._room[self.current_room['room_id']]

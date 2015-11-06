@@ -1,6 +1,7 @@
 addEventListener("DOMContentLoaded", function() {
 	registerListenerForLoginScreen();
 	registerListenerForLobbyScreen();
+	registerListenerForRoomScreen();
 	initialize();
 	gameAsset["lobby"].play();
 	//startGame();

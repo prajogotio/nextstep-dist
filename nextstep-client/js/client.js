@@ -31,6 +31,7 @@ socket.on('rooms', function(msg) {
 })
 
 function createRoom(roomTitle, gameType, roomSize){
+	displayWaitingRoom();
 	socket.emit('create_room', {
 		room_title: roomTitle,
 		game_type: gameType,
@@ -63,6 +64,7 @@ socket.on('room_created', function(msg){
 			exitedMember : []
 		}
 		client.currentRoom.hashed_member[client.userid] = client.currentRoom.member[0];
+		renderRoomInfo();
 	}
 });
 
@@ -75,6 +77,7 @@ function renderRooms() {
 }
 
 function joinRoom(roomId){
+	displayWaitingRoom();
 	socket.emit('join_room', roomId);
 }
 
@@ -88,6 +91,7 @@ socket.on('entered_room', function(msg){
 			id : msg['userid'],
 		});
 		client.currentRoom.hashed_member[msg['userid']] = client.currentRoom.member[client.currentRoom.member.length-1];
+		renderRoomInfo();
 	}
 });
 
@@ -107,6 +111,7 @@ socket.on('joined_room', function(msg) {
 	for (var i = 0; i < client.currentRoom.member.length; ++i){
 		client.currentRoom.hashed_member[client.currentRoom.member[i]['id']] = client.currentRoom.member[i];
 	}
+	renderRoomInfo();
 });
 
 
@@ -263,6 +268,9 @@ socket.on('delay_stack', function(msg) {
 });
 
 socket.on('exit_room', function(msg) {
+	if (msg['userid'] == client.userid) {
+		displayLobby();
+	}
 	if (client.currentRoom.status == 'playing') {
 		client.currentRoom.hashed_member[msg['userid']].player.isAlive = false;
 		if (state.currentTurn == msg['userid']) {
@@ -276,6 +284,7 @@ socket.on('exit_room', function(msg) {
 		}
 		client.currentRoom.member = tmp;
 		delete client.currentRoom.hashed_member[msg['userid']];
+		renderRoomInfo();
 	}
 });
 
@@ -450,12 +459,15 @@ function registerListenerForLobbyScreen() {
 
 socket.on('team_member', function(msg) {
 	client.currentRoom.hashed_member[msg['userid']].team = msg['team'];
+	renderRoomInfo();
 });
 
 socket.on('team_info', function(msg){
+	console.log(msg);
 	for (var i = 0; i < msg.length; ++i) {
-		client.currentRoom.hashed_member[msg[i]['userid']].team = msg['team'];
+		client.currentRoom.hashed_member[msg[i]['userid']].team = msg[i]['team'];
 	}
+	renderRoomInfo();
 });
 
 
@@ -483,4 +495,54 @@ socket.on("winner", function(msg) {
 socket.on('wind_change', function(msg) {
 	setWind(msg['angle'], msg['power']);
 	addSystemMessage('[NOTICE] WIND HAS CHANGED.');
+});
+
+function registerListenerForRoomScreen () {
+
+}
+
+function displayWaitingRoom() {
+	document.getElementById('room_layer').style.display = 'block';
+	document.getElementById('lobby_layer').style.display = 'none';
+	document.getElementById('room_loading').style.display = 'block';
+}
+
+function renderRoomInfo() {
+	document.getElementById('room_loading').style.display = 'none';
+	var div = '';
+	for (var i = 0; i < client.currentRoom.member.length; ++i) {
+		var m = client.currentRoom.member[i];
+
+		div += '<div class="room_member_list_item"'
+		if (m.team) {
+			if (m.team == 'B') {
+				div += 'style="background-color:rgba(40,211,34,0.5)"';
+			}
+		}
+		div += '><div class="room_member_username">'
+		div += '<b>' + m.name + '</b>';
+		if (client.currentRoom.owner == m.id) div += " [Room Owner]";
+		div += '</div><div class="room_member_team">'
+		if (m.team) {
+			div += '<b>Team ' + m.team + "</b>";
+		}
+		div += '</div><div style="clear:both"></div></div>';
+	}
+	document.getElementById('room_member_list').innerHTML = div;
+	document.getElementById('room_title_info').innerHTML = '['+client.currentRoom.roomId+'] '+client.currentRoom.roomTitle;
+	document.getElementById('game_type_info').innerHTML = 'Game Type: ' + client.currentRoom.gameType;
+	document.getElementById('room_size_info').innerHTML = 'Size: ' + client.currentRoom.member.length + "/" + client.currentRoom.roomSize;
+}
+
+function displayLobby() {
+	client.currentRoom = {};
+	document.getElementById('lobby_layer').style.display = 'block';
+	document.getElementById('room_layer').style.display = 'none';
+}
+
+
+socket.on('new_room_owner', function(msg) {
+	client.currentRoom.owner = msg['userid'];
+	renderRoomInfo();
+	
 })
