@@ -128,6 +128,7 @@ class NextStepNamespace(BaseNamespace):
 								if u is not self])
 
 	def on_join_team(self, team):
+		room = self.current_room
 		a = self.total_team_a()
 		x = 0
 		if team == 'A':
@@ -136,7 +137,7 @@ class NextStepNamespace(BaseNamespace):
 			x = len(room['member']) - a
 		if x < room['room_size']/2:
 			self.current_team = team
-			self._broadcast_room('team_member', {'userid': self(id), 'team':self.current_team})
+			self._broadcast_room('team_member', {'userid': id(self), 'team':self.current_team})
 
 	def total_team_a(self):
 		room = self.current_room
@@ -152,6 +153,7 @@ class NextStepNamespace(BaseNamespace):
 			return
 		room = self.current_room
 		if room['room_size'] != len(room['member']):
+			self._broadcast_room('start_game_failure', {})
 			return
 		room['status'] = 'playing'
 		room['stack'] = [{'user':s, 'delay':0, 'has_moved':False} for s in room['member'].itervalues()]
@@ -196,6 +198,8 @@ class NextStepNamespace(BaseNamespace):
 			angle = random.randint(0,360)
 			self._broadcast_room('wind_change', {'angle': angle, 'power': power});
 
+		self.check_winning_condition()
+
 		if s:
 			self._broadcast_room('turn', {'userid': id(s[0]['user'])})
 
@@ -227,19 +231,22 @@ class NextStepNamespace(BaseNamespace):
 		room = self.current_room
 		if room['game_type'] == 'squirmish':
 			if len(room['stack']) == 1:
-				self._broadcast_room('winner', {'userid': id(room['stack'][0])})
+				self._broadcast_room('winner', {'userid': id(room['stack'][0]['user'])})
+				room['status'] = 'ready'
 		else:
 			a = 0
 			b = 0
 			for p in room['stack']:
-				if p.current_team == 'A':
+				if p['user'].current_team == 'A':
 					a += 1
 				else:
 					b += 1
 			if a == 0:
-				self._broadcast_room('winner', {'team': 'A'})
-			elif b == 0:
 				self._broadcast_room('winner', {'team': 'B'})
+				room['status'] = 'ready'
+			elif b == 0:
+				self._broadcast_room('winner', {'team': 'A'})
+				room['status'] = 'ready'
 
 
 	def remove_from_stack(self):

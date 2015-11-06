@@ -127,7 +127,7 @@ Player.prototype.renderShoutout = function(g){
 	g.restore();
 }
 
-Player.prototype.commandHandler = function(state) {
+Player.prototype.commandHandler = function() {
 	if (this.command["ADJUST_ANGLE_UP"]) {
 		this.angle += CONST.ANGLE_DELTA;
 		if (this.angle > this.ANGLE_UPPER_LIMIT) {

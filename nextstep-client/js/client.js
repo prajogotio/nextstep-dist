@@ -1,6 +1,13 @@
 var socket = io.connect('/nextstep')
 var client = {
 	roomList : [],
+	terrainChoices : [
+		'lindbulm',
+		'herbestus',
+		'hearow',
+		'crepes',
+	],
+	listenerRegistered : false,
 }
 function login(username){
 	socket.emit('login', username)
@@ -61,7 +68,7 @@ socket.on('room_created', function(msg){
 			}],
 			hashed_member : {},
 			status : 'ready',
-			exitedMember : []
+			exitedMember : [],
 		}
 		client.currentRoom.hashed_member[client.userid] = client.currentRoom.member[0];
 		renderRoomInfo();
@@ -116,17 +123,21 @@ socket.on('joined_room', function(msg) {
 
 
 function startGameSession() {
+	sendMessage(" **starting game** ");
 	socket.emit("start_game");
 }
 
 socket.on('initialize', function(msg){
-	var data = [];
+	var data = {
+		player: [],
+		terrain: null,
+	}
 	// perform initializing job based on terrain
-	var offset = 310;
+	var offset = 350;
 	var GAP = (2500 - offset * 2)/8;
 	var samples = [];
 	for (var i = 0; i < 8; ++i) {
-		samples.push(i*GAP + offset + (Math.random() - 1) * 30);
+		samples.push(i*GAP + offset + (Math.random() - 1) * 10);
 	}
 	for (var i = 0; i < client.currentRoom.member.length; ++i) {
 		var color = "rgb(" + Math.floor(Math.random()*255) + "," + Math.floor(Math.random()*255) + "," + Math.floor(Math.random() * 255) + ')';
@@ -139,7 +150,7 @@ socket.on('initialize', function(msg){
 		samples.pop();
 
 		state.player.push(new Player(chosen_x, 0, color, client.currentRoom.member[i].name + (client.currentRoom.member[i].team ? " [" + client.currentRoom.member[i].team + "]": "")));
-		data.push({
+		data.player.push({
 			'x': chosen_x,
 			'y': 0,
 			'color':color,
@@ -151,29 +162,45 @@ socket.on('initialize', function(msg){
 		}
 		client.currentRoom.member[i].player = state.player[state.player.length-1];
 	}
+	data.terrain = terrainRandomPick();
+	state.terrainAssetName = data.terrain;
 	state.initialized = true;
+	
 	socket.emit('initialize', data);
 });
 
 
+function terrainRandomPick() {
+	var index = Math.floor(Math.random() * client.terrainChoices.length);
+	if (index == client.terrainChoices.length) {
+		index--;
+	}
+	return client.terrainChoices[index];
+}
+
 socket.on('initial_values', function(msg){
 	if(!state.initialized) {
-		for (var i = 0; i < msg.length; ++i) {
-			var d = msg[i];
+		for (var i = 0; i < msg.player.length; ++i) {
+			var d = msg.player[i];
 			state.player.push(new Player(d['x'], d['y'], d['color'], d['username']));
 			client.currentRoom.hashed_member[d['userid']].player = state.player[state.player.length-1];
 			if (d['userid'] == client.userid) {
 				CONST.MAIN_PLAYER = i;
 			}
 		}
+		state.terrainAssetName = msg.terrain;
 	} 
 	document.getElementById('room_layer').style.display = 'none';
 	document.getElementById('lobby_layer').style.display = 'none';
 	document.getElementById('login_layer').style.display = 'none';
+	document.getElementById('room_start_game_button').innerHTML = 'Start Game';
+	document.getElementById('room_start_game_button').style.cursor = 'pointer';
+	client.currentRoom.starting = false;
 	startGame();
 });
 
 socket.on('turn', function(msg){
+	if (!state.isGamePlaying) return;
 	state.currentTurn = msg['userid'];
 	if (client.userid == state.currentTurn){
 		state.startDelay = CONST.START_DELAY;
@@ -215,9 +242,11 @@ function setPlayerTurnActive() {
 
 socket.on('snapshot', function(msg) {
 	var member = client.currentRoom.hashed_member[msg['userid']];
-	member.currentSnapshot = msg.snapshot;
-	member.currentSnapshot.obsolete = false;
-	member.suggestedThrust = Math.abs(member.player.x - member.currentSnapshot.x - 1)/CONST.SNAPSHOT_TIMEFRAME * (member.player.x < member.currentSnapshot.x ? 1 : -1);
+	if(state.bullets.length == 0 && state.explosions.length == 0) {
+		member.currentSnapshot = msg.snapshot;
+		member.currentSnapshot.obsolete = false;
+		member.suggestedThrust = Math.abs(member.player.x - member.currentSnapshot.x - 1)/CONST.SNAPSHOT_TIMEFRAME * (member.player.x < member.currentSnapshot.x ? 1 : -1);
+	}
 });
 
 socket.on('player_shoot', function(msg){
@@ -278,15 +307,21 @@ socket.on('exit_room', function(msg) {
 		}
 		client.currentRoom.exitedMember.push(msg['userid']);
 	} else {
-		var tmp = [];
-		for(var i = 0; i < client.currentRoom.member.length; ++i){
-			if (client.currentRoom.member[i].id != msg['userid']) tmp.push(client.currentRoom.member[i]);
-		}
-		client.currentRoom.member = tmp;
-		delete client.currentRoom.hashed_member[msg['userid']];
+		removeMemberFromRoomList(msg['userid']);
 		renderRoomInfo();
 	}
 });
+
+function removeMemberFromRoomList(userid) {
+	var tmp = [];
+	for(var i = 0; i < client.currentRoom.member.length; ++i){
+		if (client.currentRoom.member[i].id != userid) {
+			tmp.push(client.currentRoom.member[i]);
+		}
+	}
+	client.currentRoom.member = tmp;
+	delete client.currentRoom.hashed_member[userid];
+}
 
 function addSystemMessage(msg) {
 	state.messageQueue.push({id: -1, name: 'NEXTSTEP', 'msg': msg});
@@ -304,8 +339,9 @@ function sendMessage(msg) {
 	state.lastMessageTime = now;
 	state.messageQueue.push({id: client.userid, name:client.username ,'msg': text});
 	socket.emit('message', text);
-	state.player[CONST.MAIN_PLAYER].setShoutout(msg);
+	if (state.isGamePlaying) state.player[CONST.MAIN_PLAYER].setShoutout(msg);
 	renderMessage();
+	renderRoomChatMessage();
 }
 
 socket.on('message', function(msg) {
@@ -315,8 +351,9 @@ socket.on('message', function(msg) {
 		name: client.currentRoom.hashed_member[msg['userid']].name,
 		'msg': msg['msg'],
 	});
-	client.currentRoom.hashed_member[msg['userid']].player.setShoutout(msg['msg']);
+	if (state.isGamePlaying) client.currentRoom.hashed_member[msg['userid']].player.setShoutout(msg['msg']);
 	renderMessage();
+	renderRoomChatMessage();
 });
 
 function renderMessage() {
@@ -361,7 +398,7 @@ function registerListenerForLoginScreen() {
 
 function exitRoom() {
 	socket.emit('exit_room');
-	client.currentRoom = {};
+	client.currentRoom = null;
 }
 
 socket.on('room_destroyed', function(msg) {
@@ -463,52 +500,164 @@ socket.on('team_member', function(msg) {
 });
 
 socket.on('team_info', function(msg){
-	console.log(msg);
 	for (var i = 0; i < msg.length; ++i) {
 		client.currentRoom.hashed_member[msg[i]['userid']].team = msg[i]['team'];
 	}
 	renderRoomInfo();
 });
 
+function endOfGame() {
+	clearInterval(state.countdown);
+	state.isGamePlaying = false;
+	client.currentRoom.status = 'ready';
+	var v = document.getElementById('result_notif_box');
+	var w = document.getElementById('result_label');
+	if (state.gameResult == 'win'){
+		v.style.setProperty('background-color', 'rgba(21,211,131,0.8)');
+		if (client.currentRoom.gameType == 'team') {
+			w.innerHTML = "Your Team WON!";
+		} else {
+			w.innerHTML = "You WON!";
+		}
+	} else {
+		v.style.setProperty('background-color','rgba(211,31,31,0.8)');
+		if (client.currentRoom.gameType == 'team') {
+			w.innerHTML = "Your Team Lost.";
+		} else {
+			w.innerHTML = "You Lost.";
+		}
+	}
+	v.style.display = 'block';
+}
+
 
 socket.on("winner", function(msg) {
-	endOfGame();
+	if(!state.isGamePlaying) return;
 	if (client.currentRoom.gameType == 'team') {
 		if (msg['team'] == client.currentRoom.hashed_member[client.userid].team) {
-			//
-			console.log('your team win');
+			state.gameResult = 'win';
 		} else {
-			//
-			console.log('your team lose');
+			state.gameResult = 'lose';
 		}
 	} else {
 		if (msg['userid'] == client.userid) {
-			//
-			console.log('you win!');
+			state.gameResult = 'win';
 		} else {
-			//
-			console.log('you lose');
+			state.gameResult = 'lose';
 		}
 	}
+	endOfGame();
+	
 });
 
 socket.on('wind_change', function(msg) {
-	setWind(msg['angle'], msg['power']);
-	addSystemMessage('[NOTICE] WIND HAS CHANGED.');
+	state.requestWindChange = true;
+	state.requestedWindAngle = msg['angle']; 
+	state.requestedWindPower = msg['power'];
+	console.log('wind_change!')
 });
 
 function registerListenerForRoomScreen () {
+	document.getElementById('room_start_game_button').addEventListener('click', function() {
+		if (client.currentRoom.starting) return;
+		client.currentRoom.starting = true;
+		document.getElementById('room_start_game_button').innerHTML = 'Starting...';
+		document.getElementById('room_start_game_button').style.cursor = 'default';
+		startGameSession();
+	});
 
+	document.getElementById('room_swap_team_button').addEventListener('click', function() {
+		swapTeam();
+	});
+
+	document.getElementById("waiting_room_chat_input").addEventListener("keydown", function(e) {
+		if (e.which == 13) {
+			sendMessage(document.getElementById("waiting_room_chat_input").value);
+			document.getElementById("waiting_room_chat_input").value = "";
+			e.stopPropagation();
+			return false;
+		}
+		if (document.getElementById("waiting_room_chat_input").value.length >= 100 && e.which != 8) {
+			e.preventDefault();
+			return false;
+		} 
+	});
+
+	document.getElementById('result_confirmation_button').addEventListener('click', function() {
+		document.getElementById('result_notif_box').style.display = 'none';
+		displayWaitingRoom();
+		renderRoomInfo();
+	});
+
+	document.getElementById('room_exit_room_button').addEventListener('click', function() {
+		exitRoom();
+		displayLobby();
+	});
 }
+
+function swapTeam() {
+	var newTeam = (client.currentRoom.hashed_member[client.userid].team == 'A' ? 'B' : 'A');
+	socket.emit('join_team', newTeam);
+}
+
 
 function displayWaitingRoom() {
 	document.getElementById('room_layer').style.display = 'block';
 	document.getElementById('lobby_layer').style.display = 'none';
 	document.getElementById('room_loading').style.display = 'block';
+	document.getElementById('waiting_room_chat_input').focus();
+	if (client.currentRoom) {
+		for (var i = 0; i < client.currentRoom.exitedMember.length; ++i) {
+			removeMemberFromRoomList(client.currentRoom.exitedMember[i]);
+		}
+		client.currentRoom.exitedMember = [];
+	}
+	clearRoomGameState();
+}
+
+function clearRoomGameState() {
+	clearInterval(state.timer);
+	state.player = [];
+	state.viewMode = {};
+	state.viewOffset = [0, 0];
+	state.terrainOffset = [250, 0];
+	state.powerBar = {
+			power : 0,
+			marker : 0,
+		};
+	state.bullets = [];
+	state.explosions = [];
+	state.effects = [];
+	state.wind = {
+			angle : -90,
+			strength : 0,
+			bufferedCaption : createText("0", 50, "white", 2, "black"),
+		};
+	state.terrainBitsName = null;
+	state.snapshotDelta = 200;
+	state.usedItem = false;
+	state.currentTurn = -1;
+	state.hasMoved = true;
+	state.countdown = null;
+	state.turnStartTime = 0;
+	state.requestToStartCurrentTurn = false;
+	state.timePenalty = 0;
+	state.startDelay = 200;
+	state.listenerRegistered = false;
+	state.chatFocused = false;
+	state.messageQueue = [];
+	state.lastMessageTime = 0;
+	state.isGamePlaying = false;
+	state.backgroundColor = "white";
+	state.terrainAssetName = "crepes";
+	state.terrainBitsName = "green_terrain_bits";
+	state.initialized = false;
 }
 
 function renderRoomInfo() {
+	if (!client.currentRoom) return;
 	document.getElementById('room_loading').style.display = 'none';
+
 	var div = '';
 	for (var i = 0; i < client.currentRoom.member.length; ++i) {
 		var m = client.currentRoom.member[i];
@@ -532,17 +681,47 @@ function renderRoomInfo() {
 	document.getElementById('room_title_info').innerHTML = '['+client.currentRoom.roomId+'] '+client.currentRoom.roomTitle;
 	document.getElementById('game_type_info').innerHTML = 'Game Type: ' + client.currentRoom.gameType;
 	document.getElementById('room_size_info').innerHTML = 'Size: ' + client.currentRoom.member.length + "/" + client.currentRoom.roomSize;
+	if(client.currentRoom.owner != client.userid) {
+		document.getElementById('room_start_game_button').style.display = 'none';
+	} else {
+		document.getElementById('room_start_game_button').style.display = 'block';
+	}
+	if(client.currentRoom.gameType == 'team') {
+		document.getElementById('room_swap_team_button').style.display = 'block';
+	} else {
+		document.getElementById('room_swap_team_button').style.display = 'none';
+	}
 }
 
 function displayLobby() {
-	client.currentRoom = {};
+	client.currentRoom = null;
 	document.getElementById('lobby_layer').style.display = 'block';
 	document.getElementById('room_layer').style.display = 'none';
 }
 
 
 socket.on('new_room_owner', function(msg) {
+	if(!client.currentRoom) return;
 	client.currentRoom.owner = msg['userid'];
 	renderRoomInfo();
-	
-})
+});
+
+
+socket.on('start_game_failure', function() {
+	document.getElementById('room_start_game_button').innerHTML = 'Start Game';
+	document.getElementById('room_start_game_button').style.cursor = 'pointer';
+	client.currentRoom.starting = false;
+	addSystemMessage('Game start failure. Room is not fully occupied yet.');
+	renderRoomChatMessage();
+});
+
+function renderRoomChatMessage() {
+	var disp = "";
+	for (var i = Math.max(0, state.messageQueue.length - CONST.MAX_MESSAGE_DISPLAY); i < state.messageQueue.length; ++i){
+		disp += "<div style='color:black'><b><i><span style='color:brown'>"+state.messageQueue[i].name + "</span></i></b>: <span style='font-weight:lighter'>" + state.messageQueue[i].msg + "</span><br/></div>";
+	}
+	var display = document.getElementById("waiting_room_chat_display");
+	display.innerHTML = disp;
+	display.scrollTop = display.scrollHeight;
+}
+

@@ -3,7 +3,7 @@ addEventListener("DOMContentLoaded", function() {
 	registerListenerForLobbyScreen();
 	registerListenerForRoomScreen();
 	initialize();
-	gameAsset["lobby"].play();
+	//gameAsset["lobby"].play();
 	//startGame();
 });
 
@@ -42,7 +42,7 @@ var state = {
 	backgroundColor: "white",
 	terrainAssetName: "crepes",
 	terrainBitsName : "green_terrain_bits",
-
+	initialized : false,
 };
 
 var CONST = {
@@ -89,7 +89,7 @@ var CONST = {
 	SLOWDOWN_CONSTANT : 0.5,
 	MESSAGE_FLOOD_LIMIT : 1000,
 	MAX_MESSAGE_DISPLAY : 10,
-	START_DELAY: 10,
+	START_DELAY: 40,
 	HIGH_ANGLE: 200,
 	ULTRA_HIGH_ANGLE: 400,
 };
@@ -123,10 +123,11 @@ function startGame() {
 	state.isGamePlaying = true;
 	client.currentRoom.status = 'playing';
 	initializeGameState();
+	state.viewMode["LOCKED_PLAYER_VIEW_MODE"] = true;
 	//spawnPlayers();
-	if (!state.listenerRegistered) {
+	if (!client.listenerRegistered) {
 		registerEventListener();
-		state.listenerRegistered = true;
+		client.listenerRegistered = true;
 	}
 
 	if (state.timer) {
@@ -141,18 +142,23 @@ function startGame() {
 			state.hasMoved = true;
 		}
 		if (state.requestToStartCurrentTurn) {
-			if (state.startDelay > 0) {
-				state.startDelay--;
-				return;
-			}
 			if (state.bullets.length == 0 && state.explosions.length == 0) {
+				if (state.startDelay > 0) {
+					state.startDelay--;
+					return;
+				}
 				state.requestToStartCurrentTurn = false;
 				setPlayerTurnActive();
 			}
-		} else if (state.currentTurn == client.userid && state.hasMoved) {
+		} else if (state.currentTurn == client.userid && state.hasMoved && state.isGamePlaying) {
 			if (state.bullets.length == 0 && !state.player[CONST.MAIN_PLAYER].command["ANOTHER_SHOOT"]) {
 				endOfTurn();
 			}
+		}
+		if (state.requestWindChange && state.bullets.length == 0 && state.explosions.length == 0) {
+			state.requestWindChange = false;
+			setWind(state.requestedWindAngle, state.requestedWindPower);
+			addSystemMessage('[NOTICE] WIND HAS CHANGED.');
 		}
 	}, CONST.TIME_DELTA);
 
@@ -326,7 +332,7 @@ function updateExplosions() {
 
 function updatePlayers() {
 	for(var i = 0; i < state.player.length;++i) {
-		if (i != CONST.MAIN_PLAYER && client.currentRoom.member[i].currentSnapshot && !client.currentRoom.member[i].currentSnapshot.obsolete) {
+		if (i != CONST.MAIN_PLAYER && client.currentRoom.member[i] && client.currentRoom.member[i].currentSnapshot && !client.currentRoom.member[i].currentSnapshot.obsolete) {
 			if (Math.abs(state.player[i].x - client.currentRoom.member[i].currentSnapshot.x) < CONST.X_ERROR_TOLERANCE) {
 				state.player[i].x = client.currentRoom.member[i].currentSnapshot.x;
 				state.player[i].y = client.currentRoom.member[i].currentSnapshot.y;
@@ -344,7 +350,7 @@ function updatePlayers() {
 				}
 			}
 		}
-		state.player[i].commandHandler(state);
+		state.player[i].commandHandler();
 		state.player[i].movementUpdate();
 	}
 
@@ -842,4 +848,3 @@ function createUseItemEffect(player) {
 	}
 	return effect;
 }
-

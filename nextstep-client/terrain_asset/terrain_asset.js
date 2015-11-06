@@ -307,7 +307,7 @@ var terrainAssets = {
 		g.stroke();
 	},
 	"lindbulm" : function(terrainBuffer) {
-		state.backgroundColor = "white";
+		state.backgroundColor = "#FBF9FF";
 		state.terrainBitsName = "green_terrain_bits";
 		terrainBuffer.width = 2000;
 		terrainBuffer.height = 600;
@@ -568,7 +568,7 @@ var terrainAssets = {
 		g.stroke();
 	},
 	'crepes':function(terrainBuffer) {
-		state.backgroundColor = "white";
+		state.backgroundColor = "#FBF9FF";
 		state.terrainBitsName = "green_terrain_bits";
 		terrainBuffer.width = 2000;
 		terrainBuffer.height = 600;
@@ -750,6 +750,23 @@ var terrainAssets = {
 		g.lineTo(148,506);
 		g.lineTo(106,501);
 		g.lineTo(52,504);
+		g.closePath();
+		g.fill();
+		g.stroke();
+
+		g.beginPath();
+		g.moveTo(1028,164);
+		g.lineTo(898,198);
+		g.lineTo(800,204);
+		g.lineTo(726,175);
+		g.lineTo(750,106);
+		g.lineTo(892,68);
+		g.lineTo(1052,58);
+		g.lineTo(1153,61);
+		g.lineTo(1205,85);
+		g.lineTo(1229,131);
+		g.lineTo(1151,169);
+		g.lineTo(1102,156);
 		g.closePath();
 		g.fill();
 		g.stroke();

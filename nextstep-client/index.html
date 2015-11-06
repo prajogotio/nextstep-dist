@@ -488,7 +488,9 @@
 		#waiting_room_chat_display {
 			background-color:white;
 			height:250px;
+			overflow:scroll;
 			font-size:16px;
+			padding:4px;
 		}
 
 		#waiting_room_chat_input {
@@ -499,6 +501,56 @@
 		}
 
 
+		#result_notif_box {
+			width:400px;
+			height:200px;
+			position:absolute;
+			top:50%;
+			left:50%;
+			transform: translate(-50%, -50%);
+			-moz-transform: translate(-50%, -50%);
+			-webkit-transform: translate(-50%, -50%);
+			z-index:100;
+			border-radius:20px;
+			overflow:hidden;
+			color:white;
+			text-shadow: 0 0 3px black;
+			background-color:rgba(211,31,31,0.8);
+			box-shadow: 0 0 10px black;
+			display:none;
+
+		}
+		#result_label {
+			position:absolute;
+			top:40%;
+			width:100%;
+			transform: translate(0%, -50%);
+			-moz-transform: translate(0%, -50%);
+			-webkit-transform: translate(0%, -50%);
+			font-size:40px;
+			text-align: center;
+			font-family: helvetica;
+			font-weight: lighter;
+		}
+
+		#result_confirmation_button {
+			position:absolute;
+			bottom:8px;
+			width:100px;
+			left:50%;
+			padding:10px;
+			background-color:rgba(240,10,11,0.8);
+			transform: translate(-50%, 0%);
+			-moz-transform: translate(-50%, 0%);
+			-webkit-transform: translate(-50%, 0%);
+			font-size:30px;
+			text-align: center;
+			font-family: helvetica;
+			font-weight: lighter;
+			border-radius:10px;
+			cursor:pointer;
+			box-shadow: 0 0 10px black;
+		}
 
 	</style>
 </head>
@@ -512,6 +564,13 @@
 		<input id="chat_input">
 	</div>
 	<div id="message_display" class="non-selectable">
+	</div>
+	<div id="result_notif_box">
+		<div id="result_label">
+		</div>
+		<div id="result_confirmation_button">
+			OK
+		</div>
 	</div>
 
 	<div id="login_layer">
@@ -616,7 +675,6 @@
 				</div>
 				<div id="waiting_room_chat_wrapper">
 					<div id="waiting_room_chat_display">
-						Testing here
 					</div>
 					<input id="waiting_room_chat_input">
 				</div>
