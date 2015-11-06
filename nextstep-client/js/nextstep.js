@@ -10,7 +10,7 @@ var state = {
 	player : [],
 	viewMode : {},
 	viewOffset : [0, 0],
-	terrainOffset : [100, 0],
+	terrainOffset : [250, 0],
 	powerBar : {
 		power : 0,
 		marker : 0,
@@ -38,6 +38,10 @@ var state = {
 	messageQueue : [],
 	lastMessageTime : 0,
 	isGamePlaying : false,
+	backgroundColor: "white",
+	terrainAssetName: "lindbulm",
+	terrainBitsName : "green_terrain_bits",
+
 };
 
 var CONST = {
@@ -52,7 +56,7 @@ var CONST = {
 	ANGLE_UPPER_LIMIT : 55,
 	GRAVITY : 0.28,
 	OPAQUE_VALUE : 80,
-	WORLD_WIDTH : 2000,
+	WORLD_WIDTH : 2500,
 	WORLD_HEIGHT : 1000,
 	BARREL_WIDTH : 50,
 	BARREL_HEIGHT: 16,
@@ -94,13 +98,12 @@ function initialize() {
 	state.display.width = window.innerWidth;
 	state.display.height = window.innerHeight;
 	state.g = display.getContext("2d");
-	initializeAsset();
 }
 
 
 function initializeAsset() {
-	state.terrainBitsName = "green_terrain_bits";
-	state.terrainBuffer = testAssets.get("test_asset03");
+	state.backgroundColor = state.backgroundColor;
+	state.terrainBuffer = terrainAssets.get(state.terrainAssetName);
 	state.terrainData = state.terrainBuffer.getContext("2d").getImageData(0, 0, state.terrainBuffer.width, state.terrainBuffer.height);
 }
 
@@ -112,16 +115,23 @@ function spawnPlayers() {
 	state.player.push(new Player(state.display.width/2 - 400, startHeight, "#99a", "nigel"));
 }
 
+function initializeGameState() {
+	initializeAsset();
+}
 
 function startGame() {
 	state.isGamePlaying = true;
 	client.currentRoom.status = 'playing';
+	initializeGameState();
 	//spawnPlayers();
 	if (!state.listenerRegistered) {
 		registerEventListener();
 		state.listenerRegistered = true;
 	}
 
+	if (state.timer) {
+		clearInterval(state.timer);
+	}
 	state.timer = setInterval(function(){
 		update();
 		render();
@@ -500,7 +510,7 @@ function resolveTerrainCollision(player, end) {
 	var frontCheck = false, backCheck = false;
 	var delta = 1;
 	if (checkCollision(computePivots(tmp)[0]) || checkCollision(computePivots(tmp)[1])) {
-		for (var i = player.y; i > 0; i -= delta) {
+		for (var i = player.y; ; i -= delta) {
 			tmp.y = i;
 			var pivots = computePivots(tmp);
 			var fcheck = checkCollision(pivots[0]);
@@ -578,7 +588,7 @@ function rotate(d, theta) {
 
 
 function render() {
-	state.g.fillStyle = "white";
+	state.g.fillStyle = state.backgroundColor;
 	state.g.fillRect(0, 0, state.display.width, state.display.height);
 
 	state.g.save();
@@ -833,8 +843,3 @@ function createUseItemEffect(player) {
 	return effect;
 }
 
-
-
-function endOfGame() {
-	state.isGamePlaying = false;
-}

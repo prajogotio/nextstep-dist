@@ -55,11 +55,11 @@ class NextStepNamespace(BaseNamespace):
 			'stack' : [],
 			'room_size' : msg['room_size'],
 		}
-		if msg['game_type'] == 'team':
-			self.current_team = 'A'
-			self.emit('team_member', {'userid':id(self), 'team':self.current_team});
 		self.current_room = NextStepNamespace._room[NextStepNamespace._room_counter]
 		self._broadcast('room_created', {'room_title': msg['room_title'], 'room_id': self.current_room['room_id'], 'owner': self.username, 'ownerid': id(self), 'room_size': msg['room_size'], 'game_type': msg['game_type']})
+		if msg['game_type'] == 'team':
+			self.current_team = 'A'
+			self.emit('team_member', {'userid':id(self), 'team':self.current_team})
 
 	def is_room_owner(self):
 		return self.current_room and self.current_room['owner'] == self
@@ -102,8 +102,6 @@ class NextStepNamespace(BaseNamespace):
 		
 		self.current_room = room
 		room['member'][id(self)] = self
-		if room['game_type'] == 'team':
-			self.initialize_team()
 		self._broadcast_room('entered_room', {'username': self.username, 'userid': id(self)})
 		self.emit('joined_room',
 			{ 'room_id' : room_id, 
@@ -113,6 +111,9 @@ class NextStepNamespace(BaseNamespace):
 			  			  for ns in self.current_room['member'].values()],
 			  'game_type': room['game_type'],
 			  'room_size': room['room_size'] })
+		if room['game_type'] == 'team':
+			self.initialize_team()
+		
 
 	def initialize_team(self):
 		room = self.current_room
@@ -122,7 +123,10 @@ class NextStepNamespace(BaseNamespace):
 			self.current_team = 'A'
 		else:
 			self.current_team = 'B'
-		self.emit('team_member', {'userid':id(self), 'team':self.current_team})
+		self._broadcast_room('team_member', {'userid':id(self), 'team':self.current_team})
+		self.emit('team_info', [{'userid': id(u), 'team': u.current_team}
+								for u in self.current_room['member'].values()
+								if u is not self])
 
 	def on_join_team(self, team):
 		a = self.total_team_a()

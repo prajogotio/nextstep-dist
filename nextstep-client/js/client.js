@@ -109,10 +109,6 @@ socket.on('joined_room', function(msg) {
 	}
 });
 
-socket.on('team_member', function(msg) {
-	console.log(msg);
-});
-
 
 function startGameSession() {
 	socket.emit("start_game");
@@ -121,14 +117,15 @@ function startGameSession() {
 socket.on('initialize', function(msg){
 	var data = [];
 	// perform initializing job based on terrain
+	var GAP = (2500 - 275 * 2)/client.currentRoom.member.length;
 	for (var i = 0; i < client.currentRoom.member.length; ++i) {
 		var color = "rgb(" + Math.floor(Math.random()*255) + "," + Math.floor(Math.random()*255) + "," + Math.floor(Math.random() * 255) + ')';
-		state.player.push(new Player(300 + 300 * i, 0, color, client.currentRoom.member[i].name));
+		state.player.push(new Player(275 + GAP * i, 0, color, client.currentRoom.member[i].name));
 		data.push({
-			'x': 300+300*i,
+			'x': 275+GAP*i,
 			'y': 0,
 			'color':color,
-			'username':client.currentRoom.member[i].name,
+			'username':client.currentRoom.member[i].name + (client.currentRoom.member[i].team ? " [" + client.currentRoom.member[i].team + "]": ""),
 			'userid':client.currentRoom.member[i].id
 		});
 		if(client.currentRoom.member[i].id == client.userid) {
@@ -435,4 +432,44 @@ function registerListenerForLobbyScreen() {
 			});
 		}
 	}
+}
+
+
+socket.on('team_member', function(msg) {
+	client.currentRoom.hashed_member[msg['userid']].team = msg['team'];
+});
+
+socket.on('team_info', function(msg){
+	for (var i = 0; i < msg.length; ++i) {
+		client.currentRoom.hashed_member[msg[i]['userid']].team = msg['team'];
+	}
+});
+
+
+socket.on("winner", function(msg) {
+	endOfGame();
+	if (client.currentRoom.gameType == 'team') {
+		if (msg['team'] == client.currentRoom.hashed_member[client.userid].team) {
+			//
+			console.log('your team win');
+		} else {
+			//
+			console.log('your team lose');
+		}
+	} else {
+		if (msg['userid'] == client.userid) {
+			//
+			console.log('you win!');
+		} else {
+			//
+			console.log('you lose');
+		}
+	}
+});
+
+
+
+
+function announceLoser() {
+
 }
