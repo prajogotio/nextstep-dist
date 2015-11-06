@@ -106,9 +106,8 @@
 			position: absolute;
 			left:0;
 			top:0;
-			z-index:11;
+			z-index:12;
 			background-color:white;
-			display:none;
 		}
 		#login_box {
 			position: absolute;
@@ -206,7 +205,6 @@
 			top:0;
 			z-index:11;
 			background-color:white;
-			display:none;
 		}
 		#room_layer {
 			width : 100%;
@@ -216,9 +214,8 @@
 			position: absolute;
 			left:0;
 			top:0;
-			z-index:12;
+			z-index:10;
 			background-color:white;
-			display:none;
 		}
 		#lobby_loading, #room_loading {
 			font-size:60px;
@@ -310,6 +307,93 @@
 			-webkit-text-stroke:1px black;
 		}
 
+		#create_room_form {
+			position:absolute;
+			width:600px;
+			left:50%;
+			top:50%;
+			transform: translate(-50%, -50%);
+			-moz-transform: translate(-50%, -50%);
+			-webkit-transform: translate(-50%, -50%);
+			font-size:30px;
+			font-family:helvetica;
+			border-radius:20px;
+			border: 1px solid rgba(0,0,0,0.3);
+			background-color: rgba(0,0,0,0.3);
+			overflow:hidden;
+			display:none;
+		}
+		#room_title_wrapper, #type_of_room_wrapper, #num_players_wrapper, #create_room_buttons {
+			padding:20px;
+			color:white;
+			text-shadow: 0 0 10px black;
+			background-color:rgba(240,50,0,0.9);
+
+		}
+
+		#type_of_room_wrapper {
+			background-color:rgba(80,240,180,0.5);
+		}
+
+
+		#num_players_wrapper {
+			background-color:rgba(180,140,200,0.5);
+		}
+
+		#create_room_buttons {
+			background-color:rgba(20,180,240,1);
+		}
+
+		#room_title_input {
+			width:100%;
+			font-size:30px;
+			border:none;
+			background-color:rgba(255,255,255,0.6);
+			box-shadow: 0px 0px 4px black;
+			margin-top:10px;
+			border-radius:10px;
+		}
+
+		#room_game_squirmish, #room_game_team {
+			background-color: rgb(244,211,122);
+			box-shadow: 0px 0px 4px black;
+			width:180px;
+			text-align:center;
+			padding:20px;
+			margin:10px;
+			float:left;
+			cursor:pointer;
+			border-radius:10px;
+		}
+		#room_size_2, #room_size_4, #room_size_6, #room_size_8 {
+			width:40px;
+			height:40px;
+			text-align:center;
+			padding:20px;
+			margin:10px;
+			background-color: rgb(0,211,122);
+			box-shadow: 0px 0px 4px black;
+			float:left;
+			cursor:pointer;
+			border-radius:10px;
+		}
+		#create_room_submit, #create_room_cancel {
+			width:100px;
+			text-align:center;
+			padding:20px;
+			margin:10px;
+			background-color: rgb(0,100,122);
+			box-shadow: 0px 0px 4px black;
+			float:right;
+			cursor:pointer;
+			border-radius:10px;
+		}
+
+		.chosen {
+			border: 5px solid yellow;
+		}
+		
+
 	</style>
 </head>
 <body>
@@ -346,7 +430,6 @@
 			<div>Beta: Tested by <i>Low Chang Hong</i></div>
 			<div>2015</div>
 		</div>
-		<script>registerListenerForLoginScreen()</script>
 	</div>
 
 	<div id="lobby_layer">
@@ -360,12 +443,8 @@
 		</div>
 		<div id="lobby_wrapper">
 			<div id="status">
-				Welcome prajogo!
 			</div>
 			<div id="lobby_buttons">
-				<div id="join_random">
-					Join Any Room
-				</div>
 				<div id="create_room">
 					Create Room
 				</div>
@@ -374,7 +453,31 @@
 			<div id="room_list">
 				<div style="clear:both;"></div>
 			</div>
-
+		</div>
+		<div id="create_room_form">
+			<div id="room_title_wrapper">
+				<div>Room title</div>
+				<input id="room_title_input">
+			</div>
+			<div id="type_of_room_wrapper">
+				<div>Game type</div>
+				<div id="room_game_squirmish" class='chosen'>SQUIRMISH</div>
+				<div id="room_game_team">TEAM</div>
+				<div style="clear:both;"></div>
+			</div>
+			<div id="num_players_wrapper">
+				<div>Room size</div>
+				<div id="room_size_2" class='chosen'>2</div>
+				<div id="room_size_4">4</div>
+				<div id="room_size_6">6</div>
+				<div id="room_size_8">8</div>
+				<div style="clear:both;"></div>
+			</div>
+			<div id="create_room_buttons">
+				<div id="create_room_submit">Create!</div>
+				<div id="create_room_cancel">Cancel</div>
+				<div style="clear:both;"></div>
+			</div>
 		</div>
 	</div>
 

@@ -14,6 +14,7 @@ class NextStepNamespace(BaseNamespace):
 		self.emit('connect')
 		self.username = None
 		self.current_room = None
+		self.current_team = None
 
 	def disconnect(self, *args, **kwargs):
 		if self.current_room:
@@ -34,39 +35,35 @@ class NextStepNamespace(BaseNamespace):
 		#	 for ns in NextStepNamespace._registry.values()
 		#	 if ns.username is not None])
 		self.emit('rooms',
-			[{'room_id':r['room_id'], 'room_title':r['room_title']}
+			[{'room_id':r['room_id'], 
+			  'room_title':r['room_title'],
+			  'game_type':r['game_type'],
+			  'room_size':r['room_size'],}
 			 for r in NextStepNamespace._room.values()
-			 if r['status'] is 'ready'])
+			 if r['status'] is 'ready' and r['room_size'] > len(r['member'])])
 
-	def on_create_room(self, room_title):
+	def on_create_room(self, msg):
 		NextStepNamespace._room_counter += 1
 		self._room[NextStepNamespace._room_counter] = {
 			'room_id' : NextStepNamespace._room_counter,
-			'room_title' : room_title,
+			'room_title' : msg['room_title'],
 			'owner' : self,
-			'type' : 'duel',
+			'game_type' : msg['game_type'],
 			'member' : {id(self):self},
 			'delay_accumulated' : 0,
 			'status' : 'ready',
-			'stack' : []
+			'stack' : [],
+			'room_size' : msg['room_size'],
 		}
+		if msg['game_type'] == 'team':
+			self.current_team = 'A'
+			self.emit('team_member', {'userid':id(self), 'team':self.current_team});
 		self.current_room = NextStepNamespace._room[NextStepNamespace._room_counter]
-		self._broadcast('room_created', {'room_title': room_title, 'room_id': self.current_room['room_id'], 'owner': self.username, 'ownerid': id(self)})
+		self._broadcast('room_created', {'room_title': msg['room_title'], 'room_id': self.current_room['room_id'], 'owner': self.username, 'ownerid': id(self), 'room_size': msg['room_size'], 'game_type': msg['game_type']})
 
 	def is_room_owner(self):
 		return self.current_room and self.current_room['owner'] == self
 
-	def on_set_room_type(self, new_type):
-		if not self.is_room_owner():
-			return
-		self.current_room['type'] = new_type
-		self._broadcast_room('room_info_update', {'type':new_type})
-
-	def on_set_room_terrain(self, new_terrain):
-		if not self.is_room_owner():
-			return
-		self.current_room['type'] = new_terrain
-		self._broadcast_room('room_info_update', {'terrain':new_terrain})
 
 	def on_exit_room(self):
 		if not self.current_room:
@@ -97,34 +94,78 @@ class NextStepNamespace(BaseNamespace):
 		if not room_id in NextStepNamespace._room:
 			self.emit('join_failure', {'room_id' : room_id, 'status': 'Room is not found.'})
 			return
-		if NextStepNamespace._room[room_id]['status'] == 'playing':
-			self.emit('join_failure', {'room_id' : room_id, 'status': 'Room is already playing.'})
 		room = NextStepNamespace._room[room_id]
+		if room['status'] == 'playing':
+			self.emit('join_failure', {'room_id' : room_id, 'status': 'Room is already playing.'})
+		if room['room_size'] <= len(room['member']):
+			self.emit('join_failure', {'room_id' : room_id, 'status': 'Room is full.'})
+		
 		self.current_room = room
 		room['member'][id(self)] = self
+		if room['game_type'] == 'team':
+			self.initialize_team()
 		self._broadcast_room('entered_room', {'username': self.username, 'userid': id(self)})
 		self.emit('joined_room',
-			{ 'room_id' : room_id, 'room_title' : room['room_title'], 'ownerid': id(room['owner']),'member': [{'name': ns.username, 'id' : id(ns)}
-			  for ns in self.current_room['member'].values()] })
+			{ 'room_id' : room_id, 
+			  'room_title' : room['room_title'], 
+			  'ownerid': id(room['owner']),
+			  'member': [{'name': ns.username, 'id' : id(ns)}
+			  			  for ns in self.current_room['member'].values()],
+			  'game_type': room['game_type'],
+			  'room_size': room['room_size'] })
+
+	def initialize_team(self):
+		room = self.current_room
+		a = self.total_team_a()
+		b = len(room['member']) - a - 1
+		if a <= b:
+			self.current_team = 'A'
+		else:
+			self.current_team = 'B'
+		self.emit('team_member', {'userid':id(self), 'team':self.current_team})
+
+	def on_join_team(self, team):
+		a = self.total_team_a()
+		x = 0
+		if team == 'A':
+			x = a
+		else:
+			x = len(room['member']) - a
+		if x < room['room_size']/2:
+			self.current_team = team
+			self._broadcast_room('team_member', {'userid': self(id), 'team':self.current_team})
+
+	def total_team_a(self):
+		room = self.current_room
+		a = 0
+		for m in room['member'].values():
+			if m.current_team == 'A':
+				a += 1
+		return a
 
 	def on_start_game(self):
 		if not self.current_room:
 			self.emit('start_game_failure')
 			return
 		room = self.current_room
+		if room['room_size'] != len(room['member']):
+			return
 		room['status'] = 'playing'
 		room['stack'] = [{'user':s, 'delay':0} for s in room['member'].itervalues()]
 		room['owner'].emit('initialize')
 
 	def on_initialize(self, data):
 		self._broadcast_room('initial_values', data)
-		self._broadcast_room('turn', {'userid': id(self.current_room['stack'][0]['user'])})
+		if self.current_room['stack']:
+			self._broadcast_room('turn', {'userid': id(self.current_room['stack'][0]['user'])})
 
 	def on_turn_request(self):
 		room = self.current_room
-		if self == room['stack'][0]['user']:
-			room['delay_accumulated'] = 0
-		self.emit('turn', {'userid': id(room['stack'][0]['user'])})
+		self.check_winning_condition()
+		if room['stack']:
+			if self == room['stack'][0]['user']:
+				room['delay_accumulated'] = 0
+			self.emit('turn', {'userid': id(room['stack'][0]['user'])})
 
 	def on_end_of_turn(self, msg):
 		room = self.current_room
@@ -139,7 +180,8 @@ class NextStepNamespace(BaseNamespace):
 		self.sort_stack()
 		self.broadcast_delay_stack()
 		self._broadcast_room('force_update', {'userid': id(self), 'state': msg})
-		self._broadcast_room('turn', {'userid': id(s[0]['user'])})
+		if s:
+			self._broadcast_room('turn', {'userid': id(s[0]['user'])})
 
 	def broadcast_delay_stack(self):
 		room = self.current_room
@@ -165,6 +207,25 @@ class NextStepNamespace(BaseNamespace):
 		self.remove_from_stack()
 		self._broadcast_room('death', {'userid': id(self)})
 
+	def check_winning_condition(self):
+		room = self.current_room
+		if room['game_type'] == 'squirmish':
+			if len(room['stack']) == 1:
+				self._broadcast_room('winner', {'userid': id(room['stack'][0])})
+		else:
+			a = 0
+			b = 0
+			for p in room['stack']:
+				if p.current_team == 'A':
+					a += 1
+				else:
+					b += 1
+			if a == 0:
+				self._broadcast_room('winner', {'team': 'A'})
+			elif b == 0:
+				self._broadcast_room('winner', {'team': 'B'})
+
+
 	def remove_from_stack(self):
 		if not self.current_room:
 			return
@@ -188,7 +249,8 @@ class NextStepNamespace(BaseNamespace):
 
 	def _broadcast(self, event, msg):
 		for s in NextStepNamespace._registry.values():
-			s.emit(event, msg)
+			if s.username:
+				s.emit(event, msg)
 
 	def _broadcast_room(self, event, msg):
 		if self.current_room:

@@ -1,5 +1,8 @@
 addEventListener("DOMContentLoaded", function() {
+	registerListenerForLoginScreen();
+	registerListenerForLobbyScreen();
 	initialize();
+	gameAsset["lobby"].play();
 	//startGame();
 });
 
@@ -34,6 +37,7 @@ var state = {
 	chatFocused : false,
 	messageQueue : [],
 	lastMessageTime : 0,
+	isGamePlaying : false,
 };
 
 var CONST = {
@@ -64,7 +68,7 @@ var CONST = {
 	POWER_BAR_ACTIVE_COLOR : "#f00",
 	ANGLE_BAR_WIDTH : 80,
 	BULLET_RADIUS : 10,
-	MAX_BULLET_THRUST : 50,
+	MAX_BULLET_THRUST : 40,
 	MAX_WIND_STRENGTH : 10,
 	EXPLOSION_RADIUS : 60,
 	WIND_STRENGTH_CALLIBRATOR : 0.02,
@@ -81,6 +85,8 @@ var CONST = {
 	MESSAGE_FLOOD_LIMIT : 1000,
 	MAX_MESSAGE_DISPLAY : 10,
 	START_DELAY: 10,
+	HIGH_ANGLE: 200,
+	ULTRA_HIGH_ANGLE: 400,
 };
 
 function initialize() {
@@ -108,6 +114,7 @@ function spawnPlayers() {
 
 
 function startGame() {
+	state.isGamePlaying = true;
 	client.currentRoom.status = 'playing';
 	//spawnPlayers();
 	if (!state.listenerRegistered) {
@@ -182,7 +189,7 @@ function registerEventListener() {
 		state.mouseOffset = computeMouseOffset(e);
 	});
 	addEventListener("keydown", function(e) {
-		if (e.which == 13 && !state.chatFocused) {
+		if (e.which == 13 && !state.chatFocused && state.isGamePlaying) {
 			document.getElementById('chat_input').focus();
 		}
 		var isPlayerTurn = (state.currentTurn == client.userid);
@@ -354,8 +361,8 @@ function cameraEventsHandler() {
 			state.viewMode["LOCKED_BULLET_VIEW_MODE"] = false;
 		} else {
 			var d = [-state.bullets[0].x + state.display.width/2, -state.bullets[0].y + state.display.height/2];
-			state.viewOffset[0] -= (state.viewOffset[0] - d[0])*0.21;
-			state.viewOffset[1] -= (state.viewOffset[1] - d[1])*0.21;
+			state.viewOffset[0] -= (state.viewOffset[0] - d[0])*0.41;
+			state.viewOffset[1] -= (state.viewOffset[1] - d[1])*0.41;
 		}
 	}
 	else if (state.viewMode["LOCKED_PLAYER_VIEW_MODE"]) {
@@ -428,6 +435,13 @@ function checkBulletCollision(bullet) {
 			collided = true;
 			break;
 		}
+	}
+	if (collided) {
+		if (bullet.aliveTime > CONST.ULTRA_HIGH_ANGLE) {
+			addSystemMessage("ULTRA HIGH ANGLE!!!!!!");
+		} else if (bullet.aliveTime > CONST.HIGH_ANGLE) {
+			addSystemMessage("HIGH ANGLE!!!");
+		} 
 	}
 	//terrain
 	if(checkCollision([bullet.x, bullet.y]) || 
@@ -817,4 +831,10 @@ function createUseItemEffect(player) {
 		if (effect.delta <= 0) effect.isAlive = false;
 	}
 	return effect;
+}
+
+
+
+function endOfGame() {
+	state.isGamePlaying = false;
 }

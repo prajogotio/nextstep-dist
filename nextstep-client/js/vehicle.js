@@ -296,6 +296,7 @@ function Bullet(x, y, v) {
 	this.WIND_STRENGTH_CALLIBRATOR = CONST.WIND_STRENGTH_CALLIBRATOR;
 	this.BULLET_RADIUS = CONST.BULLET_RADIUS;
 	this.EXPLOSION_DAMAGE = 500;
+	this.aliveTime = 0;
 }
 
 Bullet.prototype.update = function(state) {
@@ -313,6 +314,7 @@ Bullet.prototype.update = function(state) {
 	var wind = computeWindForce();
 	this.v[0] += wind[0] * this.WIND_STRENGTH_CALLIBRATOR;
 	this.v[1] += wind[1] * this.WIND_STRENGTH_CALLIBRATOR + this.GRAVITY;
+	this.aliveTime++;
 }
 
 Bullet.prototype.render = function(g) {
