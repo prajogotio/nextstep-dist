@@ -3073,17 +3073,12 @@
 
 		// audio
 		asset["lobby"] = {
-			start : new Audio('asset/lobby_start.mp3'),
-			main : new Audio('asset/lobby_main.mp3'),
+			main : new Audio('asset/lobby_long.mp3'),
 			play : function() {
-				this.start.volume = 0.09;
-				this.main.volume = 0.09;
-				this.start.play();
+				this.main.volume = 0.21;
+				this.main.play();
 			}
 		}
-		asset["lobby"].start.addEventListener('ended', function(){
-			asset["lobby"].main.play();
-		});
 		asset["lobby"].main.addEventListener('ended', function() {
 			this.currentTime = 0;
 			this.play();
