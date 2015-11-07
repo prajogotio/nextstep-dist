@@ -76,11 +76,23 @@ socket.on('room_created', function(msg){
 });
 
 function renderRooms() {
-	var div = "";
+	var list = document.getElementById("room_list");
+	list.innerHTML = "";
 	for (var i = 0; i < client.roomList.length;++i){ 
-		div += "<div class='room_item' onclick='joinRoom(" + client.roomList[i].id + ")'><div class='room_header_wrapper'><div class='room_id'>"+client.roomList[i].id+"</div><div class='room_title'>"+client.roomList[i].title+"</div><div style='clear:both;'></div></div><div class='room_type'><i>Type</i>: <b>"+client.roomList[i].gameType+"</b></div><div class='room_size'><i>Size</i>: <b>"+client.roomList[i].roomSize+"</b></div></div>"
+		var cur = document.createElement('div');
+
+		cur.className='room_item';
+		cur.innerHTML = "<div class='room_header_wrapper'><div class='room_id'>"+client.roomList[i].id+"</div><div class='room_title'>"+client.roomList[i].title+"</div><div style='clear:both;'></div></div><div class='room_type'><i>Type</i>: <b>"+client.roomList[i].gameType+"</b></div><div class='room_size'><i>Size</i>: <b>"+client.roomList[i].roomSize+"</b></div>";
+		list.appendChild(cur);
+		cur.onclick = (function(j) {
+			return function(e) {
+				joinRoom(client.roomList[j].id);
+			}
+		})(i);
 	}
-	document.getElementById("room_list").innerHTML = div + '<div style="clear:both;"></div>';
+	var clearDiv = document.createElement('div');
+	clearDiv.style.setProperty('clear', 'both');
+	list.appendChild(clearDiv);
 }
 
 function joinRoom(roomId){

@@ -1,11 +1,14 @@
 <html>
 <head>
 	<script src="js/socketio.js"></script>
+	<script src="js/main-min.js"></script>
+	<!--
 	<script src="js/client.js"></script>
 	<script src="js/vehicle.js"></script>
 	<script src="js/nextstep.js"></script>
 	<script src="terrain_asset/terrain_asset.js"></script>
 	<script src="asset/asset.js"></script>
+	-->
 	<style>
 		body {
 			margin:0;
@@ -287,6 +290,7 @@
 			border-radius:20px;
 			overflow:hidden;
 			cursor:pointer;
+			z-index:3;
 		}
 		.room_id,.room_title, .room_type, .room_size {
 			font-family:helvetica;
