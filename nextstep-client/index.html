@@ -225,9 +225,13 @@
 			top:50%;
 			left:50%;
 			position:absolute;
+			background-color:rgba(255,255,255,0.9);
+			border-radius:20px;
+			border:1px solid black;
 			transform: translate(-50%, -50%);
 			-moz-transform: translate(-50%, -50%);
 			-webkit-transform: translate(-50%, -50%);
+			z-index:100;
 		}
 		#lobby_wrapper {
 			position:absolute;
@@ -655,13 +659,10 @@
 		<div id="room_layer_wrapper">
 			<div id="room_info">
 				<div id="room_title_info">
-					Welcome to the game friends
 				</div>
 				<div id="game_type_info">
-					Game Type: Team
 				</div>
 				<div id="room_size_info">
-					Room Size: 2/4
 				</div>
 				<div>
 					<div id="room_start_game_button">
