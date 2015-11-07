@@ -316,6 +316,6 @@ def serve_file(environ, start_response):
 
 if __name__ == '__main__':
 	sio_server = SocketIOServer(
-		('', 8080), service,
+		('', 80), service,
 		policy_server = False)
 	sio_server.serve_forever()
