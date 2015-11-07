@@ -1,4 +1,4 @@
-var socket = io.connect('wss://'+location.host+'/nextep')
+var socket = io.connect('wss://'+location.host+'/nextstep')
 var client = {
 	roomList : [],
 	terrainChoices : [
