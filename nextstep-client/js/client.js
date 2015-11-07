@@ -1,6 +1,6 @@
 var socket = io.connect('wss://'+location.host+'/nextstep', {
 	transports: ['xhr-polling'],
-	'polling-duration': 10,
+	'polling duration': 10,
 })
 var client = {
 	roomList : [],
