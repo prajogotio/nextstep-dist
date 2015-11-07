@@ -3,7 +3,7 @@ addEventListener("DOMContentLoaded", function() {
 	registerListenerForLobbyScreen();
 	registerListenerForRoomScreen();
 	initialize();
-	//gameAsset["lobby"].play();
+	gameAsset["lobby"].play();
 	//startGame();
 });
 
