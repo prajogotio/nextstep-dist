@@ -304,7 +304,10 @@ def serve_file(environ, start_response):
 	if not os.path.exists(pathname):
 		start_response('404 NOT FOUND', [])
 		return
-	start_response('200 OK', [('Content-Type', 'text/html')])
+	if name.endswith('.mp3'):
+		start_response('200 OK', [('Content-Type', 'audio/mpeg3')])
+	else:
+		start_response('200 OK', [('Content-Type', 'text/html')])
 	with open(pathname) as fp:
 		while True:
 			chunk = fp.read(4096)
