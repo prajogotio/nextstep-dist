@@ -298,6 +298,8 @@ def service(environ, start_response):
 
 def serve_file(environ, start_response):
 	name = environ['PATH_INFO'].lstrip('/')
+	if not name:
+		name = 'index.html'
 	pathname = os.path.abspath(os.path.join(public, name))
 	if not os.path.exists(pathname):
 		start_response('404 NOT FOUND', [])
@@ -309,7 +311,8 @@ def serve_file(environ, start_response):
 			if not chunk: break
 			yield chunk
 
-sio_server = SocketIOServer(
-	('', 8080), service,
-	policy_server = False)
-sio_server.serve_forever()
+if __name__ == '__main__':
+	sio_server = SocketIOServer(
+		('', 8080), service,
+		policy_server = False)
+	sio_server.serve_forever()
