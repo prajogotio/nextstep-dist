@@ -278,7 +278,15 @@ class NextStepNamespace(BaseNamespace):
 	def _broadcast_room(self, event, msg):
 		if self.current_room:
 			for s in self.current_room['member'].values():
+				#self.intentionally_slower()
+				print '[', event, ' -> ', s.username, ']'
 				s.emit(event, msg)
+
+
+	def intentionally_slower(self):
+		i = 0
+		while i < 4000000:
+			i += 1
 
 public = os.path.join(os.path.dirname(__file__), 'nextstep-client')
 

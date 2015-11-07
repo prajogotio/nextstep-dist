@@ -300,7 +300,7 @@ function Bullet(x, y, v) {
 }
 
 Bullet.prototype.update = function(state) {
-	if (this.x < 0 || this.x > CONST.WORLD_WIDTH || this.y > CONST.WORLD_HEIGHT) {
+	if (this.x < 0 || this.x > CONST.WORLD_WIDTH || this.y > CONST.WORLD_HEIGHT || this.y < CONST.LOWEST_Y_LIMIT) {
 		this.isAlive = false;
 	}
 	this.x += this.v[0];

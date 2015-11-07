@@ -207,11 +207,20 @@ socket.on('turn', function(msg){
 		state.requestToStartCurrentTurn = true;
 	} else {
 		document.getElementById("clock").innerHTML = "";
+		focusOnPlayer(msg['userid']);
 	}
 });
 
+function focusOnPlayer(userid){
+	var p = client.currentRoom.hashed_member[userid].player;
+	state.viewOffset[0] = -p.x + state.display.width/2;
+	state.viewOffset[1] = -p.y + state.display.height/2;
+}
+
 function setPlayerTurnActive() {
 	state.viewMode["LOCKED_PLAYER_VIEW_MODE"] = true;
+	client.turnEnded = false;
+	state.endOfTurnDelay = CONST.END_OF_TURN_DELAY;
 	state.player[CONST.MAIN_PLAYER].command["USE_ITEM"] = {
 		use : false,
 	}
@@ -241,6 +250,7 @@ function setPlayerTurnActive() {
 
 
 socket.on('snapshot', function(msg) {
+	if (state.snapshotBlocked) return;
 	var member = client.currentRoom.hashed_member[msg['userid']];
 	if(state.bullets.length == 0 && state.explosions.length == 0) {
 		member.currentSnapshot = msg.snapshot;
@@ -276,6 +286,9 @@ socket.on("player_use_item", function(msg) {
 
 
 function endOfTurn() {
+	if (client.turnEnded) return;
+	console.log('my end_of_turn');
+	client.turnEnded = true;
 	socket.emit('end_of_turn', {
 		time_penalty: state.timePenalty,
 		x: state.player[CONST.MAIN_PLAYER].x,
@@ -289,6 +302,8 @@ function endOfTurn() {
 }
 
 function announceDeath() {
+	if(client.deathAnnounced) return;
+	client.deathAnnounced = true;
 	socket.emit('player_death');
 }
 
@@ -617,6 +632,9 @@ function displayWaitingRoom() {
 
 function clearRoomGameState() {
 	clearInterval(state.timer);
+	client.turnEnded = false;
+	client.deathAnnounced = false;
+	client.snapshotBlocked = false;
 	state.player = [];
 	state.viewMode = {};
 	state.viewOffset = [0, 0];

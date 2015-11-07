@@ -79,19 +79,22 @@ var CONST = {
 	WIND_STRENGTH_CALLIBRATOR : 0.02,
 	HEALTH_BAR_LENGTH : 80,
 	VIEW_SHIFT_RATIO : 1.5,
-	CAMERA_VIEW_UPPERLIMIT : 800,
+	CAMERA_VIEW_UPPERLIMIT : 1300,
 	PLAYER_VERTICAL_MOVEMENT_LIMIT : 8,
 	MAX_ITEM_BAR_SLOTS : 3,
 	ITEM_SLOT_WIDTH : 200,
 	ITEM_HEALTH_UP_EFFECT : 500,
-	SNAPSHOT_TIMEFRAME : 80,
+	SNAPSHOT_TIMEFRAME : 100,
 	X_ERROR_TOLERANCE : 0.5*1,
 	SLOWDOWN_CONSTANT : 0.5,
 	MESSAGE_FLOOD_LIMIT : 1000,
 	MAX_MESSAGE_DISPLAY : 10,
 	START_DELAY: 40,
+	END_OF_TURN_DELAY: 100,
 	HIGH_ANGLE: 200,
 	ULTRA_HIGH_ANGLE: 400,
+	LOWEST_Y_LIMIT: -2000,
+	SNAPSHOT_EXTRA_DELAY: 300,
 };
 
 function initialize() {
@@ -152,6 +155,10 @@ function startGame() {
 			}
 		} else if (state.currentTurn == client.userid && state.hasMoved && state.isGamePlaying) {
 			if (state.bullets.length == 0 && !state.player[CONST.MAIN_PLAYER].command["ANOTHER_SHOOT"]) {
+				if (state.endOfTurnDelay > 0) {
+					state.endOfTurnDelay--;
+					return;
+				}
 				endOfTurn();
 			}
 		}
@@ -167,6 +174,7 @@ function startGame() {
 function relay() {
 	state.snapshotDelta--;
 	if (state.snapshotDelta <= 0) {
+		state.snapshotBlocked = false;
 		var p = state.player[CONST.MAIN_PLAYER];
 		socket.emit('current_snapshot', {
 			'userid' : client.userid,
@@ -249,6 +257,8 @@ function registerEventListener() {
 				'dir' : state.player[CONST.MAIN_PLAYER].dir,
 				'power' : state.player[CONST.MAIN_PLAYER].power,
 			});
+			state.snapshotDelta = CONST.SNAPSHOT_EXTRA_DELAY;
+			state.snapshotBlocked = true;
 		}
 	});
 
