@@ -300,6 +300,7 @@ socket.on("player_use_item", function(msg) {
 
 
 function endOfTurn() {
+	if (!state.isGamePlaying) return;
 	if (client.turnEnded) return;
 	console.log('my end_of_turn');
 	client.turnEnded = true;
@@ -538,6 +539,11 @@ socket.on('team_info', function(msg){
 
 function endOfGame() {
 	clearInterval(state.countdown);
+	for (var i = 0; i < client.currentRoom.member.length; ++i) {
+		if (client.currentRoom.member.currentSnapshot){
+			client.currentRoom.member.currentSnapshot.obsolete = true;
+		}
+	}
 	state.isGamePlaying = false;
 	client.currentRoom.status = 'ready';
 	var v = document.getElementById('result_notif_box');
@@ -585,7 +591,7 @@ socket.on('wind_change', function(msg) {
 	state.requestWindChange = true;
 	state.requestedWindAngle = msg['angle']; 
 	state.requestedWindPower = msg['power'];
-	console.log('wind_change!')
+	console.log('wind_change!');
 });
 
 function registerListenerForRoomScreen () {

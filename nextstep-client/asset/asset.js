@@ -342,7 +342,5 @@ var gameAsset = (function() {
 		this.play();
 	});
 
-
-
 	return asset;
 })();

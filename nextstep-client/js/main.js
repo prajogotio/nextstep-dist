@@ -301,6 +301,7 @@ socket.on("player_use_item", function(msg) {
 
 
 function endOfTurn() {
+	if (!state.isGamePlaying) return;
 	if (client.turnEnded) return;
 	console.log('my end_of_turn');
 	client.turnEnded = true;
@@ -539,6 +540,11 @@ socket.on('team_info', function(msg){
 
 function endOfGame() {
 	clearInterval(state.countdown);
+	for (var i = 0; i < client.currentRoom.member.length; ++i) {
+		if (client.currentRoom.member.currentSnapshot){
+			client.currentRoom.member.currentSnapshot.obsolete = true;
+		}
+	}
 	state.isGamePlaying = false;
 	client.currentRoom.status = 'ready';
 	var v = document.getElementById('result_notif_box');
@@ -1346,6 +1352,7 @@ function registerEventListener() {
 		}
 	});
 	addEventListener("keyup", function(e) {
+		if (!state.isGamePlaying) return;
 		state.player[CONST.MAIN_PLAYER].thrust = 0;
 		state.player[CONST.MAIN_PLAYER].command = {
 			"CHARGING_POWER" : state.player[CONST.MAIN_PLAYER].command["CHARGING_POWER"],
@@ -1602,7 +1609,7 @@ function checkCollision(coor) {
 	var x = coor[0]-state.terrainOffset[0];
 	var y = coor[1]-state.terrainOffset[1];
 	if (x < 0 || y < 0) return false;
-
+	if (y >= state.terrainBuffer.height || x >= state.terrainBuffer.width) return false;
 	// var img = state.terrainBuffer.getContext("2d").getImageData(x, y-1, 1, 1);
 	// for (var i = 0; i < img.data.length; i += 4) {
 	// 	if (img.data[i+3] > CONST.OPAQUE_VALUE) return true;

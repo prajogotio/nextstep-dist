@@ -110,6 +110,7 @@ function initializeAsset() {
 	state.terrainData = state.terrainBuffer.getContext("2d").getImageData(0, 0, state.terrainBuffer.width, state.terrainBuffer.height);
 }
 
+
 function spawnPlayers() {
 	var startHeight = 0;
 	state.player.push(new Player(state.display.width/2, startHeight, "#fab", "prajogo"));
@@ -237,6 +238,7 @@ function registerEventListener() {
 		}
 	});
 	addEventListener("keyup", function(e) {
+		if (!state.isGamePlaying) return;
 		state.player[CONST.MAIN_PLAYER].thrust = 0;
 		state.player[CONST.MAIN_PLAYER].command = {
 			"CHARGING_POWER" : state.player[CONST.MAIN_PLAYER].command["CHARGING_POWER"],
@@ -493,12 +495,11 @@ function checkCollision(coor) {
 	var x = coor[0]-state.terrainOffset[0];
 	var y = coor[1]-state.terrainOffset[1];
 	if (x < 0 || y < 0) return false;
-
+	if (y >= state.terrainBuffer.height || x >= state.terrainBuffer.width) return false;
 	// var img = state.terrainBuffer.getContext("2d").getImageData(x, y-1, 1, 1);
 	// for (var i = 0; i < img.data.length; i += 4) {
 	// 	if (img.data[i+3] > CONST.OPAQUE_VALUE) return true;
 	// }
-
 	return (state.terrainData.data[Math.floor(y)*state.terrainBuffer.width*4 + Math.floor(x)*4 + 3] > CONST.OPAQUE_VALUE);
 }
 
