@@ -262,7 +262,7 @@ function setPlayerTurnActive() {
 
 
 socket.on('snapshot', function(msg) {
-	if (state.snapshotBlocked) return;
+	if (state.snapshotBlocked || !state.isGamePlaying) return;
 	var member = client.currentRoom.hashed_member[msg['userid']];
 	if(state.bullets.length == 0 && state.explosions.length == 0) {
 		member.currentSnapshot = msg.snapshot;
@@ -272,6 +272,7 @@ socket.on('snapshot', function(msg) {
 });
 
 socket.on('player_shoot', function(msg){
+	if (!state.isGamePlaying) return;
 	if (msg['userid'] == client.userid) return;
 	var m = client.currentRoom.hashed_member[msg['userid']];
 	if (m.currentSnapshot) m.currentSnapshot.obsolete = true;
@@ -288,6 +289,7 @@ socket.on('player_shoot', function(msg){
 
 
 socket.on("player_use_item", function(msg) {
+	if (!state.isGamePlaying) return;
 	if (msg['userid'] == client.userid) return;
 	var m = client.currentRoom.hashed_member[msg['userid']];
 	m.player.command["USE_ITEM"] = {
@@ -320,6 +322,7 @@ function announceDeath() {
 }
 
 socket.on('delay_stack', function(msg) {
+	if (!state.isGamePlaying) return;
 	client.currentRoom.stack = msg.data;
 });
 
@@ -578,6 +581,7 @@ socket.on("winner", function(msg) {
 });
 
 socket.on('wind_change', function(msg) {
+	if (!state.isGamePlaying) return;
 	state.requestWindChange = true;
 	state.requestedWindAngle = msg['angle']; 
 	state.requestedWindPower = msg['power'];

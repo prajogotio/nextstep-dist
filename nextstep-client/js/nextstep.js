@@ -76,7 +76,7 @@ var CONST = {
 	MAX_BULLET_THRUST : 40,
 	MAX_WIND_STRENGTH : 10,
 	EXPLOSION_RADIUS : 60,
-	WIND_STRENGTH_CALLIBRATOR : 0.02,
+	WIND_STRENGTH_CALLIBRATOR : 0.015,
 	HEALTH_BAR_LENGTH : 80,
 	VIEW_SHIFT_RATIO : 1.5,
 	CAMERA_VIEW_UPPERLIMIT : 1300,
@@ -85,15 +85,15 @@ var CONST = {
 	ITEM_SLOT_WIDTH : 200,
 	ITEM_HEALTH_UP_EFFECT : 500,
 	SNAPSHOT_TIMEFRAME : 100,
-	X_ERROR_TOLERANCE : 0.5*1,
+	X_ERROR_TOLERANCE : 1,
 	SLOWDOWN_CONSTANT : 0.5,
-	MESSAGE_FLOOD_LIMIT : 1000,
+	MESSAGE_FLOOD_LIMIT : 200,
 	MAX_MESSAGE_DISPLAY : 10,
-	START_DELAY: 40,
+	START_DELAY: 80,
 	END_OF_TURN_DELAY: 100,
 	HIGH_ANGLE: 200,
 	ULTRA_HIGH_ANGLE: 400,
-	LOWEST_Y_LIMIT: -2000,
+	LOWEST_Y_LIMIT: -2600,
 	SNAPSHOT_EXTRA_DELAY: 300,
 };
 
@@ -213,7 +213,7 @@ function registerEventListener() {
 		state.mouseOffset = computeMouseOffset(e);
 	});
 	addEventListener("keydown", function(e) {
-		if (e.which == 13 && !state.chatFocused && state.isGamePlaying) {
+		if ((e.which == 8 || e.which == 13) && !state.chatFocused && state.isGamePlaying) {
 			document.getElementById('chat_input').focus();
 		}
 		var isPlayerTurn = (state.currentTurn == client.userid);
@@ -269,7 +269,7 @@ function registerEventListener() {
 		}
 	});
 
-	document.getElementById("chat_input").addEventListener('focusout', function(e) {
+	document.getElementById("chat_input").addEventListener('blur', function(e) {
 		state.chatFocused = false;
 		document.getElementById("chat_ui_notif").style.setProperty("display", "none");
 	});
