@@ -546,7 +546,6 @@ function endOfGame() {
 		}
 	}
 	state.isGamePlaying = false;
-	client.currentRoom.status = 'ready';
 	var v = document.getElementById('result_notif_box');
 	var w = document.getElementById('result_label');
 	if (state.gameResult == 'win'){
@@ -644,6 +643,7 @@ function displayWaitingRoom() {
 	document.getElementById('lobby_layer').style.display = 'none';
 	document.getElementById('room_loading').style.display = 'block';
 	document.getElementById('waiting_room_chat_input').focus();
+	client.currentRoom.status = 'ready';
 	if (client.currentRoom) {
 		for (var i = 0; i < client.currentRoom.exitedMember.length; ++i) {
 			removeMemberFromRoomList(client.currentRoom.exitedMember[i]);

@@ -1,0 +1,1510 @@
+2015-11-08T07:31:55.003777+00:00 app[web.1]: [ snapshot  ->  doom ]
+2015-11-08T07:31:55.003886+00:00 app[web.1]: [ snapshot  ->  LOOM ]
+2015-11-08T07:31:55.287090+00:00 app[web.1]: [ snapshot  ->  doom ]
+2015-11-08T07:31:55.287156+00:00 app[web.1]: [ snapshot  ->  LOOM ]
+2015-11-08T07:31:56.693390+00:00 app[web.1]: [ snapshot  ->  doom ]
+2015-11-08T07:31:56.693515+00:00 app[web.1]: [ snapshot  ->  LOOM ]
+2015-11-08T07:31:56.970035+00:00 app[web.1]: [ snapshot  ->  doom ]
+2015-11-08T07:31:56.970241+00:00 app[web.1]: [ snapshot  ->  LOOM ]
+2015-11-08T07:31:58.328911+00:00 app[web.1]: [ snapshot  ->  doom ]
+2015-11-08T07:31:58.329047+00:00 app[web.1]: [ snapshot  ->  LOOM ]
+2015-11-08T07:31:58.596362+00:00 app[web.1]: [ snapshot  ->  doom ]
+2015-11-08T07:31:58.596408+00:00 app[web.1]: [ snapshot  ->  LOOM ]
+2015-11-08T07:32:00.384740+00:00 app[web.1]: [ player_shoot  ->  doom ]
+2015-11-08T07:32:00.384872+00:00 app[web.1]: [ player_shoot  ->  LOOM ]
+2015-11-08T07:32:01.378779+00:00 app[web.1]: [ snapshot  ->  doom ]
+2015-11-08T07:32:01.378877+00:00 app[web.1]: [ snapshot  ->  LOOM ]
+2015-11-08T07:32:02.097961+00:00 app[web.1]: [ delay_stack  ->  doom ]
+2015-11-08T07:32:02.098027+00:00 app[web.1]: [ delay_stack  ->  LOOM ]
+2015-11-08T07:32:02.098134+00:00 app[web.1]: [ force_update  ->  doom ]
+2015-11-08T07:32:02.098217+00:00 app[web.1]: [ force_update  ->  LOOM ]
+2015-11-08T07:32:02.098378+00:00 app[web.1]: [ turn  ->  doom ]
+2015-11-08T07:32:02.098468+00:00 app[web.1]: [ turn  ->  LOOM ]
+2015-11-08T07:32:02.458668+00:00 app[web.1]: [ snapshot  ->  doom ]
+2015-11-08T07:32:02.458763+00:00 app[web.1]: [ snapshot  ->  LOOM ]
+2015-11-08T07:32:03.598829+00:00 app[web.1]: [ snapshot  ->  doom ]
+2015-11-08T07:32:03.598962+00:00 app[web.1]: [ snapshot  ->  LOOM ]
+2015-11-08T07:32:04.428485+00:00 app[web.1]: [ snapshot  ->  doom ]
+2015-11-08T07:32:04.428602+00:00 app[web.1]: [ snapshot  ->  LOOM ]
+2015-11-08T07:32:05.259237+00:00 app[web.1]: [ snapshot  ->  doom ]
+2015-11-08T07:32:05.259431+00:00 app[web.1]: [ snapshot  ->  LOOM ]
+2015-11-08T07:32:06.254674+00:00 app[web.1]: [ snapshot  ->  doom ]
+2015-11-08T07:32:06.254754+00:00 app[web.1]: [ snapshot  ->  LOOM ]
+2015-11-08T07:32:07.078498+00:00 app[web.1]: [ snapshot  ->  doom ]
+2015-11-08T07:32:07.078653+00:00 app[web.1]: [ snapshot  ->  LOOM ]
+2015-11-08T07:32:07.694881+00:00 app[web.1]: [ snapshot  ->  doom ]
+2015-11-08T07:32:07.694977+00:00 app[web.1]: [ snapshot  ->  LOOM ]
+2015-11-08T07:32:08.588453+00:00 app[web.1]: [ snapshot  ->  doom ]
+2015-11-08T07:32:08.588537+00:00 app[web.1]: [ snapshot  ->  LOOM ]
+2015-11-08T07:32:09.365537+00:00 app[web.1]: [ snapshot  ->  doom ]
+2015-11-08T07:32:09.366657+00:00 app[web.1]: [ snapshot  ->  LOOM ]
+2015-11-08T07:32:10.243978+00:00 app[web.1]: [ snapshot  ->  doom ]
+2015-11-08T07:32:10.244111+00:00 app[web.1]: [ snapshot  ->  LOOM ]
+2015-11-08T07:32:10.904996+00:00 app[web.1]: [ snapshot  ->  doom ]
+2015-11-08T07:32:10.905096+00:00 app[web.1]: [ snapshot  ->  LOOM ]
+2015-11-08T07:32:11.779931+00:00 app[web.1]: [ player_shoot  ->  LOOM ]
+2015-11-08T07:32:11.779549+00:00 app[web.1]: [ player_shoot  ->  doom ]
+2015-11-08T07:32:12.676509+00:00 app[web.1]: [ snapshot  ->  doom ]
+2015-11-08T07:32:12.676629+00:00 app[web.1]: [ snapshot  ->  LOOM ]
+2015-11-08T07:32:14.290220+00:00 app[web.1]: [ snapshot  ->  doom ]
+2015-11-08T07:32:14.293044+00:00 app[web.1]: [ snapshot  ->  LOOM ]
+2015-11-08T07:32:15.254969+00:00 app[web.1]: [ delay_stack  ->  doom ]
+2015-11-08T07:32:15.281104+00:00 app[web.1]: [ turn  ->  LOOM ]
+2015-11-08T07:32:15.258704+00:00 app[web.1]: [ delay_stack  ->  LOOM ]
+2015-11-08T07:32:15.259013+00:00 app[web.1]: [ force_update  ->  doom ]
+2015-11-08T07:32:15.259452+00:00 app[web.1]: [ force_update  ->  LOOM ]
+2015-11-08T07:32:15.279811+00:00 app[web.1]: [ turn  ->  doom ]
+2015-11-08T07:32:15.943248+00:00 app[web.1]: [ snapshot  ->  doom ]
+2015-11-08T07:32:15.943385+00:00 app[web.1]: [ snapshot  ->  LOOM ]
+2015-11-08T07:32:16.835164+00:00 app[web.1]: [ snapshot  ->  doom ]
+2015-11-08T07:32:16.835314+00:00 app[web.1]: [ snapshot  ->  LOOM ]
+2015-11-08T07:32:17.524386+00:00 app[web.1]: [ snapshot  ->  doom ]
+2015-11-08T07:32:17.524541+00:00 app[web.1]: [ snapshot  ->  LOOM ]
+2015-11-08T07:32:17.810293+00:00 heroku[router]: at=info method=GET path="/" host=nextep.herokuapp.com request_id=9877c463-e74f-43f8-9260-e3fa6e27aec4 fwd="204.102.224.116" dyno=web.1 connect=0ms service=3ms status=200 bytes=14752
+2015-11-08T07:32:17.987461+00:00 heroku[router]: at=info method=GET path="/js/main-min.js" host=nextep.herokuapp.com request_id=f77ce283-777a-4b43-a7f7-245d83eff5e9 fwd="204.102.224.116" dyno=web.1 connect=1ms service=8ms status=200 bytes=59507
+2015-11-08T07:32:17.980001+00:00 heroku[router]: at=info method=GET path="/js/socketio.js" host=nextep.herokuapp.com request_id=9fa428c6-525a-4e67-b9c2-cfed2c283306 fwd="204.102.224.116" dyno=web.1 connect=5ms service=9ms status=200 bytes=44027
+2015-11-08T07:32:18.342202+00:00 heroku[router]: at=info method=GET path="/socket.io/1/?t=1446967929483" host=nextep.herokuapp.com request_id=20c6f9bc-8564-4644-94c1-21a64f733d62 fwd="204.102.224.116" dyno=web.1 connect=1ms service=3ms status=200 bytes=343
+2015-11-08T07:32:18.528843+00:00 heroku[router]: at=info method=GET path="/favicon.ico" host=nextep.herokuapp.com request_id=2dc6b067-e631-4c20-958a-645eed523476 fwd="204.102.224.116" dyno=web.1 connect=0ms service=1ms status=404 bytes=96
+2015-11-08T07:32:18.450489+00:00 app[web.1]: [ snapshot  ->  doom ]
+2015-11-08T07:32:18.450659+00:00 app[web.1]: [ snapshot  ->  LOOM ]
+2015-11-08T07:32:18.655531+00:00 heroku[router]: at=info method=GET path="/asset/lobby_long.mp3" host=nextep.herokuapp.com request_id=8f2bebbc-f59f-4155-a4f6-0cecbc36056b fwd="204.102.224.116" dyno=web.1 connect=1ms service=315ms status=200 bytes=3081343
+2015-11-08T07:32:18.626584+00:00 heroku[router]: at=info method=GET path="/favicon.ico" host=nextep.herokuapp.com request_id=d335bb96-c925-4b7e-9447-e85b2b8ca678 fwd="204.102.224.116" dyno=web.1 connect=0ms service=1ms status=404 bytes=96
+2015-11-08T07:32:19.249057+00:00 app[web.1]: [ snapshot  ->  doom ]
+2015-11-08T07:32:19.249171+00:00 app[web.1]: [ snapshot  ->  LOOM ]
+2015-11-08T07:32:20.100892+00:00 app[web.1]: [ snapshot  ->  doom ]
+2015-11-08T07:32:20.101195+00:00 app[web.1]: [ snapshot  ->  LOOM ]
+2015-11-08T07:32:20.885045+00:00 app[web.1]: [ snapshot  ->  doom ]
+2015-11-08T07:32:20.885139+00:00 app[web.1]: [ snapshot  ->  LOOM ]
+2015-11-08T07:32:21.759053+00:00 app[web.1]: [ snapshot  ->  doom ]
+2015-11-08T07:32:21.759159+00:00 app[web.1]: [ snapshot  ->  LOOM ]
+2015-11-08T07:32:22.171044+00:00 app[web.1]: [ player_shoot  ->  doom ]
+2015-11-08T07:32:22.171195+00:00 app[web.1]: [ player_shoot  ->  LOOM ]
+2015-11-08T07:32:23.458703+00:00 app[web.1]: [ snapshot  ->  doom ]
+2015-11-08T07:32:23.458830+00:00 app[web.1]: [ snapshot  ->  LOOM ]
+2015-11-08T07:32:23.829343+00:00 app[web.1]: [ delay_stack  ->  doom ]
+2015-11-08T07:32:23.829478+00:00 app[web.1]: [ delay_stack  ->  LOOM ]
+2015-11-08T07:32:23.829582+00:00 app[web.1]: [ force_update  ->  doom ]
+2015-11-08T07:32:23.829697+00:00 app[web.1]: [ force_update  ->  LOOM ]
+2015-11-08T07:32:23.829794+00:00 app[web.1]: [ turn  ->  doom ]
+2015-11-08T07:32:23.829879+00:00 app[web.1]: [ turn  ->  LOOM ]
+2015-11-08T07:32:25.088159+00:00 app[web.1]: [ snapshot  ->  doom ]
+2015-11-08T07:32:25.088285+00:00 app[web.1]: [ snapshot  ->  LOOM ]
+2015-11-08T07:32:26.758104+00:00 app[web.1]: [ snapshot  ->  doom ]
+2015-11-08T07:32:26.758212+00:00 app[web.1]: [ snapshot  ->  LOOM ]
+2015-11-08T07:32:27.204626+00:00 app[web.1]: [ snapshot  ->  doom ]
+2015-11-08T07:32:27.204714+00:00 app[web.1]: [ snapshot  ->  LOOM ]
+2015-11-08T07:32:28.388451+00:00 app[web.1]: [ snapshot  ->  doom ]
+2015-11-08T07:32:28.388579+00:00 app[web.1]: [ snapshot  ->  LOOM ]
+2015-11-08T07:32:28.775056+00:00 app[web.1]: [ snapshot  ->  doom ]
+2015-11-08T07:32:28.775205+00:00 app[web.1]: [ snapshot  ->  LOOM ]
+2015-11-08T07:32:30.048417+00:00 app[web.1]: [ snapshot  ->  LOOM ]
+2015-11-08T07:32:30.048289+00:00 app[web.1]: [ snapshot  ->  doom ]
+2015-11-08T07:32:30.465046+00:00 app[web.1]: [ snapshot  ->  doom ]
+2015-11-08T07:32:30.465155+00:00 app[web.1]: [ snapshot  ->  LOOM ]
+2015-11-08T07:32:31.740194+00:00 app[web.1]: [ snapshot  ->  doom ]
+2015-11-08T07:32:31.740322+00:00 app[web.1]: [ snapshot  ->  LOOM ]
+2015-11-08T07:32:32.075024+00:00 app[web.1]: [ snapshot  ->  doom ]
+2015-11-08T07:32:32.075279+00:00 app[web.1]: [ snapshot  ->  LOOM ]
+2015-11-08T07:32:33.359797+00:00 app[web.1]: [ snapshot  ->  doom ]
+2015-11-08T07:32:33.360006+00:00 app[web.1]: [ snapshot  ->  LOOM ]
+2015-11-08T07:32:33.720710+00:00 app[web.1]: [ snapshot  ->  doom ]
+2015-11-08T07:32:33.720854+00:00 app[web.1]: [ snapshot  ->  LOOM ]
+2015-11-08T07:32:35.008405+00:00 app[web.1]: [ snapshot  ->  doom ]
+2015-11-08T07:32:35.009812+00:00 app[web.1]: [ snapshot  ->  LOOM ]
+2015-11-08T07:32:35.379441+00:00 app[web.1]: [ snapshot  ->  doom ]
+2015-11-08T07:32:35.379563+00:00 app[web.1]: [ snapshot  ->  LOOM ]
+2015-11-08T07:32:36.660289+00:00 app[web.1]: [ snapshot  ->  doom ]
+2015-11-08T07:32:36.660413+00:00 app[web.1]: [ snapshot  ->  LOOM ]
+2015-11-08T07:32:37.062175+00:00 app[web.1]: [ snapshot  ->  doom ]
+2015-11-08T07:32:37.062322+00:00 app[web.1]: [ snapshot  ->  LOOM ]
+2015-11-08T07:32:38.268106+00:00 app[web.1]: [ player_shoot  ->  doom ]
+2015-11-08T07:32:38.268177+00:00 app[web.1]: [ player_shoot  ->  LOOM ]
+2015-11-08T07:32:38.588366+00:00 app[web.1]: [ snapshot  ->  doom ]
+2015-11-08T07:32:38.588528+00:00 app[web.1]: [ snapshot  ->  LOOM ]
+2015-11-08T07:32:40.224047+00:00 app[web.1]: [ snapshot  ->  doom ]
+2015-11-08T07:32:40.224116+00:00 app[web.1]: [ snapshot  ->  LOOM ]
+2015-11-08T07:32:40.688820+00:00 app[web.1]: [ delay_stack  ->  doom ]
+2015-11-08T07:32:40.688897+00:00 app[web.1]: [ delay_stack  ->  LOOM ]
+2015-11-08T07:32:40.688989+00:00 app[web.1]: [ force_update  ->  doom ]
+2015-11-08T07:32:40.689066+00:00 app[web.1]: [ force_update  ->  LOOM ]
+2015-11-08T07:32:40.689127+00:00 app[web.1]: [ turn  ->  doom ]
+2015-11-08T07:32:40.689165+00:00 app[web.1]: [ turn  ->  LOOM ]
+2015-11-08T07:32:41.864996+00:00 app[web.1]: [ snapshot  ->  doom ]
+2015-11-08T07:32:41.865122+00:00 app[web.1]: [ snapshot  ->  LOOM ]
+2015-11-08T07:32:43.178706+00:00 app[web.1]: [ snapshot  ->  doom ]
+2015-11-08T07:32:43.178798+00:00 app[web.1]: [ snapshot  ->  LOOM ]
+2015-11-08T07:32:43.574756+00:00 app[web.1]: [ snapshot  ->  doom ]
+2015-11-08T07:32:43.574828+00:00 app[web.1]: [ snapshot  ->  LOOM ]
+2015-11-08T07:32:44.818717+00:00 app[web.1]: [ snapshot  ->  doom ]
+2015-11-08T07:32:44.818781+00:00 app[web.1]: [ snapshot  ->  LOOM ]
+2015-11-08T07:32:45.195398+00:00 app[web.1]: [ snapshot  ->  doom ]
+2015-11-08T07:32:45.195579+00:00 app[web.1]: [ snapshot  ->  LOOM ]
+2015-11-08T07:32:46.469048+00:00 app[web.1]: [ snapshot  ->  doom ]
+2015-11-08T07:32:46.469153+00:00 app[web.1]: [ snapshot  ->  LOOM ]
+2015-11-08T07:32:46.857977+00:00 app[web.1]: [ snapshot  ->  doom ]
+2015-11-08T07:32:46.858600+00:00 app[web.1]: [ snapshot  ->  LOOM ]
+2015-11-08T07:32:48.118900+00:00 app[web.1]: [ snapshot  ->  doom ]
+2015-11-08T07:32:48.119021+00:00 app[web.1]: [ snapshot  ->  LOOM ]
+2015-11-08T07:32:48.505804+00:00 app[web.1]: [ snapshot  ->  doom ]
+2015-11-08T07:32:48.510188+00:00 app[web.1]: [ snapshot  ->  LOOM ]
+2015-11-08T07:32:49.828211+00:00 app[web.1]: [ snapshot  ->  doom ]
+2015-11-08T07:32:49.828298+00:00 app[web.1]: [ snapshot  ->  LOOM ]
+2015-11-08T07:32:49.895112+00:00 app[web.1]: [ player_shoot  ->  doom ]
+2015-11-08T07:32:49.895190+00:00 app[web.1]: [ player_shoot  ->  LOOM ]
+2015-11-08T07:32:51.490131+00:00 app[web.1]: [ snapshot  ->  doom ]
+2015-11-08T07:32:51.490392+00:00 app[web.1]: [ snapshot  ->  LOOM ]
+2015-11-08T07:32:51.543566+00:00 app[web.1]: [ delay_stack  ->  doom ]
+2015-11-08T07:32:51.543694+00:00 app[web.1]: [ delay_stack  ->  LOOM ]
+2015-11-08T07:32:51.543799+00:00 app[web.1]: [ force_update  ->  doom ]
+2015-11-08T07:32:51.543962+00:00 app[web.1]: [ force_update  ->  LOOM ]
+2015-11-08T07:32:51.544176+00:00 app[web.1]: [ turn  ->  LOOM ]
+2015-11-08T07:32:51.544084+00:00 app[web.1]: [ turn  ->  doom ]
+2015-11-08T07:32:53.089217+00:00 app[web.1]: [ snapshot  ->  doom ]
+2015-11-08T07:32:53.089344+00:00 app[web.1]: [ snapshot  ->  LOOM ]
+2015-11-08T07:32:54.751165+00:00 app[web.1]: [ snapshot  ->  doom ]
+2015-11-08T07:32:54.751323+00:00 app[web.1]: [ snapshot  ->  LOOM ]
+2015-11-08T07:32:54.767241+00:00 app[web.1]: [ snapshot  ->  doom ]
+2015-11-08T07:32:54.767394+00:00 app[web.1]: [ snapshot  ->  LOOM ]
+2015-11-08T07:32:56.399671+00:00 app[web.1]: [ snapshot  ->  doom ]
+2015-11-08T07:32:56.399853+00:00 app[web.1]: [ snapshot  ->  LOOM ]
+2015-11-08T07:32:56.419099+00:00 app[web.1]: [ snapshot  ->  doom ]
+2015-11-08T07:32:56.419242+00:00 app[web.1]: [ snapshot  ->  LOOM ]
+2015-11-08T07:32:58.136309+00:00 app[web.1]: [ snapshot  ->  doom ]
+2015-11-08T07:32:58.136509+00:00 app[web.1]: [ snapshot  ->  LOOM ]
+2015-11-08T07:32:58.138970+00:00 app[web.1]: [ snapshot  ->  doom ]
+2015-11-08T07:32:58.139099+00:00 app[web.1]: [ snapshot  ->  LOOM ]
+2015-11-08T07:32:59.749201+00:00 app[web.1]: [ snapshot  ->  doom ]
+2015-11-08T07:32:59.750094+00:00 app[web.1]: [ snapshot  ->  doom ]
+2015-11-08T07:32:59.749278+00:00 app[web.1]: [ snapshot  ->  LOOM ]
+2015-11-08T07:32:59.750186+00:00 app[web.1]: [ snapshot  ->  LOOM ]
+2015-11-08T07:33:01.359164+00:00 app[web.1]: [ snapshot  ->  doom ]
+2015-11-08T07:33:01.359190+00:00 app[web.1]: [ snapshot  ->  LOOM ]
+2015-11-08T07:33:01.374266+00:00 app[web.1]: [ snapshot  ->  doom ]
+2015-11-08T07:33:01.374423+00:00 app[web.1]: [ snapshot  ->  LOOM ]
+2015-11-08T07:33:03.088856+00:00 app[web.1]: [ snapshot  ->  doom ]
+2015-11-08T07:33:03.088927+00:00 app[web.1]: [ snapshot  ->  LOOM ]
+2015-11-08T07:33:03.203751+00:00 app[web.1]: [ snapshot  ->  doom ]
+2015-11-08T07:33:03.203821+00:00 app[web.1]: [ snapshot  ->  LOOM ]
+2015-11-08T07:33:04.723452+00:00 app[web.1]: [ snapshot  ->  doom ]
+2015-11-08T07:33:04.723545+00:00 app[web.1]: [ snapshot  ->  LOOM ]
+2015-11-08T07:33:04.733692+00:00 app[web.1]: [ snapshot  ->  doom ]
+2015-11-08T07:33:04.733767+00:00 app[web.1]: [ snapshot  ->  LOOM ]
+2015-11-08T07:33:05.889165+00:00 app[web.1]: [ player_shoot  ->  doom ]
+2015-11-08T07:33:05.889286+00:00 app[web.1]: [ player_shoot  ->  LOOM ]
+2015-11-08T07:33:06.334315+00:00 app[web.1]: [ snapshot  ->  doom ]
+2015-11-08T07:33:06.334708+00:00 app[web.1]: [ snapshot  ->  LOOM ]
+2015-11-08T07:33:07.991244+00:00 app[web.1]: [ snapshot  ->  doom ]
+2015-11-08T07:33:07.991402+00:00 app[web.1]: [ snapshot  ->  LOOM ]
+2015-11-08T07:33:09.029818+00:00 app[web.1]: [ delay_stack  ->  doom ]
+2015-11-08T07:33:09.029870+00:00 app[web.1]: [ delay_stack  ->  LOOM ]
+2015-11-08T07:33:09.029921+00:00 app[web.1]: [ force_update  ->  doom ]
+2015-11-08T07:33:09.029978+00:00 app[web.1]: [ force_update  ->  LOOM ]
+2015-11-08T07:33:09.030029+00:00 app[web.1]: [ turn  ->  doom ]
+2015-11-08T07:33:09.030070+00:00 app[web.1]: [ turn  ->  LOOM ]
+2015-11-08T07:33:09.624347+00:00 app[web.1]: [ snapshot  ->  doom ]
+2015-11-08T07:33:09.624429+00:00 app[web.1]: [ snapshot  ->  LOOM ]
+2015-11-08T07:33:10.007997+00:00 heroku[router]: at=info method=GET path="/socket.io/1/websocket/592209745269" host=nextep.herokuapp.com request_id=bea47892-fc20-481f-99d2-5899d36fdc96 fwd="204.102.224.116" dyno=web.1 connect=2ms service=51179ms status=101 bytes=618
+2015-11-08T07:33:10.819127+00:00 app[web.1]: [ snapshot  ->  doom ]
+2015-11-08T07:33:10.819190+00:00 app[web.1]: [ snapshot  ->  LOOM ]
+2015-11-08T07:33:11.284335+00:00 app[web.1]: [ snapshot  ->  doom ]
+2015-11-08T07:33:11.284465+00:00 app[web.1]: [ snapshot  ->  LOOM ]
+2015-11-08T07:33:12.529298+00:00 app[web.1]: [ snapshot  ->  doom ]
+2015-11-08T07:33:12.529622+00:00 app[web.1]: [ snapshot  ->  LOOM ]
+2015-11-08T07:33:13.067199+00:00 app[web.1]: [ snapshot  ->  doom ]
+2015-11-08T07:33:13.067386+00:00 app[web.1]: [ snapshot  ->  LOOM ]
+2015-11-08T07:33:13.471671+00:00 heroku[router]: at=info method=GET path="/" host=nextep.herokuapp.com request_id=5a1efdc2-1e60-41a4-8a93-5de5267169de fwd="204.102.224.116" dyno=web.1 connect=0ms service=3ms status=200 bytes=14752
+2015-11-08T07:33:13.885143+00:00 heroku[router]: at=info method=GET path="/js/socketio.js" host=nextep.herokuapp.com request_id=df7da796-da65-4404-a843-ef622742e852 fwd="204.102.224.116" dyno=web.1 connect=0ms service=6ms status=200 bytes=44027
+2015-11-08T07:33:13.902797+00:00 heroku[router]: at=info method=GET path="/js/main-min.js" host=nextep.herokuapp.com request_id=c0895ae2-b201-4c63-a4a9-2ae2af986db0 fwd="204.102.224.116" dyno=web.1 connect=0ms service=8ms status=200 bytes=59507
+2015-11-08T07:33:14.229317+00:00 app[web.1]: [ snapshot  ->  doom ]
+2015-11-08T07:33:14.229461+00:00 app[web.1]: [ snapshot  ->  LOOM ]
+2015-11-08T07:33:14.664258+00:00 app[web.1]: [ snapshot  ->  doom ]
+2015-11-08T07:33:14.664359+00:00 app[web.1]: [ snapshot  ->  LOOM ]
+2015-11-08T07:33:15.326747+00:00 heroku[router]: at=info method=GET path="/socket.io/1/?t=1446967986097" host=nextep.herokuapp.com request_id=0da8227e-01c7-4767-8d85-24836f8666de fwd="204.102.224.116" dyno=web.1 connect=0ms service=1ms status=200 bytes=343
+2015-11-08T07:33:15.869085+00:00 app[web.1]: [ snapshot  ->  doom ]
+2015-11-08T07:33:15.869173+00:00 app[web.1]: [ snapshot  ->  LOOM ]
+2015-11-08T07:33:16.344388+00:00 app[web.1]: [ snapshot  ->  doom ]
+2015-11-08T07:33:16.344497+00:00 app[web.1]: [ snapshot  ->  LOOM ]
+2015-11-08T07:33:17.500799+00:00 app[web.1]: [ snapshot  ->  doom ]
+2015-11-08T07:33:17.501135+00:00 app[web.1]: [ snapshot  ->  LOOM ]
+2015-11-08T07:33:17.931116+00:00 app[web.1]: [ snapshot  ->  doom ]
+2015-11-08T07:33:17.931285+00:00 app[web.1]: [ snapshot  ->  LOOM ]
+2015-11-08T07:33:19.112389+00:00 app[web.1]: [ snapshot  ->  doom ]
+2015-11-08T07:33:19.112516+00:00 app[web.1]: [ snapshot  ->  LOOM ]
+2015-11-08T07:33:19.588118+00:00 app[web.1]: [ player_shoot  ->  doom ]
+2015-11-08T07:33:19.588240+00:00 app[web.1]: [ player_shoot  ->  LOOM ]
+2015-11-08T07:33:20.822297+00:00 app[web.1]: [ snapshot  ->  LOOM ]
+2015-11-08T07:33:20.821911+00:00 app[web.1]: [ snapshot  ->  doom ]
+2015-11-08T07:33:21.194082+00:00 app[web.1]: [ delay_stack  ->  doom ]
+2015-11-08T07:33:21.194223+00:00 app[web.1]: [ delay_stack  ->  LOOM ]
+2015-11-08T07:33:21.194465+00:00 app[web.1]: [ force_update  ->  LOOM ]
+2015-11-08T07:33:21.194301+00:00 app[web.1]: [ force_update  ->  doom ]
+2015-11-08T07:33:21.194614+00:00 app[web.1]: [ turn  ->  doom ]
+2015-11-08T07:33:21.194708+00:00 app[web.1]: [ turn  ->  LOOM ]
+2015-11-08T07:33:22.449399+00:00 app[web.1]: [ snapshot  ->  doom ]
+2015-11-08T07:33:22.449496+00:00 app[web.1]: [ snapshot  ->  LOOM ]
+2015-11-08T07:33:24.229074+00:00 app[web.1]: [ snapshot  ->  doom ]
+2015-11-08T07:33:24.229164+00:00 app[web.1]: [ snapshot  ->  LOOM ]
+2015-11-08T07:33:24.614438+00:00 app[web.1]: [ snapshot  ->  doom ]
+2015-11-08T07:33:24.614560+00:00 app[web.1]: [ snapshot  ->  LOOM ]
+2015-11-08T07:33:25.838813+00:00 app[web.1]: [ snapshot  ->  doom ]
+2015-11-08T07:33:25.838899+00:00 app[web.1]: [ snapshot  ->  LOOM ]
+2015-11-08T07:33:26.284109+00:00 app[web.1]: [ snapshot  ->  doom ]
+2015-11-08T07:33:26.284193+00:00 app[web.1]: [ snapshot  ->  LOOM ]
+2015-11-08T07:33:27.409465+00:00 app[web.1]: [ snapshot  ->  doom ]
+2015-11-08T07:33:27.409531+00:00 app[web.1]: [ snapshot  ->  LOOM ]
+2015-11-08T07:33:27.853911+00:00 app[web.1]: [ snapshot  ->  doom ]
+2015-11-08T07:33:27.853984+00:00 app[web.1]: [ snapshot  ->  LOOM ]
+2015-11-08T07:33:29.162508+00:00 app[web.1]: [ snapshot  ->  doom ]
+2015-11-08T07:33:29.162575+00:00 app[web.1]: [ snapshot  ->  LOOM ]
+2015-11-08T07:33:29.516825+00:00 app[web.1]: [ snapshot  ->  doom ]
+2015-11-08T07:33:29.516908+00:00 app[web.1]: [ snapshot  ->  LOOM ]
+2015-11-08T07:33:29.845418+00:00 heroku[router]: at=info method=GET path="/socket.io/1/websocket/588051324018" host=nextep.herokuapp.com request_id=a5e0c437-72d8-46c9-a8aa-4dea272b29fa fwd="204.102.224.116" dyno=web.1 connect=1ms service=8848ms status=101 bytes=420
+2015-11-08T07:33:30.798926+00:00 app[web.1]: [ snapshot  ->  doom ]
+2015-11-08T07:33:30.799142+00:00 app[web.1]: [ snapshot  ->  LOOM ]
+2015-11-08T07:33:31.204541+00:00 app[web.1]: [ snapshot  ->  doom ]
+2015-11-08T07:33:31.204683+00:00 app[web.1]: [ snapshot  ->  LOOM ]
+2015-11-08T07:33:32.459097+00:00 app[web.1]: [ snapshot  ->  doom ]
+2015-11-08T07:33:32.459207+00:00 app[web.1]: [ snapshot  ->  LOOM ]
+2015-11-08T07:33:32.835174+00:00 app[web.1]: [ snapshot  ->  doom ]
+2015-11-08T07:33:32.835276+00:00 app[web.1]: [ snapshot  ->  LOOM ]
+2015-11-08T07:33:33.502336+00:00 app[web.1]: [ player_shoot  ->  doom ]
+2015-11-08T07:33:33.502461+00:00 app[web.1]: [ player_shoot  ->  LOOM ]
+2015-11-08T07:33:34.551718+00:00 app[web.1]: [ snapshot  ->  doom ]
+2015-11-08T07:33:34.551785+00:00 app[web.1]: [ snapshot  ->  LOOM ]
+2015-11-08T07:33:35.268568+00:00 app[web.1]: [ delay_stack  ->  doom ]
+2015-11-08T07:33:35.268717+00:00 app[web.1]: [ delay_stack  ->  LOOM ]
+2015-11-08T07:33:35.268899+00:00 app[web.1]: [ force_update  ->  LOOM ]
+2015-11-08T07:33:35.268791+00:00 app[web.1]: [ force_update  ->  doom ]
+2015-11-08T07:33:35.268966+00:00 app[web.1]: [ turn  ->  doom ]
+2015-11-08T07:33:35.269060+00:00 app[web.1]: [ turn  ->  LOOM ]
+2015-11-08T07:33:36.155898+00:00 app[web.1]: [ snapshot  ->  doom ]
+2015-11-08T07:33:36.156126+00:00 app[web.1]: [ snapshot  ->  LOOM ]
+2015-11-08T07:33:37.816667+00:00 app[web.1]: [ snapshot  ->  doom ]
+2015-11-08T07:33:37.816750+00:00 app[web.1]: [ snapshot  ->  LOOM ]
+2015-11-08T07:33:38.479015+00:00 app[web.1]: [ snapshot  ->  doom ]
+2015-11-08T07:33:38.479163+00:00 app[web.1]: [ snapshot  ->  LOOM ]
+2015-11-08T07:33:39.464408+00:00 app[web.1]: [ snapshot  ->  doom ]
+2015-11-08T07:33:39.464551+00:00 app[web.1]: [ snapshot  ->  LOOM ]
+2015-11-08T07:33:40.178622+00:00 app[web.1]: [ snapshot  ->  doom ]
+2015-11-08T07:33:40.178709+00:00 app[web.1]: [ snapshot  ->  LOOM ]
+2015-11-08T07:33:41.174940+00:00 app[web.1]: [ snapshot  ->  doom ]
+2015-11-08T07:33:41.175053+00:00 app[web.1]: [ snapshot  ->  LOOM ]
+2015-11-08T07:33:41.803101+00:00 app[web.1]: [ snapshot  ->  doom ]
+2015-11-08T07:33:41.803244+00:00 app[web.1]: [ snapshot  ->  LOOM ]
+2015-11-08T07:33:42.814826+00:00 app[web.1]: [ snapshot  ->  doom ]
+2015-11-08T07:33:42.814998+00:00 app[web.1]: [ snapshot  ->  LOOM ]
+2015-11-08T07:33:43.458915+00:00 app[web.1]: [ snapshot  ->  doom ]
+2015-11-08T07:33:43.459017+00:00 app[web.1]: [ snapshot  ->  LOOM ]
+2015-11-08T07:33:45.325037+00:00 app[web.1]: [ snapshot  ->  doom ]
+2015-11-08T07:33:45.325186+00:00 app[web.1]: [ snapshot  ->  LOOM ]
+2015-11-08T07:33:46.402447+00:00 app[web.1]: [ snapshot  ->  doom ]
+2015-11-08T07:33:46.402531+00:00 app[web.1]: [ snapshot  ->  LOOM ]
+2015-11-08T07:33:47.347058+00:00 app[web.1]: [ snapshot  ->  doom ]
+2015-11-08T07:33:47.347140+00:00 app[web.1]: [ snapshot  ->  LOOM ]
+2015-11-08T07:33:47.532023+00:00 app[web.1]: [ snapshot  ->  doom ]
+2015-11-08T07:33:47.587186+00:00 app[web.1]: [ player_shoot  ->  doom ]
+2015-11-08T07:33:47.532105+00:00 app[web.1]: [ snapshot  ->  LOOM ]
+2015-11-08T07:33:47.587251+00:00 app[web.1]: [ player_shoot  ->  LOOM ]
+2015-11-08T07:33:48.472247+00:00 app[web.1]: [ snapshot  ->  doom ]
+2015-11-08T07:33:48.472383+00:00 app[web.1]: [ snapshot  ->  LOOM ]
+2015-11-08T07:33:48.907625+00:00 app[web.1]: [ delay_stack  ->  doom ]
+2015-11-08T07:33:48.907695+00:00 app[web.1]: [ delay_stack  ->  LOOM ]
+2015-11-08T07:33:48.907784+00:00 app[web.1]: [ force_update  ->  doom ]
+2015-11-08T07:33:48.907856+00:00 app[web.1]: [ force_update  ->  LOOM ]
+2015-11-08T07:33:48.907952+00:00 app[web.1]: [ turn  ->  doom ]
+2015-11-08T07:33:48.908004+00:00 app[web.1]: [ turn  ->  LOOM ]
+2015-11-08T07:33:50.112675+00:00 app[web.1]: [ snapshot  ->  doom ]
+2015-11-08T07:33:50.112917+00:00 app[web.1]: [ snapshot  ->  LOOM ]
+2015-11-08T07:33:51.742543+00:00 app[web.1]: [ snapshot  ->  doom ]
+2015-11-08T07:33:51.742684+00:00 app[web.1]: [ snapshot  ->  LOOM ]
+2015-11-08T07:33:52.177408+00:00 app[web.1]: [ snapshot  ->  doom ]
+2015-11-08T07:33:52.177560+00:00 app[web.1]: [ snapshot  ->  LOOM ]
+2015-11-08T07:33:53.422119+00:00 app[web.1]: [ snapshot  ->  doom ]
+2015-11-08T07:33:53.422211+00:00 app[web.1]: [ snapshot  ->  LOOM ]
+2015-11-08T07:33:53.827535+00:00 app[web.1]: [ snapshot  ->  doom ]
+2015-11-08T07:33:53.827680+00:00 app[web.1]: [ snapshot  ->  LOOM ]
+2015-11-08T07:33:55.092748+00:00 app[web.1]: [ snapshot  ->  doom ]
+2015-11-08T07:33:55.092892+00:00 app[web.1]: [ snapshot  ->  LOOM ]
+2015-11-08T07:33:55.488762+00:00 app[web.1]: [ snapshot  ->  doom ]
+2015-11-08T07:33:55.488920+00:00 app[web.1]: [ snapshot  ->  LOOM ]
+2015-11-08T07:33:56.728575+00:00 app[web.1]: [ snapshot  ->  doom ]
+2015-11-08T07:33:56.728908+00:00 app[web.1]: [ snapshot  ->  LOOM ]
+2015-11-08T07:33:57.012485+00:00 app[web.1]: [ player_shoot  ->  doom ]
+2015-11-08T07:33:57.012586+00:00 app[web.1]: [ player_shoot  ->  LOOM ]
+2015-11-08T07:33:57.137728+00:00 app[web.1]: [ snapshot  ->  doom ]
+2015-11-08T07:33:57.137964+00:00 app[web.1]: [ snapshot  ->  LOOM ]
+2015-11-08T07:33:58.703083+00:00 app[web.1]: [ delay_stack  ->  doom ]
+2015-11-08T07:33:58.789897+00:00 app[web.1]: [ snapshot  ->  LOOM ]
+2015-11-08T07:33:58.703203+00:00 app[web.1]: [ delay_stack  ->  LOOM ]
+2015-11-08T07:33:58.703290+00:00 app[web.1]: [ force_update  ->  doom ]
+2015-11-08T07:33:58.703407+00:00 app[web.1]: [ force_update  ->  LOOM ]
+2015-11-08T07:33:58.703590+00:00 app[web.1]: [ turn  ->  LOOM ]
+2015-11-08T07:33:58.703518+00:00 app[web.1]: [ turn  ->  doom ]
+2015-11-08T07:33:58.789059+00:00 app[web.1]: [ snapshot  ->  doom ]
+2015-11-08T07:34:00.447778+00:00 app[web.1]: [ snapshot  ->  doom ]
+2015-11-08T07:34:00.447927+00:00 app[web.1]: [ snapshot  ->  LOOM ]
+2015-11-08T07:34:02.695816+00:00 app[web.1]: [ player_shoot  ->  doom ]
+2015-11-08T07:34:02.695944+00:00 app[web.1]: [ player_shoot  ->  LOOM ]
+2015-11-08T07:34:03.357525+00:00 app[web.1]: [ snapshot  ->  doom ]
+2015-11-08T07:34:03.357608+00:00 app[web.1]: [ snapshot  ->  LOOM ]
+2015-11-08T07:34:03.737316+00:00 app[web.1]: [ death  ->  doom ]
+2015-11-08T07:34:03.819963+00:00 app[web.1]: [ delay_stack  ->  doom ]
+2015-11-08T07:34:03.820247+00:00 app[web.1]: [ winner  ->  LOOM ]
+2015-11-08T07:34:03.737564+00:00 app[web.1]: [ death  ->  LOOM ]
+2015-11-08T07:34:03.820019+00:00 app[web.1]: [ delay_stack  ->  LOOM ]
+2015-11-08T07:34:03.820145+00:00 app[web.1]: [ force_update  ->  LOOM ]
+2015-11-08T07:34:03.820078+00:00 app[web.1]: [ force_update  ->  doom ]
+2015-11-08T07:34:03.820363+00:00 app[web.1]: [ turn  ->  LOOM ]
+2015-11-08T07:34:03.820205+00:00 app[web.1]: [ winner  ->  doom ]
+2015-11-08T07:34:03.820311+00:00 app[web.1]: [ turn  ->  doom ]
+2015-11-08T07:34:04.087506+00:00 app[web.1]: [ snapshot  ->  doom ]
+2015-11-08T07:34:04.087617+00:00 app[web.1]: [ snapshot  ->  LOOM ]
+2015-11-08T07:34:05.330520+00:00 app[web.1]: [ snapshot  ->  doom ]
+2015-11-08T07:34:05.330647+00:00 app[web.1]: [ snapshot  ->  LOOM ]
+2015-11-08T07:34:06.674235+00:00 app[web.1]: [ snapshot  ->  doom ]
+2015-11-08T07:34:06.674333+00:00 app[web.1]: [ snapshot  ->  LOOM ]
+2015-11-08T07:34:07.015856+00:00 app[web.1]: [ snapshot  ->  doom ]
+2015-11-08T07:34:07.016022+00:00 app[web.1]: [ snapshot  ->  LOOM ]
+2015-11-08T07:34:08.638144+00:00 app[web.1]: [ snapshot  ->  doom ]
+2015-11-08T07:34:08.638273+00:00 app[web.1]: [ snapshot  ->  LOOM ]
+2015-11-08T07:34:10.238228+00:00 app[web.1]: [ snapshot  ->  doom ]
+2015-11-08T07:34:10.238356+00:00 app[web.1]: [ snapshot  ->  LOOM ]
+2015-11-08T07:34:10.703017+00:00 app[web.1]: [ exit_room  ->  doom ]
+2015-11-08T07:34:15.369078+00:00 heroku[router]: at=info method=GET path="/socket.io/1/websocket/0980211216633" host=nextep.herokuapp.com request_id=0954df58-5141-4769-b66d-929a121fb477 fwd="202.67.35.23" dyno=web.1 connect=1ms service=348540ms status=101 bytes=99294
+2015-11-08T07:34:21.145911+00:00 heroku[router]: at=info method=GET path="/socket.io/1/websocket/297842316601" host=nextep.herokuapp.com request_id=2029f094-9003-4e0f-b6b0-109063720d64 fwd="202.67.35.23" dyno=web.1 connect=0ms service=595962ms status=101 bytes=100965
+2015-11-08T07:44:45.063976+00:00 heroku[router]: at=info method=GET path="/" host=nextep.herokuapp.com request_id=a7229d48-0547-4e66-95a8-0872f3f807ba fwd="116.87.35.32" dyno=web.1 connect=0ms service=3ms status=200 bytes=14752
+2015-11-08T07:44:46.013979+00:00 heroku[router]: at=info method=GET path="/js/main-min.js" host=nextep.herokuapp.com request_id=39072c53-2ec7-464e-9b31-6a5fc3993afe fwd="116.87.35.32" dyno=web.1 connect=0ms service=7ms status=200 bytes=59507
+2015-11-08T07:44:46.016406+00:00 heroku[router]: at=info method=GET path="/js/socketio.js" host=nextep.herokuapp.com request_id=6dc91ce2-8c4e-4dd9-aa03-570dce71ba77 fwd="116.87.35.32" dyno=web.1 connect=0ms service=6ms status=200 bytes=44027
+2015-11-08T07:44:47.216555+00:00 heroku[router]: at=info method=GET path="/socket.io/1/?t=1446968687074" host=nextep.herokuapp.com request_id=293a6ddb-e8b2-4614-842e-9ecd0349389e fwd="116.87.35.32" dyno=web.1 connect=1ms service=1ms status=200 bytes=343
+2015-11-08T07:44:48.496245+00:00 heroku[router]: sock=client at=warning code=H27 desc="Client Request Interrupted" method=GET path="/asset/lobby_long.mp3" host=nextep.herokuapp.com request_id=ff1431d8-97a4-4aec-a012-5a3655fe03be fwd="116.87.35.32" dyno=web.1 connect=0ms service=267ms status=499 bytes=1448
+2015-11-08T07:44:48.498382+00:00 app[web.1]: Traceback (most recent call last):
+2015-11-08T07:44:48.498390+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/gevent/pywsgi.py", line 508, in handle_one_response
+2015-11-08T07:44:48.498986+00:00 app[web.1]:     self.run_application()
+2015-11-08T07:44:48.498991+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/gevent/pywsgi.py", line 495, in run_application
+2015-11-08T07:44:48.498994+00:00 app[web.1]:     self.process_result()
+2015-11-08T07:44:48.499010+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/gevent/pywsgi.py", line 486, in process_result
+2015-11-08T07:44:48.499030+00:00 app[web.1]:     self.write(data)
+2015-11-08T07:44:48.499058+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/gevent/pywsgi.py", line 376, in write
+2015-11-08T07:44:48.499092+00:00 app[web.1]:     self._write(data)
+2015-11-08T07:44:48.499093+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/gevent/pywsgi.py", line 369, in _write
+2015-11-08T07:44:48.499094+00:00 app[web.1]:     self._sendall(data)
+2015-11-08T07:44:48.499096+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/gevent/pywsgi.py", line 355, in _sendall
+2015-11-08T07:44:48.499115+00:00 app[web.1]:     self.socket.sendall(data)
+2015-11-08T07:44:48.499116+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/gevent/socket.py", line 460, in sendall
+2015-11-08T07:44:48.499141+00:00 app[web.1]:     data_sent += self.send(_get_memory(data, data_sent), flags)
+2015-11-08T07:44:48.499142+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/gevent/socket.py", line 445, in send
+2015-11-08T07:44:48.499163+00:00 app[web.1]:     return sock.send(data, flags)
+2015-11-08T07:44:48.499183+00:00 app[web.1]: error: [Errno 104] Connection reset by peer
+2015-11-08T07:44:48.501957+00:00 app[web.1]: {'GATEWAY_INTERFACE': 'CGI/1.1',
+2015-11-08T07:44:48.501959+00:00 app[web.1]:  'HTTP_ACCEPT': '*/*',
+2015-11-08T07:44:48.501960+00:00 app[web.1]:  'HTTP_ACCEPT_ENCODING': 'identity',
+2015-11-08T07:44:48.501961+00:00 app[web.1]:  'HTTP_ACCEPT_LANGUAGE': 'en-sg',
+2015-11-08T07:44:48.501961+00:00 app[web.1]:  'HTTP_CONNECTION': 'close',
+2015-11-08T07:44:48.501962+00:00 app[web.1]:  'HTTP_CONNECT_TIME': '0',
+2015-11-08T07:44:48.501964+00:00 app[web.1]:  'HTTP_COOKIE': 'heroku-session-affinity=ACaDaANoA2IAAAWnYgAAchBiAABw02EBbAAAAAFtAAAABXdlYi4xasFDYYTo9R2T3hQ/WWuxiUZgO8zF',
+2015-11-08T07:44:48.501964+00:00 app[web.1]:  'HTTP_HOST': 'nextep.herokuapp.com',
+2015-11-08T07:44:48.501965+00:00 app[web.1]:  'HTTP_RANGE': 'bytes=0-1',
+2015-11-08T07:44:48.501966+00:00 app[web.1]:  'HTTP_REFERER': 'http://nextep.herokuapp.com/',
+2015-11-08T07:44:48.501967+00:00 app[web.1]:  'HTTP_TOTAL_ROUTE_TIME': '0',
+2015-11-08T07:44:48.501968+00:00 app[web.1]:  'HTTP_USER_AGENT': 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13B143 [FBAN/FBIOS;FBAV/43.0.0.26.314;FBBV/17000587;FBDV/iPhone7,2;FBMD/iPhone;FBSN/iPhone OS;FBSV/9.1;FBSS/2; FBCR/StarHub;FBID/phone;FBLC/en_US;FBOP/5]',
+2015-11-08T07:44:48.501969+00:00 app[web.1]:  'HTTP_VIA': '1.1 vegur',
+2015-11-08T07:44:48.501970+00:00 app[web.1]:  'HTTP_X_FORWARDED_FOR': '116.87.35.32',
+2015-11-08T07:44:48.501970+00:00 app[web.1]:  'HTTP_X_FORWARDED_PORT': '80',
+2015-11-08T07:44:48.501971+00:00 app[web.1]:  'HTTP_X_FORWARDED_PROTO': 'http',
+2015-11-08T07:44:48.501972+00:00 app[web.1]:  'HTTP_X_PLAYBACK_SESSION_ID': 'EBAFCA42-7514-477D-8BBC-12E463B01520',
+2015-11-08T07:44:48.501972+00:00 app[web.1]:  'HTTP_X_REQUEST_ID': 'ff1431d8-97a4-4aec-a012-5a3655fe03be',
+2015-11-08T07:44:48.501973+00:00 app[web.1]:  'HTTP_X_REQUEST_START': '1446968688228',
+2015-11-08T07:44:48.501974+00:00 app[web.1]:  'PATH_INFO': '/asset/lobby_long.mp3',
+2015-11-08T07:44:48.501974+00:00 app[web.1]:  'QUERY_STRING': '',
+2015-11-08T07:44:48.501975+00:00 app[web.1]:  'RAW_URI': '/asset/lobby_long.mp3',
+2015-11-08T07:44:48.501976+00:00 app[web.1]:  'REMOTE_ADDR': '10.102.161.24',
+2015-11-08T07:44:48.501976+00:00 app[web.1]:  'REMOTE_PORT': '44241',
+2015-11-08T07:44:48.501977+00:00 app[web.1]:  'REQUEST_METHOD': 'GET',
+2015-11-08T07:44:48.501978+00:00 app[web.1]:  'SCRIPT_NAME': '',
+2015-11-08T07:44:48.501979+00:00 app[web.1]:  'SERVER_NAME': '9ec1676e-4d5b-4830-837e-7f8121285af0.prvt.dyno.rt.heroku.com',
+2015-11-08T07:44:48.501980+00:00 app[web.1]:  'SERVER_PORT': '28833',
+2015-11-08T07:44:48.501980+00:00 app[web.1]:  'SERVER_PROTOCOL': 'HTTP/1.1',
+2015-11-08T07:44:48.501981+00:00 app[web.1]:  'SERVER_SOFTWARE': 'gevent/1.0 Python/2.7',
+2015-11-08T07:44:48.501981+00:00 app[web.1]:  'gunicorn.sock': <socket at 0x7f43b5d92250 fileno=13 sock=172.17.38.70:28833>,
+2015-11-08T07:44:48.501982+00:00 app[web.1]:  'wsgi.errors': <open file '<stderr>', mode 'w' at 0x7f43c130b1e0>,
+2015-11-08T07:44:48.501983+00:00 app[web.1]:  'wsgi.input': <gevent.pywsgi.Input object at 0x7f43b5d49e90>,
+2015-11-08T07:44:48.501983+00:00 app[web.1]:  'wsgi.multiprocess': False,
+2015-11-08T07:44:48.501984+00:00 app[web.1]:  'wsgi.multithread': False,
+2015-11-08T07:44:48.501985+00:00 app[web.1]:  'wsgi.run_once': False,
+2015-11-08T07:44:48.501986+00:00 app[web.1]:  'wsgi.url_scheme': 'http',
+2015-11-08T07:44:48.501986+00:00 app[web.1]:  'wsgi.version': (1, 0)} failed with error
+2015-11-08T07:44:48.501987+00:00 app[web.1]: 
+2015-11-08T07:46:23.965322+00:00 app[web.1]: [ message  ->  Dsa ]
+2015-11-08T07:46:24.002478+00:00 app[web.1]: [ start_game_failure  ->  Dsa ]
+2015-11-08T07:46:34.328865+00:00 heroku[router]: at=info method=GET path="/socket.io/1/websocket/402582588455" host=nextep.herokuapp.com request_id=3114c871-ed4c-45b2-943a-45d22abcc2f2 fwd="116.87.35.32" dyno=web.1 connect=0ms service=106095ms status=101 bytes=763
+2015-11-08T07:48:00.305746+00:00 heroku[router]: at=info method=GET path="/" host=nextep.herokuapp.com request_id=672e78ab-b208-4d59-8087-c74177f44f49 fwd="175.159.97.185" dyno=web.1 connect=0ms service=3ms status=200 bytes=14752
+2015-11-08T07:48:01.789118+00:00 heroku[router]: at=info method=GET path="/js/socketio.js" host=nextep.herokuapp.com request_id=fdad1093-2388-4355-a607-cd1bbcdb9450 fwd="175.159.97.185" dyno=web.1 connect=1ms service=7ms status=200 bytes=44027
+2015-11-08T07:48:01.937362+00:00 heroku[router]: at=info method=GET path="/js/main-min.js" host=nextep.herokuapp.com request_id=e34575f0-777d-441b-a833-5193a7f9771a fwd="175.159.97.185" dyno=web.1 connect=1ms service=9ms status=200 bytes=59507
+2015-11-08T07:48:03.319541+00:00 heroku[router]: at=info method=GET path="/socket.io/1/?t=1446968888410" host=nextep.herokuapp.com request_id=e59b61d1-e6f0-4a3f-a56d-1611f9bb58ea fwd="175.159.97.185" dyno=web.1 connect=0ms service=1ms status=200 bytes=343
+2015-11-08T07:48:05.959149+00:00 heroku[router]: at=info method=GET path="/asset/lobby_long.mp3" host=nextep.herokuapp.com request_id=21e82388-e50b-41e6-a23d-edeb0f122d5b fwd="175.159.97.185" dyno=web.1 connect=0ms service=310ms status=200 bytes=3081343
+2015-11-08T07:48:07.408534+00:00 heroku[router]: at=info method=GET path="/favicon.ico" host=nextep.herokuapp.com request_id=ea0b0a65-1a9f-4d0d-87bd-294ae0c7083a fwd="175.159.97.185" dyno=web.1 connect=1ms service=1ms status=404 bytes=96
+2015-11-08T07:48:32.730085+00:00 heroku[router]: at=info method=GET path="/" host=nextep.herokuapp.com request_id=8daa605f-c33c-416c-a6e7-6d3e9667ec4d fwd="128.61.127.26" dyno=web.1 connect=0ms service=2ms status=200 bytes=14752
+2015-11-08T07:48:32.817858+00:00 heroku[router]: at=info method=GET path="/js/socketio.js" host=nextep.herokuapp.com request_id=32e35216-7241-45bd-b0c1-53e1b5b3f489 fwd="128.61.127.26" dyno=web.1 connect=0ms service=5ms status=200 bytes=44027
+2015-11-08T07:48:32.851727+00:00 heroku[router]: at=info method=GET path="/js/main-min.js" host=nextep.herokuapp.com request_id=18156971-3050-44a7-8998-67afb0796ee1 fwd="128.61.127.26" dyno=web.1 connect=0ms service=7ms status=200 bytes=59507
+2015-11-08T07:48:33.002162+00:00 heroku[router]: at=info method=GET path="/socket.io/1/?t=1446968913075" host=nextep.herokuapp.com request_id=d701b7bf-1089-43f7-a815-ecac9e4a453e fwd="128.61.127.26" dyno=web.1 connect=0ms service=1ms status=200 bytes=343
+2015-11-08T07:48:33.866751+00:00 heroku[router]: sock=client at=warning code=H27 desc="Client Request Interrupted" method=GET path="/asset/lobby_long.mp3" host=nextep.herokuapp.com request_id=3d8104a3-d96a-4bf0-ba94-733ef4fdcc1c fwd="128.61.127.26" dyno=web.1 connect=0ms service=25ms status=499 bytes=2896
+2015-11-08T07:48:33.869616+00:00 app[web.1]: Traceback (most recent call last):
+2015-11-08T07:48:33.869656+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/gevent/pywsgi.py", line 508, in handle_one_response
+2015-11-08T07:48:33.869660+00:00 app[web.1]:     self.run_application()
+2015-11-08T07:48:33.869661+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/gevent/pywsgi.py", line 495, in run_application
+2015-11-08T07:48:33.869685+00:00 app[web.1]:     self.process_result()
+2015-11-08T07:48:33.869687+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/gevent/pywsgi.py", line 486, in process_result
+2015-11-08T07:48:33.869706+00:00 app[web.1]:     self.write(data)
+2015-11-08T07:48:33.869708+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/gevent/pywsgi.py", line 376, in write
+2015-11-08T07:48:33.869726+00:00 app[web.1]:     self._write(data)
+2015-11-08T07:48:33.869746+00:00 app[web.1]:     self._sendall(data)
+2015-11-08T07:48:33.869727+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/gevent/pywsgi.py", line 369, in _write
+2015-11-08T07:48:33.869765+00:00 app[web.1]:     self.socket.sendall(data)
+2015-11-08T07:48:33.869748+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/gevent/pywsgi.py", line 355, in _sendall
+2015-11-08T07:48:33.869766+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/gevent/socket.py", line 460, in sendall
+2015-11-08T07:48:33.869786+00:00 app[web.1]:     data_sent += self.send(_get_memory(data, data_sent), flags)
+2015-11-08T07:48:33.869801+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/gevent/socket.py", line 445, in send
+2015-11-08T07:48:33.869827+00:00 app[web.1]:     return sock.send(data, flags)
+2015-11-08T07:48:33.869849+00:00 app[web.1]: error: [Errno 104] Connection reset by peer
+2015-11-08T07:48:33.872090+00:00 app[web.1]: {'GATEWAY_INTERFACE': 'CGI/1.1',
+2015-11-08T07:48:33.872
+091+00:00 app[web.1]:  'HTTP_ACCEPT': '*/*',
+2015-11-08T07:48:33.872092+00:00 app[web.1]:  'HTTP_ACCEPT_ENCODING': 'identity',
+2015-11-08T07:48:33.872093+00:00 app[web.1]:  'HTTP_ACCEPT_LANGUAGE': 'fr-fr',
+2015-11-08T07:48:33.872093+00:00 app[web.1]:  'HTTP_CONNECTION': 'close',
+2015-11-08T07:48:33.872094+00:00 app[web.1]:  'HTTP_CONNECT_TIME': '0',
+2015-11-08T07:48:33.872095+00:00 app[web.1]:  'HTTP_COOKIE': 'heroku-session-affinity=ACaDaANoA2IAAAWnYgAAcvNiAABxEmEBbAAAAAFtAAAABXdlYi4xakCgkOvPInC5dznx6IiqDp5hYm5E',
+2015-11-08T07:48:33.872096+00:00 app[web.1]:  'HTTP_HOST': 'nextep.herokuapp.com',
+2015-11-08T07:48:33.872096+00:00 app[web.1]:  'HTTP_RANGE': 'bytes=0-1',
+2015-11-08T07:48:33.872097+00:00 app[web.1]:  'HTTP_REFERER': 'http://nextep.herokuapp.com/',
+2015-11-08T07:48:33.872097+00:00 app[web.1]:  'HTTP_TOTAL_ROUTE_TIME': '0',
+2015-11-08T07:48:33.872099+00:00 app[web.1]:  'HTTP_USER_AGENT': 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_0_2 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13A452 [FBAN/FBIOS;FBAV/31.0.0.44.261;FBBV/10598108;FBDV/iPhone7,2;FBMD/iPhone;FBSN/iPhone OS;FBSV/9.0.2;FBSS/2; FBCR/AT&T;FBID/phone;FBLC/fr_FR;FBOP/5]',
+2015-11-08T07:48:33.872099+00:00 app[web.1]:  'HTTP_VIA': '1.1 vegur',
+2015-11-08T07:48:33.872100+00:00 app[web.1]:  'HTTP_X_FORWARDED_FOR': '128.61.127.26',
+2015-11-08T07:48:33.872100+00:00 app[web.1]:  'HTTP_X_FORWARDED_PORT': '80',
+2015-11-08T07:48:33.872101+00:00 app[web.1]:  'HTTP_X_FORWARDED_PROTO': 'http',
+2015-11-08T07:48:33.872101+00:00 app[web.1]:  'HTTP_X_PLAYBACK_SESSION_ID': 'D9C5D8F7-798B-4CF1-84C9-6FBD71F3D173',
+2015-11-08T07:48:33.872102+00:00 app[web.1]:  'HTTP_X_REQUEST_ID': '3d8104a3-d96a-4bf0-ba94-733ef4fdcc1c',
+2015-11-08T07:48:33.872103+00:00 app[web.1]:  'HTTP_X_REQUEST_START': '1446968913840',
+2015-11-08T07:48:33.872103+00:00 app[web.1]:  'PATH_INFO': '/asset/lobby_long.mp3',
+2015-11-08T07:48:33.872104+00:00 app[web.1]:  'QUERY_STRING': '',
+2015-11-08T07:48:33.872104+00:00 app[web.1]:  'RAW_URI': '/asset/lobby_long.mp3',
+2015-11-08T07:48:33.872105+00:00 app[web.1]:  'REMOTE_ADDR': '10.186.150.28',
+2015-11-08T07:48:33.872105+00:00 app[web.1]:  'REMOTE_PORT': '26208',
+2015-11-08T07:48:33.872106+00:00 app[web.1]:  'SCRIPT_NAME': '',
+2015-11-08T07:48:33.872106+00:00 app[web.1]:  'SERVER_NAME': '9ec1676e-4d5b-4830-837e-7f8121285af0.prvt.dyno.rt.heroku.com',
+2015-11-08T07:48:33.872105+00:00 app[web.1]:  'REQUEST_METHOD': 'GET',
+2015-11-08T07:48:33.872107+00:00 app[web.1]:  'SERVER_PORT': '28833',
+2015-11-08T07:48:33.872107+00:00 app[web.1]:  'SERVER_PROTOCOL': 'HTTP/1.1',
+2015-11-08T07:48:33.872108+00:00 app[web.1]:  'SERVER_SOFTWARE': 'gevent/1.0 Python/2.7',
+2015-11-08T07:48:33.872109+00:00 app[web.1]:  'gunicorn.sock': <socket at 0x7f43b5d4bed0 fileno=14 sock=172.17.38.70:28833>,
+2015-11-08T07:48:33.872109+00:00 app[web.1]:  'wsgi.input': <gevent.pywsgi.Input object at 0x7f43b5d4d610>,
+2015-11-08T07:48:33.872109+00:00 app[web.1]:  'wsgi.errors': <open file '<stderr>', mode 'w' at 0x7f43c130b1e0>,
+2015-11-08T07:48:33.872110+00:00 app[web.1]:  'wsgi.multiprocess': False,
+2015-11-08T07:48:33.872110+00:00 app[web.1]:  'wsgi.multithread': False,
+2015-11-08T07:48:33.872110+00:00 app[web.1]:  'wsgi.run_once': False,
+2015-11-08T07:48:33.872111+00:00 app[web.1]:  'wsgi.url_scheme': 'http',
+2015-11-08T07:48:33.872112+00:00 app[web.1]: 
+2015-11-08T07:48:33.872111+00:00 app[web.1]:  'wsgi.version': (1, 0)} failed with error
+2015-11-08T07:48:34.485689+00:00 app[web.1]: [ message  ->  AAA ]
+2015-11-08T07:48:34.488184+00:00 app[web.1]: [ start_game_failure  ->  AAA ]
+2015-11-08T07:48:52.975875+00:00 heroku[router]: at=info method=GET path="/socket.io/1/websocket/945563231683" host=nextep.herokuapp.com request_id=2f1e0e02-bc7a-45e3-af6a-b11a9c107c95 fwd="175.159.97.185" dyno=web.1 connect=0ms service=49210ms status=101 bytes=794
+2015-11-08T07:49:02.278970+00:00 app[web.1]: [ message  ->  A ]
+2015-11-08T07:49:02.289162+00:00 app[web.1]: [ start_game_failure  ->  A ]
+2015-11-08T07:49:12.750463+00:00 heroku[router]: at=info method=GET path="/socket.io/1/websocket/662341059776" host=nextep.herokuapp.com request_id=f33c89aa-6ea3-4537-9a5a-cd3bf540b1bb fwd="128.61.127.26" dyno=web.1 connect=0ms service=38819ms status=101 bytes=789
+2015-11-08T07:52:30.120355+00:00 heroku[router]: at=info method=GET path="/" host=nextep.herokuapp.com request_id=58335c80-c6ef-43ac-94ac-48dc04c86b52 fwd="130.132.173.252" dyno=web.1 connect=0ms service=6ms status=200 bytes=14752
+2015-11-08T07:52:30.322697+00:00 heroku[router]: at=info method=GET path="/js/main-min.js" host=nextep.herokuapp.com request_id=ab57a167-b148-4f8a-8679-e8a44473c03a fwd="130.132.173.252" dyno=web.1 connect=10ms service=17ms status=200 bytes=59507
+2015-11-08T07:52:30.286001+00:00 heroku[router]: at=info method=GET path="/js/socketio.js" host=nextep.herokuapp.com request_id=ea595862-314e-4408-a9ba-1f5fbabf49ae fwd="130.132.173.252" dyno=web.1 connect=0ms service=5ms status=200 bytes=44027
+2015-11-08T07:52:30.372921+00:00 heroku[router]: at=info method=GET path="/socket.io/1/?t=1446969150250" host=nextep.herokuapp.com request_id=4c6a5bf2-af55-4bee-88c2-7b30d2f919b3 fwd="130.132.173.252" dyno=web.1 connect=0ms service=2ms status=200 bytes=343
+2015-11-08T07:52:30.495040+00:00 heroku[router]: at=info method=GET path="/favicon.ico" host=nextep.herokuapp.com request_id=8eba26ca-a1f3-4587-9bf9-fd6e1e15f947 fwd="130.132.173.252" dyno=web.1 connect=1ms service=1ms status=404 bytes=96
+2015-11-08T07:52:34.741881+00:00 heroku[router]: sock=client at=warning code=H27 desc="Client Request Interrupted" method=GET path="/asset/lobby_long.mp3" host=nextep.herokuapp.com request_id=d0906cf0-1469-4e08-a72d-ac57f8a6bd78 fwd="130.132.173.252" dyno=web.1 connect=0ms service=43ms status=499 bytes=323743
+2015-11-08T07:52:34.744814+00:00 app[web.1]: Traceback (most recent call last):
+2015-11-08T07:52:34.744824+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/gevent/pywsgi.py", line 508, in handle_one_response
+2015-11-08T07:52:34.744867+00:00 app[web.1]:     self.run_application()
+2015-11-08T07:52:34.744870+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/gevent/pywsgi.py", line 495, in run_application
+2015-11-08T07:52:34.744903+00:00 app[web.1]:     self.process_result()
+2015-11-08T07:52:34.744906+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/gevent/pywsgi.py", line 486, in process_result
+2015-11-08T07:52:34.744938+00:00 app[web.1]:     self.write(data)
+2015-11-08T07:52:34.744942+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/gevent/pywsgi.py", line 376, in write
+2015-11-08T07:52:34.744971+00:00 app[web.1]:     self._write(data)
+2015-11-08T07:52:34.744974+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/gevent/pywsgi.py", line 369, in _write
+2015-11-08T07:52:34.745005+00:00 app[web.1]:     self._sendall(data)
+2015-11-08T07:52:34.745038+00:00 app[web.1]:     self.socket.sendall(data)
+2015-11-08T07:52:34.745008+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/gevent/pywsgi.py", line 355, in _sendall
+2015-11-08T07:52:34.745041+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/gevent/socket.py", line 460, in sendall
+2015-11-08T07:52:34.745106+00:00 app[web.1]:     return sock.send(data, flags)
+2015-11-08T07:52:34.745073+00:00 app[web.1]:     data_sent += self.send(_get_memory(data, data_sent), flags)
+2015-11-08T07:52:34.745076+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/gevent/socket.py", line 445, in send
+2015-11-08T07:52:34.745134+00:00 app[web.1]: error: [Errno 104] Connection reset by peer
+2015-11-08T07:52:34.747865+00:00 app[web.1]:  'HTTP_ACCEPT': '*/*',
+2015-11-08T07:52:34.747862+00:00 app[web.1]: {'GATEWAY_INTERFACE': 'CGI/1.1',
+2015-11-08T07:52:34.747866+00:00 app[web.1]:  'HTTP_ACCEPT_ENCODING': 'identity',
+2015-11-08T07:52:34.747867+00:00 app[web.1]:  'HTTP_CONNECTION': 'close',
+2015-11-08T07:52:34.747866+00:00 app[web.1]:  'HTTP_ACCEPT_LANGUAGE': 'en-us',
+2015-11-08T07:52:34.747868+00:00 app[web.1]:  'HTTP_CONNECT_TIME': '0',
+2015-11-08T07:52:34.747869+00:00 app[web.1]:  'HTTP_COOKIE': 'heroku-session-affinity=ACaDaANoA2IAAAWnYgAAc+FiAABRFWEBbAAAAAFtAAAABXdlYi4xajriCOMude2OWxLB8CXkJEPdjkey',
+2015-11-08T07:52:34.747870+00:00 app[web.1]:  'HTTP_RANGE': 'bytes=0-1',
+2015-11-08T07:52:34.747870+00:00 app[web.1]:  'HTTP_HOST': 'nextep.herokuapp.com',
+2015-11-08T07:52:34.747872+00:00 app[web.1]:  'HTTP_TOTAL_ROUTE_TIME': '0',
+2015-11-08T07:52:34.747874+00:00 app[web.1]:  'HTTP_VIA': '1.1 vegur',
+2015-11-08T07:52:34.747871+00:00 app[web.1]:  'HTTP_REFERER': 'http://nextep.herokuapp.com/',
+2015-11-08T07:52:34.747873+00:00 app[web.1]:  'HTTP_USER_AGENT': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/601.2.7 (KHTML, like Gecko) Version/9.0.1 Safari/601.2.7',
+2015-11-08T07:52:34.747874+00:00 app[web.1]:  'HTTP_X_FORWARDED_FOR': '130.132.173.252',
+2015-11-08T07:52:34.747876+00:00 app[web.1]:  'HTTP_X_FORWARDED_PROTO': 'http',
+2015-11-08T07:52:34.747877+00:00 app[web.1]:  'HTTP_X_REQUEST_ID': 'd0906cf0-1469-4e08-a72d-ac57f8a6bd78',
+2015-11-08T07:52:34.747875+00:00 app[web.1]:  'HTTP_X_FORWARDED_PORT': '80',
+2015-11-08T07:52:34.747878+00:00 app[web.1]:  'HTTP_X_REQUEST_START': '1446969154697',
+2015-11-08T07:52:34.747877+00:00 app[web.1]:  'HTTP_X_PLAYBACK_SESSION_ID': 'F9DD9180-94D8-4D8A-8471-2FFC143DE34B',
+2015-11-08T07:52:34.747880+00:00 app[web.1]:  'RAW_URI': '/asset/lobby_long.mp3',
+2015-11-08T07:52:34.747879+00:00 app[web.1]:  'QUERY_STRING': '',
+2015-11-08T07:52:34.747878+00:00 app[web.1]:  'PATH_INFO': '/asset/lobby_long.mp3',
+2015-11-08T07:52:34.747880+00:00 app[web.1]:  'REMOTE_ADDR': '10.186.150.28',
+2015-11-08T07:52:34.747881+00:00 app[web.1]:  'REMOTE_PORT': '21090',
+2015-11-08T07:52:34.747882+00:00 app[web.1]:  'REQUEST_METHOD': 'GET',
+2015-11-08T07:52:34.747882+00:00 app[web.1]:  'SCRIPT_NAME': '',
+2015-11-08T07:52:34.747884+00:00 app[web.1]:  'SERVER_NAME': '9ec1676e-4d5b-4830-837e-7f8121285af0.prvt.dyno.rt.heroku.com',
+2015-11-08T07:52:34.747885+00:00 app[web.1]:  'SERVER_PROTOCOL': 'HTTP/1.1',
+2015-11-08T07:52:34.747884+00:00 app[web.1]:  'SERVER_PORT': '28833',
+2015-11-08T07:52:34.747885+00:00 app[web.1]:  'SERVER_SOFTWARE': 'gevent/1.0 Python/2.7',
+2015-11-08T07:52:34.747886+00:00 app[web.1]:  'gunicorn.sock': <socket at 0x7f43b5d51710 fileno=14 sock=172.17.38.70:28833>,
+2015-11-08T07:52:34.747887+00:00 app[web.1]:  'wsgi.errors': <open file '<stderr>', mode 'w' at 0x7f43c130b1e0>,
+2015-11-08T07:52:34.747887+00:00 app[web.1]:  'wsgi.input': <gevent.pywsgi.Input object at 0x7f43b5d51cd0>,
+2015-11-08T07:52:34.747888+00:00 app[web.1]:  'wsgi.multiprocess': False,
+2015-11-08T07:52:34.747889+00:00 app[web.1]:  'wsgi.multithread': False,
+2015-11-08T07:52:34.747889+00:00 app[web.1]:  'wsgi.run_once': False,
+2015-11-08T07:52:34.747890+00:00 app[web.1]:  'wsgi.url_scheme': 'http',
+2015-11-08T07:52:34.747891+00:00 app[web.1]: 
+2015-11-08T07:52:34.747890+00:00 app[web.1]:  'wsgi.version': (1, 0)} failed with error
+2015-11-08T07:52:35.109533+00:00 heroku[router]: at=info method=GET path="/asset/lobby_long.mp3" host=nextep.herokuapp.com request_id=f559bb26-bc7c-49bb-996e-fac35bbf425a fwd="130.132.173.252" dyno=web.1 connect=0ms service=300ms status=200 bytes=3081343
+2015-11-08T07:52:40.858160+00:00 heroku[router]: at=info method=GET path="/" host=nextep.herokuapp.com request_id=22865d60-cb14-4da0-8380-193ab4f19942 fwd="155.69.160.106" dyno=web.1 connect=0ms service=4ms status=200 bytes=14752
+2015-11-08T07:52:41.103327+00:00 heroku[router]: at=info method=GET path="/js/socketio.js" host=nextep.herokuapp.com request_id=bffabee3-c601-4ee9-8964-901078e2cf17 fwd="155.69.160.106" dyno=web.1 connect=0ms service=5ms status=200 bytes=44027
+2015-11-08T07:52:41.320758+00:00 heroku[router]: at=info method=GET path="/js/main-min.js" host=nextep.herokuapp.com request_id=5b80816c-a804-4e01-a9b7-deb2785736ed fwd="155.69.160.106" dyno=web.1 connect=0ms service=7ms status=200 bytes=59507
+2015-11-08T07:52:42.050599+00:00 heroku[router]: at=info method=GET path="/socket.io/1/?t=1446969155391" host=nextep.herokuapp.com request_id=5cc0d586-5726-4445-a858-fddc5d7b7893 fwd="155.69.160.106" dyno=web.1 connect=1ms service=2ms status=200 bytes=342
+2015-11-08T07:52:44.632758+00:00 heroku[router]: at=info method=GET path="/asset/lobby_long.mp3" host=nextep.herokuapp.com request_id=48949544-7db8-444f-aa4c-94db05992460 fwd="155.69.160.106" dyno=web.1 connect=0ms service=308ms status=200 bytes=3081343
+2015-11-08T07:52:45.276694+00:00 heroku[router]: at=info method=GET path="/favicon.ico" host=nextep.herokuapp.com request_id=ccc7053a-bc72-4734-ba04-8b9670a5b72f fwd="155.69.160.106" dyno=web.1 connect=3ms service=2ms status=404 bytes=96
+2015-11-08T07:53:03.202400+00:00 app[web.1]: [ message  ->  aaa ]
+2015-11-08T07:53:03.211013+00:00 app[web.1]: [ start_game_failure  ->  aaa ]
+2015-11-08T07:53:05.757216+00:00 app[web.1]: [ entered_room  ->  asdf ]
+2015-11-08T07:53:05.757138+00:00 app[web.1]: [ entered_room  ->  aaa ]
+2015-11-08T07:53:07.946730+00:00 app[web.1]: [ message  ->  aaa ]
+2015-11-08T07:53:07.946825+00:00 app[web.1]: [ message  ->  asdf ]
+2015-11-08T07:53:08.188099+00:00 app[web.1]: [ turn  ->  aaa ]
+2015-11-08T07:53:08.187700+00:00 app[web.1]: [ initial_values  ->  aaa ]
+2015-11-08T07:53:08.187923+00:00 app[web.1]: [ initial_values  ->  asdf ]
+2015-11-08T07:53:08.188204+00:00 app[web.1]: [ turn  ->  asdf ]
+2015-11-08T07:53:11.705818+00:00 app[web.1]: [ snapshot  ->  aaa ]
+2015-11-08T07:53:11.706109+00:00 app[web.1]: [ snapshot  ->  asdf ]
+2015-11-08T07:53:12.087849+00:00 app[web.1]: [ snapshot  ->  aaa ]
+2015-11-08T07:53:12.087974+00:00 app[web.1]: [ snapshot  ->  asdf ]
+2015-11-08T07:53:13.445738+00:00 app[web.1]: [ snapshot  ->  aaa ]
+2015-11-08T07:53:13.446222+00:00 app[web.1]: [ snapshot  ->  asdf ]
+2015-11-08T07:53:13.790985+00:00 app[web.1]: [ snapshot  ->  asdf ]
+2015-11-08T07:53:13.790771+00:00 app[web.1]: [ snapshot  ->  aaa ]
+2015-11-08T07:53:15.183237+00:00 app[web.1]: [ snapshot  ->  aaa ]
+2015-11-08T07:53:15.183327+00:00 app[web.1]: [ snapshot  ->  asdf ]
+2015-11-08T07:53:15.491035+00:00 app[web.1]: [ snapshot  ->  aaa ]
+2015-11-08T07:53:15.491118+00:00 app[web.1]: [ snapshot  ->  asdf ]
+2015-11-08T07:53:16.938963+00:00 app[web.1]: [ snapshot  ->  aaa ]
+2015-11-08T07:53:16.939041+00:00 app[web.1]: [ snapshot  ->  asdf ]
+2015-11-08T07:53:17.198586+00:00 app[web.1]: [ snapshot  ->  aaa ]
+2015-11-08T07:53:17.198662+00:00 app[web.1]: [ snapshot  ->  asdf ]
+2015-11-08T07:53:18.659385+00:00 app[web.1]: [ snapshot  ->  aaa ]
+2015-11-08T07:53:18.659476+00:00 app[web.1]: [ snapshot  ->  asdf ]
+2015-11-08T07:53:18.898067+00:00 app[web.1]: [ snapshot  ->  aaa ]
+2015-11-08T07:53:18.898201+00:00 app[web.1]: [ snapshot  ->  asdf ]
+2015-11-08T07:53:19.020007+00:00 app[web.1]: [ player_shoot  ->  aaa ]
+2015-11-08T07:53:19.020102+00:00 app[web.1]: [ player_shoot  ->  asdf ]
+2015-11-08T07:53:20.735321+00:00 app[web.1]: [ snapshot  ->  aaa ]
+2015-11-08T07:53:20.735447+00:00 app[web.1]: [ snapshot  ->  asdf ]
+2015-11-08T07:53:22.005938+00:00 app[web.1]: [ delay_stack  ->  aaa ]
+2015-11-08T07:53:22.005990+00:00 app[web.1]: [ delay_stack  ->  asdf ]
+2015-11-08T07:53:22.006040+00:00 app[web.1]: [ force_update  ->  aaa ]
+2015-11-08T07:53:22.006161+00:00 app[web.1]: [ force_update  ->  asdf ]
+2015-11-08T07:53:22.006267+00:00 app[web.1]: [ turn  ->  asdf ]
+2015-11-08T07:53:22.006226+00:00 app[web.1]: [ turn  ->  aaa ]
+2015-11-08T07:53:22.435845+00:00 app[web.1]: [ snapshot  ->  aaa ]
+2015-11-08T07:53:22.436042+00:00 app[web.1]: [ snapshot  ->  asdf ]
+2015-11-08T07:53:24.136991+00:00 app[web.1]: [ snapshot  ->  aaa ]
+2015-11-08T07:53:24.137165+00:00 app[web.1]: [ snapshot  ->  asdf ]
+2015-11-08T07:53:24.261352+00:00 app[web.1]: [ snapshot  ->  aaa ]
+2015-11-08T07:53:24.261596+00:00 app[web.1]: [ snapshot  ->  asdf ]
+2015-11-08T07:53:25.554291+00:00 app[web.1]: [ player_use_item  ->  aaa ]
+2015-11-08T07:53:25.554399+00:00 app[web.1]: [ player_use_item  ->  asdf ]
+2015-11-08T07:53:25.843435+0
+0:00 app[web.1]: [ snapshot  ->  aaa ]
+2015-11-08T07:53:25.843531+00:00 app[web.1]: [ snapshot  ->  asdf ]
+2015-11-08T07:53:26.012303+00:00 app[web.1]: [ snapshot  ->  aaa ]
+2015-11-08T07:53:26.012401+00:00 app[web.1]: [ snapshot  ->  asdf ]
+2015-11-08T07:53:27.332144+00:00 app[web.1]: [ player_shoot  ->  aaa ]
+2015-11-08T07:53:27.332278+00:00 app[web.1]: [ player_shoot  ->  asdf ]
+2015-11-08T07:53:27.761784+00:00 app[web.1]: [ snapshot  ->  asdf ]
+2015-11-08T07:53:27.761656+00:00 app[web.1]: [ snapshot  ->  aaa ]
+2015-11-08T07:53:29.492829+00:00 app[web.1]: [ snapshot  ->  aaa ]
+2015-11-08T07:53:29.492929+00:00 app[web.1]: [ snapshot  ->  asdf ]
+2015-11-08T07:53:30.355099+00:00 app[web.1]: [ delay_stack  ->  aaa ]
+2015-11-08T07:53:30.355186+00:00 app[web.1]: [ delay_stack  ->  asdf ]
+2015-11-08T07:53:30.355342+00:00 app[web.1]: [ force_update  ->  asdf ]
+2015-11-08T07:53:30.355256+00:00 app[web.1]: [ force_update  ->  aaa ]
+2015-11-08T07:53:30.355425+00:00 app[web.1]: [ turn  ->  aaa ]
+2015-11-08T07:53:30.355489+00:00 app[web.1]: [ turn  ->  asdf ]
+2015-11-08T07:53:31.227093+00:00 app[web.1]: [ snapshot  ->  aaa ]
+2015-11-08T07:53:31.227236+00:00 app[web.1]: [ snapshot  ->  asdf ]
+2015-11-08T07:53:32.471711+00:00 app[web.1]: [ snapshot  ->  aaa ]
+2015-11-08T07:53:32.471838+00:00 app[web.1]: [ snapshot  ->  asdf ]
+2015-11-08T07:53:32.951575+00:00 app[web.1]: [ snapshot  ->  aaa ]
+2015-11-08T07:53:32.951821+00:00 app[web.1]: [ snapshot  ->  asdf ]
+2015-11-08T07:53:34.178762+00:00 app[web.1]: [ snapshot  ->  aaa ]
+2015-11-08T07:53:34.179061+00:00 app[web.1]: [ snapshot  ->  asdf ]
+2015-11-08T07:53:34.649908+00:00 app[web.1]: [ snapshot  ->  aaa ]
+2015-11-08T07:53:34.650049+00:00 app[web.1]: [ snapshot  ->  asdf ]
+2015-11-08T07:53:35.880976+00:00 app[web.1]: [ snapshot  ->  aaa ]
+2015-11-08T07:53:35.881317+00:00 app[web.1]: [ snapshot  ->  asdf ]
+2015-11-08T07:53:36.380691+00:00 app[web.1]: [ snapshot  ->  aaa ]
+2015-11-08T07:53:36.380885+00:00 app[web.1]: [ snapshot  ->  asdf ]
+2015-11-08T07:53:37.602322+00:00 app[web.1]: [ snapshot  ->  aaa ]
+2015-11-08T07:53:37.602463+00:00 app[web.1]: [ snapshot  ->  asdf ]
+2015-11-08T07:53:38.091239+00:00 app[web.1]: [ snapshot  ->  aaa ]
+2015-11-08T07:53:38.091377+00:00 app[web.1]: [ snapshot  ->  asdf ]
+2015-11-08T07:53:39.299919+00:00 app[web.1]: [ snapshot  ->  aaa ]
+2015-11-08T07:53:39.300210+00:00 app[web.1]: [ snapshot  ->  asdf ]
+2015-11-08T07:53:39.816652+00:00 app[web.1]: [ snapshot  ->  aaa ]
+2015-11-08T07:53:39.816800+00:00 app[web.1]: [ snapshot  ->  asdf ]
+2015-11-08T07:53:41.000788+00:00 app[web.1]: [ snapshot  ->  aaa ]
+2015-11-08T07:53:41.000861+00:00 app[web.1]: [ snapshot  ->  asdf ]
+2015-11-08T07:53:41.523678+00:00 app[web.1]: [ snapshot  ->  aaa ]
+2015-11-08T07:53:41.523817+00:00 app[web.1]: [ snapshot  ->  asdf ]
+2015-11-08T07:53:42.699970+00:00 app[web.1]: [ snapshot  ->  aaa ]
+2015-11-08T07:53:42.700098+00:00 app[web.1]: [ snapshot  ->  asdf ]
+2015-11-08T07:53:43.237496+00:00 app[web.1]: [ snapshot  ->  aaa ]
+2015-11-08T07:53:43.237757+00:00 app[web.1]: [ snapshot  ->  asdf ]
+2015-11-08T07:53:44.400968+00:00 app[web.1]: [ snapshot  ->  aaa ]
+2015-11-08T07:53:44.401046+00:00 app[web.1]: [ snapshot  ->  asdf ]
+2015-11-08T07:53:44.964038+00:00 app[web.1]: [ player_use_item  ->  aaa ]
+2015-11-08T07:53:44.964106+00:00 app[web.1]: [ player_use_item  ->  asdf ]
+2015-11-08T07:53:44.974004+00:00 app[web.1]: [ snapshot  ->  aaa ]
+2015-11-08T07:53:44.974080+00:00 app[web.1]: [ snapshot  ->  asdf ]
+2015-11-08T07:53:46.100798+00:00 app[web.1]: [ snapshot  ->  aaa ]
+2015-11-08T07:53:46.100888+00:00 app[web.1]: [ snapshot  ->  asdf ]
+2015-11-08T07:53:46.687110+00:00 app[web.1]: [ snapshot  ->  aaa ]
+2015-11-08T07:53:46.687195+00:00 app[web.1]: [ snapshot  ->  asdf ]
+2015-11-08T07:53:47.516330+00:00 app[web.1]: [ player_shoot  ->  aaa ]
+2015-11-08T07:53:47.516415+00:00 app[web.1]: [ player_shoot  ->  asdf ]
+2015-11-08T07:53:47.803138+00:00 app[web.1]: [ snapshot  ->  asdf ]
+2015-11-08T07:53:47.803051+00:00 app[web.1]: [ snapshot  ->  aaa ]
+2015-11-08T07:53:49.526530+00:00 app[web.1]: [ snapshot  ->  asdf ]
+2015-11-08T07:53:49.526263+00:00 app[web.1]: [ snapshot  ->  aaa ]
+2015-11-08T07:53:51.261819+00:00 app[web.1]: [ snapshot  ->  aaa ]
+2015-11-08T07:53:51.261969+00:00 app[web.1]: [ snapshot  ->  asdf ]
+2015-11-08T07:53:51.656891+00:00 app[web.1]: [ delay_stack  ->  aaa ]
+2015-11-08T07:53:51.657069+00:00 app[web.1]: [ delay_stack  ->  asdf ]
+2015-11-08T07:53:51.657290+00:00 app[web.1]: [ force_update  ->  aaa ]
+2015-11-08T07:53:51.657780+00:00 app[web.1]: [ turn  ->  asdf ]
+2015-11-08T07:53:51.657465+00:00 app[web.1]: [ force_update  ->  asdf ]
+2015-11-08T07:53:51.657637+00:00 app[web.1]: [ turn  ->  aaa ]
+2015-11-08T07:53:52.783711+00:00 app[web.1]: [ snapshot  ->  aaa ]
+2015-11-08T07:53:52.783952+00:00 app[web.1]: [ snapshot  ->  asdf ]
+2015-11-08T07:53:52.964197+00:00 app[web.1]: [ snapshot  ->  aaa ]
+2015-11-08T07:53:52.964989+00:00 app[web.1]: [ snapshot  ->  asdf ]
+2015-11-08T07:53:54.528454+00:00 app[web.1]: [ snapshot  ->  aaa ]
+2015-11-08T07:53:54.528755+00:00 app[web.1]: [ snapshot  ->  asdf ]
+2015-11-08T07:53:54.665528+00:00 app[web.1]: [ snapshot  ->  aaa ]
+2015-11-08T07:53:54.665615+00:00 app[web.1]: [ snapshot  ->  asdf ]
+2015-11-08T07:53:56.294498+00:00 app[web.1]: [ snapshot  ->  aaa ]
+2015-11-08T07:53:56.294767+00:00 app[web.1]: [ snapshot  ->  asdf ]
+2015-11-08T07:53:56.374581+00:00 app[web.1]: [ snapshot  ->  aaa ]
+2015-11-08T07:53:56.374701+00:00 app[web.1]: [ snapshot  ->  asdf ]
+2015-11-08T07:53:58.030847+00:00 app[web.1]: [ snapshot  ->  aaa ]
+2015-11-08T07:53:58.031020+00:00 app[web.1]: [ snapshot  ->  asdf ]
+2015-11-08T07:53:58.077963+00:00 app[web.1]: [ snapshot  ->  aaa ]
+2015-11-08T07:53:58.078197+00:00 app[web.1]: [ snapshot  ->  asdf ]
+2015-11-08T07:53:58.775926+00:00 app[web.1]: [ player_shoot  ->  aaa ]
+2015-11-08T07:53:58.776147+00:00 app[web.1]: [ player_shoot  ->  asdf ]
+2015-11-08T07:53:59.747803+00:00 app[web.1]: [ snapshot  ->  aaa ]
+2015-11-08T07:53:59.747807+00:00 app[web.1]: [ snapshot  ->  asdf ]
+2015-11-08T07:54:00.982935+00:00 app[web.1]: [ delay_stack  ->  aaa ]
+2015-11-08T07:54:00.983033+00:00 app[web.1]: [ delay_stack  ->  asdf ]
+2015-11-08T07:54:00.983102+00:00 app[web.1]: [ force_update  ->  aaa ]
+2015-11-08T07:54:00.983186+00:00 app[web.1]: [ force_update  ->  asdf ]
+2015-11-08T07:54:00.983268+00:00 app[web.1]: [ turn  ->  aaa ]
+2015-11-08T07:54:00.983339+00:00 app[web.1]: [ turn  ->  asdf ]
+2015-11-08T07:54:01.481286+00:00 app[web.1]: [ snapshot  ->  aaa ]
+2015-11-08T07:54:01.481465+00:00 app[web.1]: [ snapshot  ->  asdf ]
+2015-11-08T07:54:02.707524+00:00 heroku[router]: sock=client at=warning code=H27 desc="Client Request Interrupted" method=GET path="/asset/lobby_long.mp3" host=nextep.herokuapp.com request_id=f0ee1b8d-c21f-4cdf-aade-a221b754a285 fwd="155.69.160.106" dyno=web.1 connect=1ms service=234ms status=499 bytes=13871
+2015-11-08T07:54:02.714924+00:00 app[web.1]: Traceback (most recent call last):
+2015-11-08T07:54:02.714936+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/gevent/pywsgi.py", line 508, in handle_one_response
+2015-11-08T07:54:02.715054+00:00 app[web.1]:     self.run_application()
+2015-11-08T07:54:02.715056+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/gevent/pywsgi.py", line 495, in run_application
+2015-11-08T07:54:02.715056+00:00 app[web.1]:     self.process_result()
+2015-11-08T07:54:02.715057+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/gevent/pywsgi.py", line 486, in process_result
+2015-11-08T07:54:02.715058+00:00 app[web.1]:     self.write(data)
+2015-11-08T07:54:02.715062+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/gevent/pywsgi.py", line 376, in write
+2015-11-08T07:54:02.715089+00:00 app[web.1]:     self._write(data)
+2015-11-08T07:54:02.715091+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/gevent/pywsgi.py", line 369, in _write
+2015-11-08T07:54:02.715127+00:00 app[web.1]:     self._sendall(data)
+2015-11-08T07:54:02.715130+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/gevent/pywsgi.py", line 355, in _sendall
+2015-11-08T07:54:02.715174+00:00 app[web.1]:     self.socket.sendall(data)
+2015-11-08T07:54:02.715178+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/gevent/socket.py", line 460, in sendall
+2015-11-08T07:54:02.715304+00:00 app[web.1]:     data_sent += self.send(_get_memory(data, data_sent), flags)
+2015-11-08T07:54:02.715305+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/gevent/socket.py", line 437, in send
+2015-11-08T07:54:02.715306+00:00 app[web.1]:     return sock.send(data, flags)
+2015-11-08T07:54:02.715307+00:00 app[web.1]: error: [Errno 32] Broken pipe
+2015-11-08T07:54:02.719095+00:00 app[web.1]: {'GATEWAY_INTERFACE': 'CGI/1.1',
+2015-11-08T07:54:02.719098+00:00 app[web.1]:  'HTTP_ACCEPT': '*/*',
+2015-11-08T07:54:02.719099+00:00 app[web.1]:  'HTTP_ACCEPT_ENCODING': 'identity;q=1, *;q=0',
+2015-11-08T07:54:02.719100+00:00 app[web.1]:  'HTTP_ACCEPT_LANGUAGE': 'en-US,en;q=0.8',
+2015-11-08T07:54:02.719100+00:00 app[web.1]:  'HTTP_CONNECTION': 'close',
+2015-11-08T07:54:02.719101+00:00 app[web.1]:  'HTTP_CONNECT_TIME': '1',
+2015-11-08T07:54:02.719103+00:00 app[web.1]:  'HTTP_COOKIE': 'heroku-session-affinity=ACaDaANoA2IAAAWnYgAAc+tiAAALy2EBbAAAAAFtAAAABXdlYi4xaq7Kpy9CDLLkibupUV5faKlKs7O3',
+2015-11-08T07:54:02.719104+00:00 app[web.1]:  'HTTP_HOST': 'nextep.herokuapp.com',
+2015-11-08T07:54:02.719105+00:00 app[web.1]:  'HTTP_RANGE': 'bytes=2048-3075219',
+2015-11-08T07:54:02.719105+00:00 app[web.1]:  'HTTP_REFERER': 'http://nextep.herokuapp.com/',
+2015-11-08T07:54:02.719106+00:00 app[web.1]:  'HTTP_TOTAL_ROUTE_TIME': '0',
+2015-11-08T07:54:02.719107+00:00 app[web.1]:  'HTTP_USER_AGENT': 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.80 Safari/537.36',
+2015-11-08T07:54:02.719108+00:00 app[web.1]:  'HTTP_VIA': '1.1 vegur',
+2015-11-08T07:54:02.719108+00:00 app[web.1]:  'HTTP_X_FORWARDED_FOR': '155.69.160.106',
+2015-11-08T07:54:02.719109+00:00 app[web.1]:  'HTTP_X_FORWARDED_PORT': '80',
+2015-11-08T07:54:02.719110+00:00 app[web.1]:  'HTTP_X_FORWARDED_PROTO': 'http',
+2015-11-08T07:54:02.719110+00:00 app[web.1]:  'HTTP_X_REQUEST_ID': 'f0ee1b8d-c21f-4cdf-aade-a221b754a285',
+2015-11-08T07:54:02.719111+00:00 app[web.1]:  'HTTP_X_REQUEST_START': '1446969242471',
+2015-11-08T07:54:02.719112+00:00 app[web.1]:  'PATH_INFO': '/asset/lobby_long.mp3',
+2015-11-08T07:54:02.719113+00:00 app[web.1]:  'QUERY_STRING': '',
+2015-11-08T07:54:02.719113+00:00 app[web.1]:  'RAW_URI': '/asset/lobby_long.mp3',
+2015-11-08T07:54:02.719114+00:00 app[web.1]:  'REMOTE_ADDR': '10.144.102.111',
+2015-11-08T07:54:02.719115+00:00 app[web.1]:  'REMOTE_PORT': '34519',
+2015-11-08T07:54:02.719115+00:00 app[web.1]:  'REQUEST_METHOD': 'GET',
+2015-11-08T07:54:02.719116+00:00 app[web.1]:  'SCRIPT_NAME': '',
+2015-11-08T07:54:02.719117+00:00 app[web.1]:  'SERVER_NAME': '9ec1676e-4d5b-4830-837e-7f8121285af0.prvt.dyno.rt.heroku.com',
+2015-11-08T07:54:02.719118+00:00 app[web.1]:  'SERVER_PORT': '28833',
+2015-11-08T07:54:02.719119+00:00 app[web.1]:  'SERVER_PROTOCOL': 'HTTP/1.1',
+2015-11-08T07:54:02.719119+00:00 app[web.1]:  'SERVER_SOFTWARE': 'gevent/1.0 Python/2.7',
+2015-11-08T07:54:02.719120+00:00 app[web.1]:  'gunicorn.sock': <socket at 0x7f43b5d517d0 fileno=15 sock=172.17.38.70:28833>,
+2015-11-08T07:54:02.719121+00:00 app[web.1]:  'wsgi.errors': <open file '<stderr>', mode 'w' at 0x7f43c130b1e0>,
+2015-11-08T07:54:02.719122+00:00 app[web.1]:  'wsgi.input': <gevent.pywsgi.Input object at 0x7f43b5d55790>,
+2015-11-08T07:54:02.719122+00:00 app[web.1]:  'wsgi.multiprocess': False,
+2015-11-08T07:54:02.719123+00:00 app[web.1]:  'wsgi.multithread': False,
+2015-11-08T07:54:02.719124+00:00 app[web.1]:  'wsgi.run_once': False,
+2015-11-08T07:54:02.719124+00:00 app[web.1]:  'wsgi.url_scheme': 'http',
+2015-11-08T07:54:02.719126+00:00 app[web.1]: 
+2015-11-08T07:54:02.719125+00:00 app[web.1]:  'wsgi.version': (1, 0)} failed with error
+2015-11-08T07:54:03.200773+00:00 app[web.1]: [ snapshot  ->  asdf ]
+2015-11-08T07:54:03.200638+00:00 app[web.1]: [ snapshot  ->  aaa ]
+2015-11-08T07:54:03.898884+00:00 app[web.1]: [ snapshot  ->  aaa ]
+2015-11-08T07:54:03.898991+00:00 app[web.1]: [ snapshot  ->  asdf ]
+2015-11-08T07:54:04.919176+00:00 app[web.1]: [ snapshot  ->  aaa ]
+2015-11-08T07:54:04.920355+00:00 app[web.1]: [ snapshot  ->  asdf ]
+2015-11-08T07:54:05.597179+00:00 app[web.1]: [ snapshot  ->  aaa ]
+2015-11-08T07:54:05.719976+00:00 app[web.1]: [ player_use_item  ->  aaa ]
+2015-11-08T07:54:05.720091+00:00 app[web.1]: [ player_use_item  ->  asdf ]
+2015-11-08T07:54:05.598192+00:00 app[web.1]: [ snapshot  ->  asdf ]
+2015-11-08T07:54:06.685367+00:00 app[web.1]: [ snapshot  ->  aaa ]
+2015-11-08T07:54:06.685487+00:00 app[web.1]: [ snapshot  ->  asdf ]
+2015-11-08T07:54:07.326467+00:00 app[web.1]: [ snapshot  ->  aaa ]
+2015-11-08T07:54:07.326588+00:00 app[web.1]: [ snapshot  ->  asdf ]
+2015-11-08T07:54:07.356906+00:00 app[web.1]: [ player_shoot  ->  aaa ]
+2015-11-08T07:54:07.357035+00:00 app[web.1]: [ player_shoot  ->  asdf ]
+2015-11-08T07:54:07.911099+00:00 app[web.1]: [ death  ->  aaa ]
+2015-11-08T07:54:07.911356+00:00 app[web.1]: [ death  ->  asdf ]
+2015-11-08T07:54:08.484704+00:00 app[web.1]: [ snapshot  ->  aaa ]
+2015-11-08T07:54:08.484961+00:00 app[web.1]: [ snapshot  ->  asdf ]
+2015-11-08T07:54:09.517018+00:00 app[web.1]: [ delay_stack  ->  aaa ]
+2015-11-08T07:54:09.517253+00:00 app[web.1]: [ delay_stack  ->  asdf ]
+2015-11-08T07:54:09.517444+00:00 app[web.1]: [ force_update  ->  aaa ]
+2015-11-08T07:54:09.517657+00:00 app[web.1]: [ force_update  ->  asdf ]
+2015-11-08T07:54:09.517904+00:00 app[web.1]: [ wind_change  ->  aaa ]
+2015-11-08T07:54:09.518065+00:00 app[web.1]: [ wind_change  ->  asdf ]
+2015-11-08T07:54:09.518276+00:00 app[web.1]: [ winner  ->  aaa ]
+2015-11-08T07:54:09.518466+00:00 app[web.1]: [ winner  ->  asdf ]
+2015-11-08T07:54:09.518663+00:00 app[web.1]: [ turn  ->  aaa ]
+2015-11-08T07:54:09.518821+00:00 app[web.1]: [ turn  ->  asdf ]
+2015-11-08T07:54:10.234466+00:00 app[web.1]: [ snapshot  ->  aaa ]
+2015-11-08T07:54:10.234705+00:00 app[web.1]: [ snapshot  ->  asdf ]
+2015-11-08T07:54:12.324164+00:00 app[web.1]: [ exit_room  ->  asdf ]
+2015-11-08T07:54:13.327826+00:00 heroku[router]: at=info method=GET path="/socket.io/1/websocket/98597687024" host=nextep.herokuapp.com request_id=592accbe-1321-498b-8d90-455ffe080c99 fwd="155.69.160.106" dyno=web.1 connect=0ms service=90795ms status=101 bytes=21049
+2015-11-08T07:54:18.665020+00:00 heroku[router]: at=info method=GET path="/socket.io/1/websocket/650281479609" host=nextep.herokuapp.com request_id=64f695a5-d324-4e1c-8a74-1bbcbe5d7d45 fwd="130.132.173.252" dyno=web.1 connect=0ms service=108177ms status=101 bytes=21134
+2015-11-08T08:09:17.239476+00:00 heroku[router]: at=info method=GET path="/" host=nextep.herokuapp.com request_id=2e1ec0b8-64da-44fd-a6e5-2c1cebb24991 fwd="155.69.160.106" dyno=web.1 connect=0ms service=5ms status=200 bytes=14752
+2015-11-08T08:09:17.700764+00:00 heroku[router]: at=info method=GET path="/js/main-min.js" host=nextep.herokuapp.com request_id=4f9cc3e1-d141-4451-babc-6f25541b2015 fwd="155.69.160.106" dyno=web.1 connect=0ms service=7ms status=200 bytes=59507
+2015-11-08T08:09:17.571184+00:00 heroku[router]: at=info method=GET path="/js/socketio.js" host=nextep.herokuapp.com request_id=e43878fd-be0b-4d8c-8134-fd96580ccfbc fwd="155.69.160.106" dyno=web.1 connect=2ms service=6ms status=200 bytes=44027
+2015-11-08T08:09:18.456622+00:00 heroku[router]: at=info method=GET path="/socket.io/1/?t=1446970155006" host=nextep.herokuapp.com request_id=763e97d6-33b8-421c-888b-0e82d4b51617 fwd="155.69.160.106" dyno=web.1 connect=1ms service=1ms status=200 bytes=343
+2015-11-08T08:09:22.016699+00:00 heroku[router]: at=info method=GET path="/favicon.ico" host=nextep.herokuapp.com request_id=b608b41c-ef78-472c-bc1f-7a84c21b16bb fwd="155.69.160.106" dyno=web.1 connect=0ms service=5ms status=404 bytes=96
+2015-11-08T08:09:22.593484+00:00
+ heroku[router]: at=info method=GET path="/asset/lobby_long.mp3" host=nextep.herokuapp.com request_id=96d71744-3a2f-464b-b115-54f95baad98a fwd="155.69.160.106" dyno=web.1 connect=0ms service=311ms status=200 bytes=3081343
+2015-11-08T08:09:33.112032+00:00 heroku[router]: at=info method=GET path="/socket.io/1/websocket/939607384764" host=nextep.herokuapp.com request_id=002d01bb-0622-48f7-81c7-4a0098388363 fwd="155.69.160.106" dyno=web.1 connect=0ms service=14158ms status=101 bytes=195
+2015-11-08T08:22:31.366731+00:00 heroku[router]: at=info method=GET path="/" host=nextep.herokuapp.com request_id=53311b98-5a7d-4940-a713-ed2906536e62 fwd="60.241.64.245" dyno=web.1 connect=0ms service=3ms status=200 bytes=14752
+2015-11-08T08:22:31.751490+00:00 heroku[router]: at=info method=GET path="/js/socketio.js" host=nextep.herokuapp.com request_id=ee5dac78-7bc9-496f-a4b9-9be9c9ad11ec fwd="60.241.64.245" dyno=web.1 connect=0ms service=5ms status=200 bytes=44027
+2015-11-08T08:22:31.839209+00:00 heroku[router]: at=info method=GET path="/js/main-min.js" host=nextep.herokuapp.com request_id=814b9d1a-b1c6-4dde-ac06-8e9f152c7428 fwd="60.241.64.245" dyno=web.1 connect=0ms service=7ms status=200 bytes=59507
+2015-11-08T08:22:32.586941+00:00 heroku[router]: at=info method=GET path="/socket.io/1/?t=1446970949709" host=nextep.herokuapp.com request_id=b059c04c-b471-4e4f-9cc5-16933596b599 fwd="60.241.64.245" dyno=web.1 connect=1ms service=1ms status=200 bytes=343
+2015-11-08T08:22:34.475228+00:00 heroku[router]: at=info method=GET path="/asset/lobby_long.mp3" host=nextep.herokuapp.com request_id=b411c51d-ad0d-45ee-ab4f-86948858bd60 fwd="60.241.64.245" dyno=web.1 connect=0ms service=326ms status=200 bytes=3081343
+2015-11-08T08:22:35.162948+00:00 heroku[router]: at=info method=GET path="/favicon.ico" host=nextep.herokuapp.com request_id=0f0fe70a-4d1d-4a22-b554-544b5c6bd5a4 fwd="60.241.64.245" dyno=web.1 connect=0ms service=1ms status=404 bytes=96
+2015-11-08T08:23:00.675482+00:00 app[web.1]: [ message  ->  Cordivalence ]
+2015-11-08T08:23:00.742238+00:00 app[web.1]: [ start_game_failure  ->  Cordivalence ]
+2015-11-08T08:23:07.394498+00:00 heroku[router]: at=info method=GET path="/socket.io/1/websocket/795207134545" host=nextep.herokuapp.com request_id=52c324be-46a4-4aa1-bbfd-25f4113a9c06 fwd="60.241.64.245" dyno=web.1 connect=0ms service=34324ms status=101 bytes=714
+2015-11-08T08:29:06.653707+00:00 heroku[router]: at=info method=GET path="/" host=nextep.herokuapp.com request_id=d73f8e6d-ef06-4a17-954e-f3735fc0e4a1 fwd="180.244.185.82" dyno=web.1 connect=0ms service=3ms status=200 bytes=14752
+2015-11-08T08:29:07.430311+00:00 heroku[router]: at=info method=GET path="/js/socketio.js" host=nextep.herokuapp.com request_id=adcecb06-3682-4f58-b5d7-ebf247e5e2b3 fwd="180.244.185.82" dyno=web.1 connect=0ms service=7ms status=200 bytes=44027
+2015-11-08T08:29:07.443290+00:00 heroku[router]: at=info method=GET path="/js/main-min.js" host=nextep.herokuapp.com request_id=41af2998-6eac-42f9-96cd-51c7e452dd10 fwd="180.244.185.82" dyno=web.1 connect=1ms service=8ms status=200 bytes=59507
+2015-11-08T08:29:08.715643+00:00 heroku[router]: at=info method=GET path="/socket.io/1/?t=1446971348155" host=nextep.herokuapp.com request_id=1a1cfbab-cce4-4925-b755-f7253cc4afd2 fwd="180.244.185.82" dyno=web.1 connect=0ms service=14ms status=200 bytes=342
+2015-11-08T08:29:09.309963+00:00 heroku[router]: at=info method=GET path="/asset/lobby_long.mp3" host=nextep.herokuapp.com request_id=c7899872-9574-4082-be46-87dc292f55a8 fwd="180.244.185.82" dyno=web.1 connect=0ms service=323ms status=200 bytes=3081343
+2015-11-08T08:29:09.844510+00:00 heroku[router]: at=info method=GET path="/socket.io/1/websocket/50508672754" host=nextep.herokuapp.com request_id=afa829b7-f38b-4932-bf5f-3aaae7702923 fwd="180.244.185.82" dyno=web.1 connect=1ms service=11ms status=500 bytes=161
+2015-11-08T08:29:09.837963+00:00 app[web.1]: Traceback (most recent call last):
+2015-11-08T08:29:09.845979+00:00 app[web.1]:  'HTTP_VIA': '1.1 vegur',
+2015-11-08T08:29:09.845982+00:00 app[web.1]:  'HTTP_X_REQUEST_ID': 'afa829b7-f38b-4932-bf5f-3aaae7702923',
+2015-11-08T08:29:09.837971+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/gevent/pywsgi.py", line 508, in handle_one_response
+2015-11-08T08:29:09.845982+00:00 app[web.1]:  'HTTP_X_REQUEST_START': '1446971349831',
+2015-11-08T08:29:09.837973+00:00 app[web.1]:     self.run_application()
+2015-11-08T08:29:09.845968+00:00 app[web.1]: {'GATEWAY_INTERFACE': 'CGI/1.1',
+2015-11-08T08:29:09.837974+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/geventwebsocket/handler.py", line 88, in run_application
+2015-11-08T08:29:09.842442+00:00 app[web.1]:     socket = environ['socketio']
+2015-11-08T08:29:09.845972+00:00 app[web.1]:  'HTTP_CONNECTION': 'close',
+2015-11-08T08:29:09.845975+00:00 app[web.1]:  'HTTP_ORIGIN': 'http://nextep.herokuapp.com',
+2015-11-08T08:29:09.845975+00:00 app[web.1]:  'HTTP_PRAGMA': 'no-cache',
+2015-11-08T08:29:09.845977+00:00 app[web.1]:  'HTTP_SEC_WEBSOCKET_VERSION': '13',
+2015-11-08T08:29:09.845983+00:00 app[web.1]:  'QUERY_STRING': '',
+2015-11-08T08:29:09.841307+00:00 app[web.1]:     return super(WebSocketHandler, self).run_application()
+2015-11-08T08:29:09.845980+00:00 app[web.1]:  'HTTP_X_FORWARDED_FOR': '180.244.185.82',
+2015-11-08T08:29:09.845983+00:00 app[web.1]:  'PATH_INFO': '/socket.io/1/websocket/50508672754',
+2015-11-08T08:29:09.841312+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/gevent/pywsgi.py", line 494, in run_application
+2015-11-08T08:29:09.845986+00:00 app[web.1]:  'REQUEST_METHOD': 'GET',
+2015-11-08T08:29:09.841332+00:00 app[web.1]:     self.result = self.application(self.environ, self.start_response)
+2015-11-08T08:29:09.841358+00:00 app[web.1]:   File "/app/server.py", line 295, in service
+2015-11-08T08:29:09.845972+00:00 app[web.1]:  'HTTP_CONNECT_TIME': '1',
+2015-11-08T08:29:09.845985+00:00 app[web.1]:  'REMOTE_ADDR': '10.186.56.209',
+2015-11-08T08:29:09.841917+00:00 app[web.1]:     return socketio_manage(environ, {'/nextstep' : NextStepNamespace})
+2015-11-08T08:29:09.845976+00:00 app[web.1]:  'HTTP_SEC_WEBSOCKET_EXTENSIONS': 'permessage-deflate; client_max_window_bits',
+2015-11-08T08:29:09.845977+00:00 app[web.1]:  'HTTP_SEC_WEBSOCKET_KEY': 'K/LPV/QrstedZZ3S9kZ4kw==',
+2015-11-08T08:29:09.845981+00:00 app[web.1]:  'HTTP_X_FORWARDED_PROTO': 'http',
+2015-11-08T08:29:09.845984+00:00 app[web.1]:  'RAW_URI': '/socket.io/1/websocket/50508672754',
+2015-11-08T08:29:09.845987+00:00 app[web.1]:  'SCRIPT_NAME': '',
+2015-11-08T08:29:09.845988+00:00 app[web.1]:  'SERVER_PORT': '28833',
+2015-11-08T08:29:09.845994+00:00 app[web.1]: 
+2015-11-08T08:29:09.845988+00:00 app[web.1]:  'SERVER_PROTOCOL': 'HTTP/1.1',
+2015-11-08T08:29:09.845991+00:00 app[web.1]:  'wsgi.multiprocess': False,
+2015-11-08T08:29:09.845992+00:00 app[web.1]:  'wsgi.run_once': False,
+2015-11-08T08:29:09.841923+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/socketio/__init__.py", line 67, in socketio_manage
+2015-11-08T08:29:09.845970+00:00 app[web.1]:  'HTTP_ACCEPT_LANGUAGE': 'id,en-GB;q=0.8,en;q=0.6,en-US;q=0.4,ms;q=0.2',
+2015-11-08T08:29:09.845971+00:00 app[web.1]:  'HTTP_CACHE_CONTROL': 'no-cache',
+2015-11-08T08:29:09.845979+00:00 app[web.1]:  'HTTP_USER_AGENT': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.85 Safari/537.36',
+2015-11-08T08:29:09.845980+00:00 app[web.1]:  'HTTP_X_FORWARDED_PORT': '80',
+2015-11-08T08:29:09.845987+00:00 app[web.1]:  'SERVER_NAME': '9ec1676e-4d5b-4830-837e-7f8121285af0.prvt.dyno.rt.heroku.com',
+2015-11-08T08:29:09.846317+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/gevent/greenlet.py", line 327, in run
+2015-11-08T08:29:09.845974+00:00 app[web.1]:  'HTTP_COOKIE': 'heroku-session-affinity=ACaDaANoA2IAAAWnYgAABhNiAAAyc2EBbAAAAAFtAAAABXdlYi4xapP6gOzcx4vmsCTW2c0hWW4Ex20o',
+2015-11-08T08:29:09.845974+00:00 app[web.1]:  'HTTP_HOST': 'nextep.herokuapp.com',
+2015-11-08T08:29:09.845978+00:00 app[web.1]:  'HTTP_TOTAL_ROUTE_TIME': '0',
+2015-11-08T08:29:09.845985+00:00 app[web.1]:  'REMOTE_PORT': '34649',
+2015-11-08T08:29:09.845994+00:00 app[web.1]:  'wsgi.version': (1, 0)} failed with KeyError
+2015-11-08T08:29:09.846357+00:00 app[web.1]:     result = self._run(*self.args, **self.kwargs)
+2015-11-08T08:29:09.845989+00:00 app[web.1]:  'SERVER_SOFTWARE': 'gevent/1.0 Python/2.7',
+2015-11-08T08:29:09.845989+00:00 app[web.1]:  'gunicorn.sock': <socket at 0x7f43b5d55c50 fileno=15 sock=172.17.38.70:28833 peer=10.186.56.209:34649>,
+2015-11-08T08:29:09.845993+00:00 app[web.1]:  'wsgi.url_scheme': 'http',
+2015-11-08T08:29:09.846491+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/socketio/handler.py", line 170, in handle_one_response
+2015-11-08T08:29:09.846298+00:00 app[web.1]: Traceback (most recent call last):
+2015-11-08T08:29:09.846457+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/gevent/pywsgi.py", line 321, in handle_one_request
+2015-11-08T08:29:09.846741+00:00 app[web.1]: 
+2015-11-08T08:29:09.846528+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/socketio/transports.py", line 241, in do_exchange
+2015-11-08T08:29:09.846569+00:00 app[web.1]:     websocket = self.handler.environ['wsgi.websocket']
+2015-11-08T08:29:09.846584+00:00 app[web.1]: KeyError: 'wsgi.websocket'
+2015-11-08T08:29:09.846740+00:00 app[web.1]: <Greenlet at 0x7f43b6253af0: <bound method SocketIOServer.handle of <SocketIOServer at 0x7f43b5cab310 fileno=5 address=0.0.0.0:28833>>(<socket at 0x7f43b5d55c50 fileno=[Errno 9] Bad fil, ('10.186.56.209', 34649))> failed with KeyError
+2015-11-08T08:29:09.846527+00:00 app[web.1]:     self.transport.do_exchange(socket, request_method)
+2015-11-08T08:29:09.846489+00:00 app[web.1]:     self.handle_one_response()
+2015-11-08T08:29:09.845990+00:00 app[web.1]:  'wsgi.errors': <open file '<stderr>', mode 'w' at 0x7f43c130b1e0>,
+2015-11-08T08:29:09.845992+00:00 app[web.1]:  'wsgi.multithread': False,
+2015-11-08T08:29:09.846422+00:00 app[web.1]:     handler.handle()
+2015-11-08T08:29:09.845991+00:00 app[web.1]:  'wsgi.input': <gevent.pywsgi.Input object at 0x7f43b5d51dd0>,
+2015-11-08T08:29:09.846374+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/socketio/server.py", line 124, in handle
+2015-11-08T08:29:09.846456+00:00 app[web.1]:     result = self.handle_one_request()
+2015-11-08T08:29:09.846424+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/gevent/pywsgi.py", line 184, in handle
+2015-11-08T08:29:09.843537+00:00 app[web.1]: KeyError: 'socketio'
+2015-11-08T08:29:10.138058+00:00 heroku[router]: at=info method=GET path="/asset/lobby_long.mp3" host=nextep.herokuapp.com request_id=356812cc-bc18-4438-a66d-9e0f3537ee73 fwd="180.244.185.82" dyno=web.1 connect=0ms service=320ms status=200 bytes=3081343
+2015-11-08T08:29:11.182239+00:00 heroku[router]: at=info method=GET path="/favicon.ico" host=nextep.herokuapp.com request_id=c3f276ee-0d43-4c42-9c6c-5e125d8d9634 fwd="180.244.185.82" dyno=web.1 connect=0ms service=5ms status=404 bytes=96
+2015-11-08T08:29:19.535753+00:00 heroku[router]: at=info method=GET path="/socket.io/1/xhr-polling/50508672754?t=1446971359015" host=nextep.herokuapp.com request_id=b9d4c61d-6ca6-454f-b44f-c3d9e53ac484 fwd="180.244.185.82" dyno=web.1 connect=0ms service=4ms status=200 bytes=256
+2015-11-08T08:29:20.267694+00:00 heroku[router]: at=info method=GET path="/socket.io/1/xhr-polling/50508672754?t=1446971359751" host=nextep.herokuapp.com request_id=13e6fc4a-b687-4f02-b44f-9d055ce2311f fwd="180.244.185.82" dyno=web.1 connect=0ms service=1ms status=200 bytes=520
+2015-11-08T08:29:20.248825+00:00 heroku[router]: at=info method=POST path="/socket.io/1/xhr-polling/50508672754?t=1446971359749" host=nextep.herokuapp.com request_id=3c2f28bf-41b3-4a3e-8f76-dbd092ddd966 fwd="180.244.185.82" dyno=web.1 connect=0ms service=5ms status=200 bytes=280
+2015-11-08T08:29:25.692615+00:00 heroku[router]: at=info method=POST path="/socket.io/1/xhr-polling/50508672754?t=1446971365170" host=nextep.herokuapp.com request_id=cd17f27b-37b0-4265-a4b6-23df76a3ef81 fwd="180.244.185.82" dyno=web.1 connect=1ms service=2ms status=200 bytes=280
+2015-11-08T08:29:25.694440+00:00 heroku[router]: at=info method=GET path="/socket.io/1/xhr-polling/50508672754?t=1446971360572" host=nextep.herokuapp.com request_id=731c8c80-63da-46fc-bb27-bff73d441874 fwd="180.244.185.82" dyno=web.1 connect=0ms service=4589ms status=200 bytes=414
+2015-11-08T08:29:31.140644+00:00 heroku[router]: at=info method=POST path="/socket.io/1/xhr-polling/50508672754?t=1446971370618" host=nextep.herokuapp.com request_id=d37d457c-e8a8-4d4f-83eb-4c42fac015c7 fwd="180.244.185.82" dyno=web.1 connect=11ms service=1ms status=200 bytes=280
+2015-11-08T08:29:31.142914+00:00 heroku[router]: at=info method=GET path="/socket.io/1/xhr-polling/50508672754?t=1446971365793" host=nextep.herokuapp.com request_id=ddb872c1-bf83-41d7-b04f-7943b3f3a93f fwd="180.244.185.82" dyno=web.1 connect=1ms service=4822ms status=200 bytes=347
+2015-11-08T08:29:31.142876+00:00 app[web.1]: [ message  ->  felik ]
+2015-11-08T08:29:31.719615+00:00 heroku[router]: at=info method=POST path="/socket.io/1/xhr-polling/50508672754?t=1446971371228" host=nextep.herokuapp.com request_id=0d834a50-bb7b-47c7-961f-434ba210708c fwd="180.244.185.82" dyno=web.1 connect=0ms service=1ms status=200 bytes=280
+2015-11-08T08:29:31.770908+00:00 heroku[router]: at=info method=GET path="/socket.io/1/xhr-polling/50508672754?t=1446971371234" host=nextep.herokuapp.com request_id=5618bf66-9281-4414-9507-7058ee3616d6 fwd="180.244.185.82" dyno=web.1 connect=0ms service=1ms status=200 bytes=308
+2015-11-08T08:29:31.724102+00:00 app[web.1]: [ start_game_failure  ->  felik ]
+2015-11-08T08:29:36.785002+00:00 heroku[router]: at=info method=POST path="/socket.io/1/xhr-polling/50508672754?t=1446971376232" host=nextep.herokuapp.com request_id=0b4fba83-bc0c-4910-8feb-94e47072f8dc fwd="180.244.185.82" dyno=web.1 connect=0ms service=1ms status=200 bytes=280
+2015-11-08T08:29:36.787326+00:00 app[web.1]: [ message  ->  felik ]
+2015-11-08T08:29:36.785386+00:00 heroku[router]: at=info method=GET path="/socket.io/1/xhr-polling/50508672754?t=1446971371884" host=nextep.herokuapp.com request_id=ab3aac00-0750-46d4-b3c2-bd024b206c32 fwd="180.244.185.82" dyno=web.1 connect=0ms service=4401ms status=200 bytes=347
+2015-11-08T08:29:37.479873+00:00 heroku[router]: at=info method=GET path="/socket.io/1/xhr-polling/50508672754?t=1446971376912" host=nextep.herokuapp.com request_id=91c66d7f-b5a3-43d5-a6fc-94e723d0c6c9 fwd="180.244.185.82" dyno=web.1 connect=0ms service=1ms status=200 bytes=308
+2015-11-08T08:29:37.430498+00:00 heroku[router]: at=info method=POST path="/socket.io/1/xhr-polling/50508672754?t=1446971376920" host=nextep.herokuapp.com request_id=d7c9ace3-33a4-4785-9a74-f857a28c0048 fwd="180.244.185.82" dyno=web.1 connect=0ms service=2ms status=200 bytes=280
+2015-11-08T08:29:37.430914+00:00 app[web.1]: [ start_game_failure  ->  felik ]
+2015-11-08T08:29:43.197025+00:00 heroku[router]: at=info method=POST path="/socket.io/1/xhr-polling/50508672754?t=1446971382686" host=nextep.herokuapp.com request_id=88a01c1d-d093-4878-b7cd-3a74870fe746 fwd="180.244.185.82" dyno=web.1 connect=0ms service=1ms status=200 bytes=280
+2015-11-08T08:29:43.194718+00:00 heroku[router]: at=info method=GET path="/socket.io/1/xhr-polling/50508672754?t=1446971377576" host=nextep.herokuapp.com request_id=1679d168-cd72-40ca-9aa1-b14900c26dcb fwd="180.244.185.82" dyno=web.1 connect=1ms service=5100ms status=200 bytes=316
+2015-11-08T08:29:44.532216+00:00 heroku[router]: at=info method=GET path="/socket.io/1/xhr-polling/50508672754?t=1446971383277" host=nextep.herokuapp.com request_id=68617e0a-fa1c-4ed4-b05b-740a28501610 fwd="180.244.185.82" dyno=web.1 connect=0ms service=710ms status=200 bytes=256
+2015-11-08T08:29:45.151642+00:00 heroku[router]: at=info method=POST path="/socket.io/1/xhr-polling/50508672754?t=1446971384640" host=nextep.herokuapp.com request_id=e37ab378-812c-4187-bcef-9529540c4e41 fwd="180.244.185.82" dyno=web.1 connect=0ms service=1ms status=200 bytes=280
+2015-11-08T08:29:57.824
+346+00:00 heroku[router]: at=info method=GET path="/" host=nextep.herokuapp.com request_id=5da25635-da5b-455b-8b52-238d76ba65b1 fwd="172.23.192.106,137.132.3.8" dyno=web.1 connect=0ms service=6ms status=200 bytes=14752
+2015-11-08T08:29:58.315782+00:00 heroku[router]: at=info method=GET path="/js/socketio.js" host=nextep.herokuapp.com request_id=065a6b95-7088-471d-9deb-46b7fa3c8da9 fwd="172.23.192.106,137.132.3.8" dyno=web.1 connect=0ms service=5ms status=200 bytes=44027
+2015-11-08T08:29:58.504640+00:00 heroku[router]: at=info method=GET path="/js/main-min.js" host=nextep.herokuapp.com request_id=8177659c-fa13-4a2b-81a7-8eba16d93da1 fwd="172.23.192.106,137.132.3.8" dyno=web.1 connect=0ms service=25ms status=200 bytes=59507
+2015-11-08T08:29:59.500362+00:00 heroku[router]: at=info method=GET path="/socket.io/1/?t=1446971400779" host=nextep.herokuapp.com request_id=874db15c-32a1-408c-b0cb-5cabdac876ec fwd="172.23.192.106,137.132.3.8" dyno=web.1 connect=0ms service=1ms status=200 bytes=343
+2015-11-08T08:30:00.112819+00:00 heroku[router]: at=info method=GET path="/socket.io/1/websocket/826184720697" host=nextep.herokuapp.com request_id=c1d40af1-e115-4ae6-a540-06f8d01969f9 fwd="172.23.192.106,137.132.250.13" dyno=web.1 connect=0ms service=4ms status=500 bytes=161
+2015-11-08T08:30:00.118168+00:00 heroku[router]: at=info method=GET path="/asset/lobby_long.mp3" host=nextep.herokuapp.com request_id=4228b97b-a6db-476c-b87d-12cf473b41b2 fwd="172.23.192.106,137.132.3.8" dyno=web.1 connect=0ms service=309ms status=200 bytes=3081343
+2015-11-08T08:30:00.107315+00:00 app[web.1]: Traceback (most recent call last):
+2015-11-08T08:30:00.107652+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/gevent/pywsgi.py", line 508, in handle_one_response
+2015-11-08T08:30:00.107689+00:00 app[web.1]:     self.run_application()
+2015-11-08T08:30:00.107726+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/geventwebsocket/handler.py", line 88, in run_application
+2015-11-08T08:30:00.107757+00:00 app[web.1]:     return super(WebSocketHandler, self).run_application()
+2015-11-08T08:30:00.107760+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/gevent/pywsgi.py", line 494, in run_application
+2015-11-08T08:30:00.107794+00:00 app[web.1]:     self.result = self.application(self.environ, self.start_response)
+2015-11-08T08:30:00.107797+00:00 app[web.1]:   File "/app/server.py", line 295, in service
+2015-11-08T08:30:00.107828+00:00 app[web.1]:     return socketio_manage(environ, {'/nextstep' : NextStepNamespace})
+2015-11-08T08:30:00.107831+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/socketio/__init__.py", line 67, in socketio_manage
+2015-11-08T08:30:00.107878+00:00 app[web.1]:     socket = environ['socketio']
+2015-11-08T08:30:00.107882+00:00 app[web.1]: KeyError: 'socketio'
+2015-11-08T08:30:00.110695+00:00 app[web.1]: {'GATEWAY_INTERFACE': 'CGI/1.1',
+2015-11-08T08:30:00.110698+00:00 app[web.1]:  'HTTP_ACCEPT_ENCODING': 'gzip, deflate, sdch',
+2015-11-08T08:30:00.110698+00:00 app[web.1]:  'HTTP_ACCEPT_LANGUAGE': 'en-GB,en-US;q=0.8,en;q=0.6',
+2015-11-08T08:30:00.110699+00:00 app[web.1]:  'HTTP_CACHE_CONTROL': 'no-cache, bypass-client=172.23.192.106',
+2015-11-08T08:30:00.110700+00:00 app[web.1]:  'HTTP_CONNECTION': 'close',
+2015-11-08T08:30:00.110701+00:00 app[web.1]:  'HTTP_CONNECT_TIME': '0',
+2015-11-08T08:30:00.110701+00:00 app[web.1]:  'HTTP_COOKIE': 'heroku-session-affinity=ACaDaANoA2IAAAWnYgAABkZiAABuTWEBbAAAAAFtAAAABXdlYi4xaptvxoXpTfd91xUPBMYVnzDK47Py',
+2015-11-08T08:30:00.110703+00:00 app[web.1]:  'HTTP_ORIGIN': 'http://nextep.herokuapp.com',
+2015-11-08T08:30:00.110702+00:00 app[web.1]:  'HTTP_HOST': 'nextep.herokuapp.com',
+2015-11-08T08:30:00.110703+00:00 app[web.1]:  'HTTP_PRAGMA': 'no-cache',
+2015-11-08T08:30:00.110704+00:00 app[web.1]:  'HTTP_SEC_WEBSOCKET_EXTENSIONS': 'permessage-deflate; client_max_window_bits',
+2015-11-08T08:30:00.110705+00:00 app[web.1]:  'HTTP_SEC_WEBSOCKET_KEY': 't8d9nc4sPW17/oALw7Ss6A==',
+2015-11-08T08:30:00.110706+00:00 app[web.1]:  'HTTP_TOTAL_ROUTE_TIME': '0',
+2015-11-08T08:30:00.110706+00:00 app[web.1]:  'HTTP_SEC_WEBSOCKET_VERSION': '13',
+2015-11-08T08:30:00.110709+00:00 app[web.1]:  'HTTP_USER_AGENT': 'Mozilla/5.0 (Linux; Android 5.0; SM-N9005 Build/LRX21V) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.93 Mobile Safari/537.36',
+2015-11-08T08:30:00.110710+00:00 app[web.1]:  'HTTP_X_FORWARDED_FOR': '172.23.192.106, 137.132.250.13',
+2015-11-08T08:30:00.110710+00:00 app[web.1]:  'HTTP_VIA': '1.1 webcache1-cc (Cisco ACNS 5.5.19), 1.1 vegur',
+2015-11-08T08:30:00.110712+00:00 app[web.1]:  'HTTP_X_FORWARDED_PROTO': 'http',
+2015-11-08T08:30:00.110711+00:00 app[web.1]:  'HTTP_X_FORWARDED_PORT': '80',
+2015-11-08T08:30:00.110712+00:00 app[web.1]:  'HTTP_X_REQUEST_ID': 'c1d40af1-e115-4ae6-a540-06f8d01969f9',
+2015-11-08T08:30:00.110713+00:00 app[web.1]:  'HTTP_X_REQUEST_START': '1446971400106',
+2015-11-08T08:30:00.110713+00:00 app[web.1]:  'PATH_INFO': '/socket.io/1/websocket/826184720697',
+2015-11-08T08:30:00.110714+00:00 app[web.1]:  'QUERY_STRING': '',
+2015-11-08T08:30:00.110715+00:00 app[web.1]:  'RAW_URI': '/socket.io/1/websocket/826184720697',
+2015-11-08T08:30:00.110715+00:00 app[web.1]:  'REMOTE_ADDR': '10.97.162.141',
+2015-11-08T08:30:00.110716+00:00 app[web.1]:  'REMOTE_PORT': '48837',
+2015-11-08T08:30:00.110716+00:00 app[web.1]:  'REQUEST_METHOD': 'GET',
+2015-11-08T08:30:00.110717+00:00 app[web.1]:  'SCRIPT_NAME': '',
+2015-11-08T08:30:00.110718+00:00 app[web.1]:  'SERVER_NAME': '9ec1676e-4d5b-4830-837e-7f8121285af0.prvt.dyno.rt.heroku.com',
+2015-11-08T08:30:00.110719+00:00 app[web.1]:  'SERVER_PORT': '28833',
+2015-11-08T08:30:00.110719+00:00 app[web.1]:  'SERVER_PROTOCOL': 'HTTP/1.1',
+2015-11-08T08:30:00.110720+00:00 app[web.1]:  'SERVER_SOFTWARE': 'gevent/1.0 Python/2.7',
+2015-11-08T08:30:00.110721+00:00 app[web.1]:  'gunicorn.sock': <socket at 0x7f43b6920c90 fileno=14 sock=172.17.38.70:28833 peer=10.97.162.141:48837>,
+2015-11-08T08:30:00.110721+00:00 app[web.1]:  'wsgi.errors': <open file '<stderr>', mode 'w' at 0x7f43c130b1e0>,
+2015-11-08T08:30:00.110722+00:00 app[web.1]:  'wsgi.input': <gevent.pywsgi.Input object at 0x7f43b5d74050>,
+2015-11-08T08:30:00.110723+00:00 app[web.1]:  'wsgi.multiprocess': False,
+2015-11-08T08:30:00.110723+00:00 app[web.1]:  'wsgi.multithread': False,
+2015-11-08T08:30:00.110724+00:00 app[web.1]:  'wsgi.run_once': False,
+2015-11-08T08:30:00.110725+00:00 app[web.1]:  'wsgi.url_scheme': 'http',
+2015-11-08T08:30:00.110725+00:00 app[web.1]:  'wsgi.version': (1, 0)} failed with KeyError
+2015-11-08T08:30:00.110726+00:00 app[web.1]: 
+2015-11-08T08:30:00.111012+00:00 app[web.1]: Traceback (most recent call last):
+2015-11-08T08:30:00.111016+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/gevent/greenlet.py", line 327, in run
+2015-11-08T08:30:00.111058+00:00 app[web.1]:     result = self._run(*self.args, **self.kwargs)
+2015-11-08T08:30:00.111062+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/socketio/server.py", line 124, in handle
+2015-11-08T08:30:00.111110+00:00 app[web.1]:     handler.handle()
+2015-11-08T08:30:00.111111+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/gevent/pywsgi.py", line 184, in handle
+2015-11-08T08:30:00.111133+00:00 app[web.1]:     result = self.handle_one_request()
+2015-11-08T08:30:00.111172+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/socketio/handler.py", line 170, in handle_one_response
+2015-11-08T08:30:00.111136+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/gevent/pywsgi.py", line 321, in handle_one_request
+2015-11-08T08:30:00.111168+00:00 app[web.1]:     self.handle_one_response()
+2015-11-08T08:30:00.111206+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/socketio/transports.py", line 241, in do_exchange
+2015-11-08T08:30:00.111203+00:00 app[web.1]:     self.transport.do_exchange(socket, request_method)
+2015-11-08T08:30:00.111236+00:00 app[web.1]:     websocket = self.handler.environ['wsgi.websocket']
+2015-11-08T08:30:00.111276+00:00 app[web.1]: KeyError: 'wsgi.websocket'
+2015-11-08T08:30:00.111366+00:00 app[web.1]: 
+2015-11-08T08:30:00.111365+00:00 app[web.1]: <Greenlet at 0x7f43b5a61af0: <bound method SocketIOServer.handle of <SocketIOServer at 0x7f43b5cab310 fileno=5 address=0.0.0.0:28833>>(<socket at 0x7f43b6920c90 fileno=[Errno 9] Bad fil, ('10.97.162.141', 48837))> failed with KeyError
+2015-11-08T08:30:00.180842+00:00 heroku[router]: at=info method=GET path="/favicon.ico" host=nextep.herokuapp.com request_id=b49f56b8-5038-4b4a-bd59-70763a5f434c fwd="172.23.192.106,137.132.3.8" dyno=web.1 connect=0ms service=4ms status=404 bytes=96
+2015-11-08T08:30:00.877684+00:00 heroku[router]: at=info method=GET path="/asset/lobby_long.mp3" host=nextep.herokuapp.com request_id=6b6f38c6-3921-4e4d-8812-5ce61dce3da9 fwd="172.23.192.106,137.132.250.12" dyno=web.1 connect=1ms service=318ms status=200 bytes=3081343
+2015-11-08T08:30:06.469802+00:00 heroku[router]: at=info method=GET path="/js/socketio.js" host=nextep.herokuapp.com request_id=38cf4619-0cff-48a8-94b5-a5cd79e51e4e fwd="180.244.185.82" dyno=web.1 connect=0ms service=5ms status=200 bytes=44027
+2015-11-08T08:30:09.531020+00:00 heroku[router]: at=info method=GET path="/socket.io/1/xhr-polling/50508672754?t=1446971384640" host=nextep.herokuapp.com request_id=2440b44b-c52f-4ec4-83f0-5195df982e25 fwd="180.244.185.82" dyno=web.1 connect=0ms service=24388ms status=200 bytes=256
+2015-11-08T08:30:10.113335+00:00 heroku[router]: at=info method=POST path="/socket.io/1/xhr-polling/50508672754?t=1446971409602" host=nextep.herokuapp.com request_id=1179c755-2b61-40c4-a96f-6aa11b685cc6 fwd="180.244.185.82" dyno=web.1 connect=0ms service=1ms status=200 bytes=280
+2015-11-08T08:30:13.266852+00:00 heroku[router]: at=info method=GET path="/socket.io/1/xhr-polling/826184720697?t=1446971411237" host=nextep.herokuapp.com request_id=9f96eb68-9219-4b8c-8324-b7a9736f3200 fwd="172.23.192.106,137.132.3.8" dyno=web.1 connect=0ms service=1ms status=200 bytes=256
+2015-11-08T08:30:14.116647+00:00 heroku[router]: at=info method=POST path="/socket.io/1/xhr-polling/826184720697?t=1446971414964" host=nextep.herokuapp.com request_id=14183644-3193-49b1-912b-5be621c4ba61 fwd="172.23.192.106,137.132.3.8" dyno=web.1 connect=0ms service=2ms status=200 bytes=280
+2015-11-08T08:30:14.119494+00:00 heroku[router]: at=info method=GET path="/socket.io/1/xhr-polling/50508672754?t=1446971409603" host=nextep.herokuapp.com request_id=a65b8f0a-1b67-48a4-9473-c089c7c83ec0 fwd="180.244.185.82" dyno=web.1 connect=0ms service=4014ms status=200 bytes=299
+2015-11-08T08:30:34.318404+00:00 heroku[router]: sock=client at=warning code=H27 desc="Client Request Interrupted" method=GET path="/" host=nextep.herokuapp.com request_id=3c1d090a-b59f-4627-a21d-1f8b6776fe77 fwd="137.132.250.12" dyno=web.1 connect=0ms service=1ms status=499 bytes=1448
+2015-11-08T08:30:34.535542+00:00 heroku[router]: at=info method=GET path="/socket.io/1/xhr-polling/50508672754?t=1446971414204" host=nextep.herokuapp.com request_id=cf26ccf5-d46c-4152-9258-7fbd7d3aa04f fwd="180.244.185.82" dyno=web.1 connect=0ms service=19834ms status=200 bytes=256
+2015-11-08T08:34:30.436964+00:00 heroku[router]: at=info method=GET path="/" host=nextep.herokuapp.com request_id=5c9071b7-545f-443a-9767-46b6ad988960 fwd="204.102.226.80" dyno=web.1 connect=0ms service=5ms status=200 bytes=14752
+2015-11-08T08:34:30.619352+00:00 heroku[router]: at=info method=GET path="/js/socketio.js" host=nextep.herokuapp.com request_id=05c6c77d-3334-4408-8f67-37094d2abde7 fwd="204.102.226.80" dyno=web.1 connect=0ms service=12ms status=200 bytes=44027
+2015-11-08T08:34:30.662555+00:00 heroku[router]: at=info method=GET path="/js/main-min.js" host=nextep.herokuapp.com request_id=ca015e7d-d368-46e2-bdae-0761fa5c9cc9 fwd="204.102.226.80" dyno=web.1 connect=0ms service=13ms status=200 bytes=59507
+2015-11-08T08:34:31.081062+00:00 heroku[router]: at=info method=GET path="/socket.io/1/?t=1447025850723" host=nextep.herokuapp.com request_id=e6f2bdb3-6984-44e1-9095-2071510f6502 fwd="204.102.226.80" dyno=web.1 connect=0ms service=2ms status=200 bytes=343
+2015-11-08T08:34:32.198668+00:00 heroku[router]: at=info method=GET path="/asset/lobby_long.mp3" host=nextep.herokuapp.com request_id=fcc9a90e-a800-46c2-aebf-9a4781e3ad8e fwd="204.102.226.80" dyno=web.1 connect=0ms service=297ms status=200 bytes=3081343
+2015-11-08T08:34:32.380429+00:00 heroku[router]: at=info method=GET path="/favicon.ico" host=nextep.herokuapp.com request_id=a20d04b7-5cc0-4c16-9017-86c25028284f fwd="204.102.226.80" dyno=web.1 connect=0ms service=5ms status=404 bytes=96
+2015-11-08T08:34:50.522870+00:00 app[web.1]: [ message  ->  jo ]
+2015-11-08T08:34:50.523042+00:00 app[web.1]: [ start_game_failure  ->  jo ]
+2015-11-08T08:35:39.391019+00:00 heroku[router]: at=info method=GET path="/socket.io/1/websocket/107962579582" host=nextep.herokuapp.com request_id=dfd2e944-11f8-4440-8929-db7430454c4e fwd="204.102.226.80" dyno=web.1 connect=0ms service=68139ms status=101 bytes=752
+2015-11-08T08:44:51.307566+00:00 heroku[router]: at=info method=GET path="/" host=nextep.herokuapp.com request_id=a425b0e8-9ab0-401d-8d1c-35b2bc8b4dac fwd="138.75.168.246" dyno=web.1 connect=1ms service=3ms status=200 bytes=14752
+2015-11-08T08:44:52.063611+00:00 heroku[router]: at=info method=GET path="/js/socketio.js" host=nextep.herokuapp.com request_id=9b5383c6-f75b-4e61-8081-066b81cf1c6d fwd="138.75.168.246" dyno=web.1 connect=1ms service=7ms status=200 bytes=44027
+2015-11-08T08:44:52.066774+00:00 heroku[router]: at=info method=GET path="/js/main-min.js" host=nextep.herokuapp.com request_id=631b1a07-56de-445f-b9f1-f7bcd74ba04b fwd="138.75.168.246" dyno=web.1 connect=1ms service=8ms status=200 bytes=59507
+2015-11-08T08:44:53.002370+00:00 heroku[router]: at=info method=GET path="/socket.io/1/?t=1446972292864" host=nextep.herokuapp.com request_id=4aea4b01-d940-4572-a689-36eb0ac912d4 fwd="138.75.168.246" dyno=web.1 connect=1ms service=2ms status=200 bytes=343
+2015-11-08T08:44:53.656034+00:00 heroku[router]: sock=client at=warning code=H27 desc="Client Request Interrupted" method=GET path="/asset/lobby_long.mp3" host=nextep.herokuapp.com request_id=086e9eec-e7fa-4ba8-b4cd-84bf975f490a fwd="138.75.168.246" dyno=web.1 connect=1ms service=247ms status=499 bytes=1448
+2015-11-08T08:44:53.658292+00:00 app[web.1]: Traceback (most recent call last):
+2015-11-08T08:44:53.658299+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/gevent/pywsgi.py", line 508, in handle_one_response
+2015-11-08T08:44:53.658339+00:00 app[web.1]:     self.run_application()
+2015-11-08T08:44:53.658355+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/gevent/pywsgi.py", line 495, in run_application
+2015-11-08T08:44:53.658377+00:00 app[web.1]:     self.process_result()
+2015-11-08T08:44:53.658379+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/gevent/pywsgi.py", line 486, in process_result
+2015-11-08T08:44:53.658398+00:00 app[web.1]:     self.write(data)
+2015-11-08T08:44:53.658401+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/gevent/pywsgi.py", line 376, in write
+2015-11-08T08:44:53.658424+00:00 app[web.1]:     self._write(data)
+2015-11-08T08:44:53.658426+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/gevent/pywsgi.py", line 369, in _write
+2015-11-08T08:44:53.658443+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/gevent/pywsgi.py", line 355, in _sendall
+2015-11-08T08:44:53.658443+00:00 app[web.1]:     self._sendall(data)
+2015-11-08T08:44:53.658473+00:00 app[web.1]:     self.socket.sendall(data)
+2015-11-08T08:44:53.658475+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/gevent/socket.py", line 460, in sendall
+2015-11-08T08:44:53.658478+00:00 app[web.1]:     data_sent += self.send(_get_memory(data, data_sent), flags)
+2015-11-08T08:44:53.658493+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/gevent/socket.py", line 445, in send
+2015-11-08
+T08:44:53.658518+00:00 app[web.1]:     return sock.send(data, flags)
+2015-11-08T08:44:53.658539+00:00 app[web.1]: error: [Errno 104] Connection reset by peer
+2015-11-08T08:44:53.661200+00:00 app[web.1]: {'GATEWAY_INTERFACE': 'CGI/1.1',
+2015-11-08T08:44:53.661201+00:00 app[web.1]:  'HTTP_ACCEPT': '*/*',
+2015-11-08T08:44:53.661202+00:00 app[web.1]:  'HTTP_ACCEPT_ENCODING': 'identity',
+2015-11-08T08:44:53.661202+00:00 app[web.1]:  'HTTP_ACCEPT_LANGUAGE': 'en-gb',
+2015-11-08T08:44:53.661203+00:00 app[web.1]:  'HTTP_CONNECTION': 'close',
+2015-11-08T08:44:53.661203+00:00 app[web.1]:  'HTTP_CONNECT_TIME': '1',
+2015-11-08T08:44:53.661204+00:00 app[web.1]:  'HTTP_HOST': 'nextep.herokuapp.com',
+2015-11-08T08:44:53.661204+00:00 app[web.1]:  'HTTP_COOKIE': 'heroku-session-affinity=ACaDaANoA2IAAAWnYgAACcRiAABySWEBbAAAAAFtAAAABXdlYi4xamYKJpFX6mDlWQxTKEo8+qi6THyg',
+2015-11-08T08:44:53.661205+00:00 app[web.1]:  'HTTP_RANGE': 'bytes=0-1',
+2015-11-08T08:44:53.661207+00:00 app[web.1]:  'HTTP_USER_AGENT': 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13B143 [FBAN/FBIOS;FBAV/43.0.0.26.314;FBBV/17000587;FBDV/iPhone7,2;FBMD/iPhone;FBSN/iPhone OS;FBSV/9.1;FBSS/2; FBCR/M1Singapore;FBID/phone;FBLC/en_GB;FBOP/5]',
+2015-11-08T08:44:53.661205+00:00 app[web.1]:  'HTTP_REFERER': 'http://nextep.herokuapp.com/',
+2015-11-08T08:44:53.661206+00:00 app[web.1]:  'HTTP_TOTAL_ROUTE_TIME': '0',
+2015-11-08T08:44:53.661207+00:00 app[web.1]:  'HTTP_VIA': '1.1 vegur',
+2015-11-08T08:44:53.661208+00:00 app[web.1]:  'HTTP_X_FORWARDED_FOR': '138.75.168.246',
+2015-11-08T08:44:53.661208+00:00 app[web.1]:  'HTTP_X_FORWARDED_PORT': '80',
+2015-11-08T08:44:53.661209+00:00 app[web.1]:  'HTTP_X_FORWARDED_PROTO': 'http',
+2015-11-08T08:44:53.661210+00:00 app[web.1]:  'HTTP_X_PLAYBACK_SESSION_ID': '9B5C9740-B4AD-4A75-BE20-9AB6DD3089A0',
+2015-11-08T08:44:53.661210+00:00 app[web.1]:  'HTTP_X_REQUEST_ID': '086e9eec-e7fa-4ba8-b4cd-84bf975f490a',
+2015-11-08T08:44:53.661211+00:00 app[web.1]:  'HTTP_X_REQUEST_START': '1446972293406',
+2015-11-08T08:44:53.661211+00:00 app[web.1]:  'PATH_INFO': '/asset/lobby_long.mp3',
+2015-11-08T08:44:53.661212+00:00 app[web.1]:  'QUERY_STRING': '',
+2015-11-08T08:44:53.661212+00:00 app[web.1]:  'RAW_URI': '/asset/lobby_long.mp3',
+2015-11-08T08:44:53.661213+00:00 app[web.1]:  'REMOTE_ADDR': '10.63.87.95',
+2015-11-08T08:44:53.661213+00:00 app[web.1]:  'REMOTE_PORT': '45881',
+2015-11-08T08:44:53.661213+00:00 app[web.1]:  'REQUEST_METHOD': 'GET',
+2015-11-08T08:44:53.661214+00:00 app[web.1]:  'SCRIPT_NAME': '',
+2015-11-08T08:44:53.661214+00:00 app[web.1]:  'SERVER_NAME': '9ec1676e-4d5b-4830-837e-7f8121285af0.prvt.dyno.rt.heroku.com',
+2015-11-08T08:44:53.661215+00:00 app[web.1]:  'SERVER_PORT': '28833',
+2015-11-08T08:44:53.661215+00:00 app[web.1]:  'SERVER_PROTOCOL': 'HTTP/1.1',
+2015-11-08T08:44:53.661215+00:00 app[web.1]:  'SERVER_SOFTWARE': 'gevent/1.0 Python/2.7',
+2015-11-08T08:44:53.661216+00:00 app[web.1]:  'gunicorn.sock': <socket at 0x7f43b5d97310 fileno=13 sock=172.17.38.70:28833>,
+2015-11-08T08:44:53.661216+00:00 app[web.1]:  'wsgi.errors': <open file '<stderr>', mode 'w' at 0x7f43c130b1e0>,
+2015-11-08T08:44:53.661217+00:00 app[web.1]:  'wsgi.input': <gevent.pywsgi.Input object at 0x7f43b5d82310>,
+2015-11-08T08:44:53.661217+00:00 app[web.1]:  'wsgi.multiprocess': False,
+2015-11-08T08:44:53.661217+00:00 app[web.1]:  'wsgi.multithread': False,
+2015-11-08T08:44:53.661218+00:00 app[web.1]:  'wsgi.run_once': False,
+2015-11-08T08:44:53.661218+00:00 app[web.1]:  'wsgi.url_scheme': 'http',
+2015-11-08T08:44:53.661218+00:00 app[web.1]:  'wsgi.version': (1, 0)} failed with error
+2015-11-08T08:44:53.661219+00:00 app[web.1]: 
+2015-11-08T08:44:57.617558+00:00 heroku[router]: at=info method=GET path="/socket.io/1/websocket/235785567073" host=nextep.herokuapp.com request_id=e7e37c5f-afa2-4090-b0ca-707e60744c1a fwd="138.75.168.246" dyno=web.1 connect=1ms service=4077ms status=101 bytes=191
+2015-11-08T08:47:34.820575+00:00 heroku[router]: at=info method=GET path="/" host=nextep.herokuapp.com request_id=d834a8ea-51dd-4ffd-9427-603aa4aa2437 fwd="14.100.132.81" dyno=web.1 connect=0ms service=3ms status=200 bytes=14752
+2015-11-08T08:47:35.565214+00:00 heroku[router]: at=info method=GET path="/js/socketio.js" host=nextep.herokuapp.com request_id=4ac7541a-0b93-42c2-961c-11a25be58295 fwd="14.100.132.81" dyno=web.1 connect=0ms service=6ms status=200 bytes=44027
+2015-11-08T08:47:35.573647+00:00 heroku[router]: at=info method=GET path="/js/main-min.js" host=nextep.herokuapp.com request_id=951918db-f9e6-4910-9739-8a2a5522218c fwd="14.100.132.81" dyno=web.1 connect=0ms service=6ms status=200 bytes=59507
+2015-11-08T08:47:36.502139+00:00 heroku[router]: at=info method=GET path="/socket.io/1/?t=1446972367958" host=nextep.herokuapp.com request_id=a65f2f9c-0da6-4de8-9cb2-136f12988d84 fwd="14.100.132.81" dyno=web.1 connect=0ms service=1ms status=200 bytes=342
+2015-11-08T08:47:37.574354+00:00 heroku[router]: at=info method=GET path="/asset/lobby_long.mp3" host=nextep.herokuapp.com request_id=49ebc270-c23b-4fd8-80f0-af0710da2811 fwd="14.100.132.81" dyno=web.1 connect=0ms service=306ms status=200 bytes=3081343
+2015-11-08T08:47:38.293750+00:00 heroku[router]: at=info method=GET path="/asset/lobby_long.mp3" host=nextep.herokuapp.com request_id=9dac21bd-9138-4222-ab83-1ab9dd99a8bc fwd="14.100.132.81" dyno=web.1 connect=0ms service=316ms status=200 bytes=3081343
+2015-11-08T08:47:40.584676+00:00 heroku[router]: at=info method=GET path="/socket.io/1/websocket/10095609884" host=nextep.herokuapp.com request_id=d3abf331-f4a4-4bd4-bafa-7f68001ba91d fwd="14.100.132.81" dyno=web.1 connect=0ms service=3297ms status=101 bytes=191
+2015-11-08T08:54:19.828173+00:00 heroku[router]: at=info method=GET path="/" host=nextep.herokuapp.com request_id=d92be43d-7626-4a9c-854a-142548fa034d fwd="155.69.160.109" dyno=web.1 connect=1ms service=3ms status=200 bytes=14752
+2015-11-08T08:54:20.111632+00:00 heroku[router]: at=info method=GET path="/js/socketio.js" host=nextep.herokuapp.com request_id=d6a61259-24ea-433d-b07d-9bbcc36e0c32 fwd="155.69.160.109" dyno=web.1 connect=0ms service=6ms status=200 bytes=44027
+2015-11-08T08:54:20.284824+00:00 heroku[router]: at=info method=GET path="/js/main-min.js" host=nextep.herokuapp.com request_id=fbed4b7f-699a-4b18-95b2-786403d7195c fwd="155.69.160.109" dyno=web.1 connect=0ms service=7ms status=200 bytes=59507
+2015-11-08T08:54:20.991346+00:00 heroku[router]: at=info method=GET path="/socket.io/1/?t=1446972852702" host=nextep.herokuapp.com request_id=610c2a0c-4cf1-47b5-a9e5-c37141f288b5 fwd="155.69.160.109" dyno=web.1 connect=0ms service=1ms status=200 bytes=343
+2015-11-08T08:54:24.301508+00:00 heroku[router]: at=info method=GET path="/favicon.ico" host=nextep.herokuapp.com request_id=5c7e2721-55d4-4d22-87d7-c3a0f710122e fwd="155.69.160.109" dyno=web.1 connect=0ms service=1ms status=404 bytes=96
+2015-11-08T08:54:30.767505+00:00 heroku[router]: at=info method=GET path="/asset/lobby_long.mp3" host=nextep.herokuapp.com request_id=153f0b66-6c2e-4d46-9c46-58e258aa40f8 fwd="155.69.160.109" dyno=web.1 connect=0ms service=315ms status=200 bytes=3081343
+2015-11-08T08:54:41.805456+00:00 heroku[router]: at=info method=GET path="/socket.io/1/websocket/250492084351" host=nextep.herokuapp.com request_id=26100783-3bfb-45fc-b7ec-19b2bb999a9e fwd="155.69.160.109" dyno=web.1 connect=0ms service=20353ms status=101 bytes=195
+2015-11-08T08:54:59.947898+00:00 heroku[router]: at=info method=GET path="/" host=nextep.herokuapp.com request_id=83c5955f-b7f6-4a59-b3a6-d11e6a300221 fwd="155.69.160.109" dyno=web.1 connect=0ms service=3ms status=200 bytes=14752
+2015-11-08T08:55:00.403536+00:00 heroku[router]: at=info method=GET path="/js/socketio.js" host=nextep.herokuapp.com request_id=61fb8e8d-1ada-4b86-b263-52a637f18098 fwd="155.69.160.109" dyno=web.1 connect=0ms service=6ms status=200 bytes=44027
+2015-11-08T08:55:00.468415+00:00 heroku[router]: at=info method=GET path="/js/main-min.js" host=nextep.herokuapp.com request_id=5b6a5152-a5ea-4d7a-9481-6ebde9a3c38d fwd="155.69.160.109" dyno=web.1 connect=0ms service=8ms status=200 bytes=59507
+2015-11-08T08:55:01.172923+00:00 heroku[router]: at=info method=GET path="/socket.io/1/?t=1446972892882" host=nextep.herokuapp.com request_id=fad938fb-15b0-4b5c-afca-e76e81093e15 fwd="155.69.160.109" dyno=web.1 connect=1ms service=1ms status=200 bytes=343
+2015-11-08T08:55:01.948327+00:00 heroku[router]: at=info method=GET path="/asset/lobby_long.mp3" host=nextep.herokuapp.com request_id=51cc8bc2-cc68-4c0b-9908-0d50c8fcd558 fwd="155.69.160.109" dyno=web.1 connect=1ms service=287ms status=200 bytes=3081343
+2015-11-08T08:55:28.735359+00:00 app[web.1]: [ message  ->  mike ]
+2015-11-08T08:55:28.740287+00:00 app[web.1]: [ start_game_failure  ->  mike ]
+2015-11-08T08:55:43.263696+00:00 heroku[router]: at=info method=GET path="/" host=nextep.herokuapp.com request_id=14e28808-cec9-4122-b106-c9103341bb75 fwd="155.69.160.109" dyno=web.1 connect=0ms service=3ms status=200 bytes=14752
+2015-11-08T08:55:43.576199+00:00 heroku[router]: at=info method=GET path="/js/socketio.js" host=nextep.herokuapp.com request_id=f2a00cd1-fe94-4cc6-a5e2-b61f74116916 fwd="155.69.160.109" dyno=web.1 connect=0ms service=5ms status=200 bytes=44027
+2015-11-08T08:55:43.719801+00:00 heroku[router]: at=info method=GET path="/js/main-min.js" host=nextep.herokuapp.com request_id=a4a7d1a7-f9d9-4bfd-8efd-65f54eeacd0c fwd="155.69.160.109" dyno=web.1 connect=0ms service=7ms status=200 bytes=59507
+2015-11-08T08:55:44.404598+00:00 heroku[router]: at=info method=GET path="/socket.io/1/?t=1446972936123" host=nextep.herokuapp.com request_id=faa87b8b-7c16-4fcc-9340-0b44d19afdc1 fwd="155.69.160.109" dyno=web.1 connect=0ms service=1ms status=200 bytes=343
+2015-11-08T08:55:45.192012+00:00 heroku[router]: at=info method=GET path="/asset/lobby_long.mp3" host=nextep.herokuapp.com request_id=e760129e-354b-4ab5-a673-ab84131dfc38 fwd="155.69.160.109" dyno=web.1 connect=0ms service=307ms status=200 bytes=3081343
+2015-11-08T08:56:02.499983+00:00 heroku[router]: at=info method=GET path="/socket.io/1/websocket/262405101362" host=nextep.herokuapp.com request_id=6f3ed869-25bb-46b4-aa96-25dd0b8c159e fwd="155.69.160.109" dyno=web.1 connect=0ms service=17384ms status=101 bytes=195
+2015-11-08T08:56:03.150354+00:00 heroku[router]: at=info method=GET path="/socket.io/1/websocket/129859540124" host=nextep.herokuapp.com request_id=59d4ee2e-4f1c-4d12-a95b-c2fc66fb023c fwd="155.69.160.109" dyno=web.1 connect=2ms service=61254ms status=101 bytes=754
+2015-11-08T08:56:46.449864+00:00 heroku[router]: at=info method=GET path="/" host=nextep.herokuapp.com request_id=9212e793-bb2e-4987-9e5b-1f3af39c4786 fwd="49.145.3.17" dyno=web.1 connect=0ms service=3ms status=200 bytes=14752
+2015-11-08T08:56:47.476582+00:00 heroku[router]: at=info method=GET path="/js/socketio.js" host=nextep.herokuapp.com request_id=c793c815-c2b6-4cf4-aebf-e1ef1ece8763 fwd="49.145.3.17" dyno=web.1 connect=0ms service=6ms status=200 bytes=44027
+2015-11-08T08:56:47.479218+00:00 heroku[router]: at=info method=GET path="/js/main-min.js" host=nextep.herokuapp.com request_id=05d3c7c9-9ce8-4f84-9bbc-bdb837c54b2b fwd="49.145.3.17" dyno=web.1 connect=0ms service=7ms status=200 bytes=59507
+2015-11-08T08:56:49.064653+00:00 heroku[router]: at=info method=GET path="/socket.io/1/?t=1446973423851" host=nextep.herokuapp.com request_id=a1d476f9-e403-42a1-ba9f-443b0e0781fd fwd="49.145.3.17" dyno=web.1 connect=0ms service=1ms status=200 bytes=343
+2015-11-08T08:56:51.141817+00:00 heroku[router]: at=info method=GET path="/asset/lobby_long.mp3" host=nextep.herokuapp.com request_id=0198af3a-22d4-4a98-ae5f-dbdd25f111d1 fwd="49.145.3.17" dyno=web.1 connect=0ms service=318ms status=200 bytes=3081343
+2015-11-08T08:56:52.486605+00:00 heroku[router]: at=info method=GET path="/asset/lobby_long.mp3" host=nextep.herokuapp.com request_id=39c481fa-28d3-4ad4-bf62-c7e0eb411e5b fwd="49.145.3.17" dyno=web.1 connect=0ms service=319ms status=200 bytes=3081343
+2015-11-08T08:57:17.067078+00:00 app[web.1]: [ message  ->  Mike ]
+2015-11-08T08:57:17.098959+00:00 app[web.1]: [ start_game_failure  ->  Mike ]
+2015-11-08T08:57:23.244951+00:00 heroku[router]: at=info method=GET path="/socket.io/1/websocket/704951035579" host=nextep.herokuapp.com request_id=7b8b2c5b-3455-40ca-84e2-de4adf8e405f fwd="49.145.3.17" dyno=web.1 connect=0ms service=32627ms status=101 bytes=686
+2015-11-08T09:10:37.151088+00:00 heroku[router]: at=info method=GET path="/" host=nextep.herokuapp.com request_id=7be9e125-662f-4a48-9064-ce494d2dac0f fwd="155.69.160.102" dyno=web.1 connect=1ms service=4ms status=200 bytes=14752
+2015-11-08T09:10:37.636836+00:00 heroku[router]: at=info method=GET path="/js/socketio.js" host=nextep.herokuapp.com request_id=acab7fdc-b62d-475e-be24-e3c0c947a221 fwd="155.69.160.102" dyno=web.1 connect=1ms service=6ms status=200 bytes=44027
+2015-11-08T09:10:37.634438+00:00 heroku[router]: at=info method=GET path="/js/main-min.js" host=nextep.herokuapp.com request_id=67d46e7c-54fd-4b64-9b1e-0729a549e715 fwd="155.69.160.102" dyno=web.1 connect=1ms service=7ms status=200 bytes=59507
+2015-11-08T09:10:38.438633+00:00 heroku[router]: at=info method=GET path="/socket.io/1/?t=1446973838372" host=nextep.herokuapp.com request_id=39990b32-e272-41d1-b8b1-b69cf9ab1591 fwd="155.69.160.102" dyno=web.1 connect=1ms service=1ms status=200 bytes=342
+2015-11-08T09:10:38.716576+00:00 heroku[router]: at=info method=GET path="/favicon.ico" host=nextep.herokuapp.com request_id=c08a28b4-c2c2-451a-a43b-38a3395e6e9c fwd="155.69.160.102" dyno=web.1 connect=2ms service=3ms status=404 bytes=96
+2015-11-08T09:10:44.023211+00:00 heroku[router]: at=info method=GET path="/asset/lobby_long.mp3" host=nextep.herokuapp.com request_id=08d08a5c-4981-4f22-aff5-287ea5c3ac6f fwd="155.69.160.102" dyno=web.1 connect=1ms service=304ms status=200 bytes=3081343
+2015-11-08T09:10:44.594521+00:00 heroku[router]: at=info method=GET path="/asset/lobby_long.mp3" host=nextep.herokuapp.com request_id=106e6247-8210-4b99-8713-8506c4a11994 fwd="155.69.160.102" dyno=web.1 connect=1ms service=323ms status=200 bytes=3081343
+2015-11-08T09:10:56.571434+00:00 heroku[router]: at=info method=GET path="/socket.io/1/websocket/87397793014" host=nextep.herokuapp.com request_id=065e0d0a-244a-4c61-b852-63ac63df67fc fwd="155.69.160.102" dyno=web.1 connect=1ms service=17632ms status=101 bytes=365
+2015-11-08T09:16:26.475438+00:00 heroku[router]: at=info method=GET path="/" host=nextep.herokuapp.com request_id=00a06574-5491-48f2-b900-9da5b96fc0b2 fwd="204.102.227.190" dyno=web.1 connect=16ms service=8ms status=200 bytes=14752
+2015-11-08T09:16:26.641826+00:00 heroku[router]: at=info method=GET path="/js/socketio.js" host=nextep.herokuapp.com request_id=13e4d2ba-dae5-44d0-a6c9-a5b7eec01258 fwd="204.102.227.190" dyno=web.1 connect=2ms service=8ms status=200 bytes=44027
+2015-11-08T09:16:27.039296+00:00 heroku[router]: at=info method=GET path="/js/main-min.js" host=nextep.herokuapp.com request_id=61bf3379-21f8-4ca7-b747-1c6dda587233 fwd="204.102.227.190" dyno=web.1 connect=0ms service=9ms status=200 bytes=59507
+2015-11-08T09:16:29.117355+00:00 heroku[router]: at=info method=GET path="/socket.io/1/?t=1446974188683" host=nextep.herokuapp.com request_id=45d5985d-08b1-47cf-a466-206e37fadc29 fwd="204.102.227.190" dyno=web.1 connect=0ms service=4ms status=200 bytes=343
+2015-11-08T09:16:32.341311+00:00 heroku[router]: at=info method=GET path="/favicon.ico" host=nextep.herokuapp.com request_id=f17c0dca-76ef-4f40-bdba-5adea7e3559f fwd="204.102.227.190" dyno=web.1 connect=3ms service=3ms status=404 bytes=96
+2015-11-08T09:16:37.128488+00:00 heroku[router]: at=info method=GET path="/asset/lobby_long.mp3" host=nextep.herokuapp.com request_id=ce93a88f-51cc-4b79-8d3a-ac1371d49c75 fwd="204.102.227.190" dyno=web.1 connect=0ms service=396ms status=200 bytes=3081343
+2015-11-08T09:16:55.574888+00:00 app[web.1]: [ message  ->  Hello ]
+2015-11-08T09:16:55.578717+00:00 app[web.1]: [ start_game_failure  ->  Hello ]
+2015-11-08T09:17:15.600709+00:00 app[web.1]: [ message  ->  Hello ]
+2015-11-08T09:17:15.600942+00:00 app[web.1]: [ start_game_failure  ->  Hello ]
+2015-11-08T09:17:40.683076+00:00 heroku[router]: at=info method=GET path="/s
+ocket.io/1/websocket/736898620375" host=nextep.herokuapp.com request_id=ee8554e7-f375-4b84-8074-9e5033a51a5c fwd="204.102.227.190" dyno=web.1 connect=0ms service=71185ms status=101 bytes=1072
+2015-11-08T09:28:31.460216+00:00 heroku[router]: at=info method=GET path="/" host=nextep.herokuapp.com request_id=f96849b2-bf43-4c6f-85b0-412090cd77f8 fwd="202.62.17.210" dyno=web.1 connect=1ms service=4ms status=200 bytes=14752
+2015-11-08T09:28:32.633612+00:00 heroku[router]: at=info method=GET path="/js/main-min.js" host=nextep.herokuapp.com request_id=fe8ac029-f9f5-4706-9b3f-2a74b5af889d fwd="202.62.17.210" dyno=web.1 connect=1ms service=10ms status=200 bytes=59507
+2015-11-08T09:28:32.634161+00:00 heroku[router]: at=info method=GET path="/js/socketio.js" host=nextep.herokuapp.com request_id=e41afff2-f81a-47e7-abad-e51563ffaa30 fwd="202.62.17.210" dyno=web.1 connect=4ms service=10ms status=200 bytes=44027
+2015-11-08T09:28:34.723445+00:00 heroku[router]: at=info method=GET path="/socket.io/1/?t=1446974915577" host=nextep.herokuapp.com request_id=786627fd-2910-4f2f-9564-4562b9f2f52f fwd="202.62.17.210" dyno=web.1 connect=1ms service=5ms status=200 bytes=343
+2015-11-08T09:28:37.570971+00:00 heroku[router]: at=info method=GET path="/asset/lobby_long.mp3" host=nextep.herokuapp.com request_id=ff139461-a23d-4c1d-a1e7-26d369a2940a fwd="202.62.17.210" dyno=web.1 connect=1ms service=311ms status=200 bytes=3081343
+2015-11-08T09:28:38.518688+00:00 heroku[router]: at=info method=GET path="/favicon.ico" host=nextep.herokuapp.com request_id=f2c3544b-ab32-443c-8aba-0207910899ed fwd="202.62.17.210" dyno=web.1 connect=1ms service=7ms status=404 bytes=96
+2015-11-08T09:28:43.926650+00:00 heroku[router]: at=info method=GET path="/socket.io/1/websocket/196480197196" host=nextep.herokuapp.com request_id=eae1db42-30fa-4bf5-9bed-4a74c621cfd9 fwd="202.62.17.210" dyno=web.1 connect=1ms service=8207ms status=101 bytes=195
+2015-11-08T09:32:15.226058+00:00 heroku[router]: at=info method=GET path="/" host=nextep.herokuapp.com request_id=ac135e66-1f8a-4ca6-933f-e3765b6c2327 fwd="116.88.152.187" dyno=web.1 connect=1ms service=3ms status=200 bytes=14752
+2015-11-08T09:32:15.612685+00:00 heroku[router]: at=info method=GET path="/js/socketio.js" host=nextep.herokuapp.com request_id=59012b40-5e55-4148-aa42-9f29726dc5a5 fwd="116.88.152.187" dyno=web.1 connect=1ms service=5ms status=200 bytes=44027
+2015-11-08T09:32:15.813101+00:00 heroku[router]: at=info method=GET path="/js/main-min.js" host=nextep.herokuapp.com request_id=4eb4a1fc-62fa-4305-86e5-a7af22ad7854 fwd="116.88.152.187" dyno=web.1 connect=1ms service=11ms status=200 bytes=59507
+2015-11-08T09:32:16.696899+00:00 heroku[router]: at=info method=GET path="/socket.io/1/?t=1446975136879" host=nextep.herokuapp.com request_id=6a047998-1cbd-46c2-9353-3e2c42faab8f fwd="116.88.152.187" dyno=web.1 connect=1ms service=5ms status=200 bytes=342
+2015-11-08T09:32:20.024517+00:00 heroku[router]: at=info method=GET path="/favicon.ico" host=nextep.herokuapp.com request_id=4153003e-1edd-435e-a33c-a7af2ffe1306 fwd="116.88.152.187" dyno=web.1 connect=1ms service=6ms status=404 bytes=96
+2015-11-08T09:32:26.244770+00:00 heroku[router]: at=info method=GET path="/asset/lobby_long.mp3" host=nextep.herokuapp.com request_id=ef721a39-7f46-41ad-9138-f40906f5a064 fwd="116.88.152.187" dyno=web.1 connect=1ms service=310ms status=200 bytes=3081343
+2015-11-08T09:32:46.597005+00:00 app[web.1]: [ message  ->  zxkirazx ]
+2015-11-08T09:32:46.614984+00:00 app[web.1]: [ start_game_failure  ->  zxkirazx ]
+2015-11-08T09:33:24.396159+00:00 heroku[router]: at=info method=GET path="/socket.io/1/websocket/45321268675" host=nextep.herokuapp.com request_id=cac28c44-2f00-40ef-bb4a-a152a95c6acb fwd="116.88.152.187" dyno=web.1 connect=1ms service=67113ms status=101 bytes=773
+2015-11-08T09:40:38.580675+00:00 heroku[router]: at=info method=GET path="/" host=nextep.herokuapp.com request_id=9af60b32-377d-4acb-899b-9f8fd9d128cc fwd="116.14.48.138" dyno=web.1 connect=0ms service=5ms status=200 bytes=14752
+2015-11-08T09:40:39.161760+00:00 heroku[router]: at=info method=GET path="/js/socketio.js" host=nextep.herokuapp.com request_id=aa061fb9-0764-4cb1-b55f-55bad9f33310 fwd="116.14.48.138" dyno=web.1 connect=1ms service=61ms status=200 bytes=44027
+2015-11-08T09:40:39.177153+00:00 heroku[router]: at=info method=GET path="/js/main-min.js" host=nextep.herokuapp.com request_id=c10fb1a8-db26-4b0d-a203-8600165ce9d8 fwd="116.14.48.138" dyno=web.1 connect=1ms service=55ms status=200 bytes=59507
+2015-11-08T09:40:40.065068+00:00 heroku[router]: at=info method=GET path="/socket.io/1/?t=1446975639583" host=nextep.herokuapp.com request_id=d5d35f9c-0db5-4b3c-81de-02c3ff1d1203 fwd="116.14.48.138" dyno=web.1 connect=0ms service=79ms status=200 bytes=343
+2015-11-08T09:40:40.350472+00:00 heroku[router]: at=info method=GET path="/asset/lobby_long.mp3" host=nextep.herokuapp.com request_id=3da0b2a3-eb97-4e33-8497-5bad40dc9a6c fwd="116.14.48.138" dyno=web.1 connect=1ms service=374ms status=200 bytes=3081343
+2015-11-08T09:40:40.502146+00:00 heroku[router]: at=info method=GET path="/favicon.ico" host=nextep.herokuapp.com request_id=7e57bedc-c83b-400a-8415-73616e3b0899 fwd="116.14.48.138" dyno=web.1 connect=0ms service=3ms status=404 bytes=96
+2015-11-08T09:40:40.784436+00:00 heroku[router]: at=info method=GET path="/favicon.ico" host=nextep.herokuapp.com request_id=7780eaf4-a9fd-4e08-8880-84e410833521 fwd="116.14.48.138" dyno=web.1 connect=2ms service=12ms status=404 bytes=96
+2015-11-08T09:40:59.984315+00:00 app[web.1]: [ message  ->  kmlk ]
+2015-11-08T09:40:59.984520+00:00 app[web.1]: [ start_game_failure  ->  kmlk ]
+2015-11-08T09:41:17.698563+00:00 heroku[router]: at=info method=GET path="/socket.io/1/websocket/206636596336" host=nextep.herokuapp.com request_id=bac31887-b619-4193-86db-356eb358f002 fwd="116.14.48.138" dyno=web.1 connect=1ms service=36964ms status=101 bytes=753
+2015-11-08T09:56:13.687570+00:00 heroku[router]: at=info method=GET path="/" host=nextep.herokuapp.com request_id=ab40f4a2-a3f9-4299-a602-a96fa4a8047d fwd="115.66.158.23" dyno=web.1 connect=0ms service=12ms status=200 bytes=14752
+2015-11-08T09:56:14.263067+00:00 heroku[router]: at=info method=GET path="/js/socketio.js" host=nextep.herokuapp.com request_id=279d567f-b8a8-4cb4-9b19-a2dcd9d65442 fwd="115.66.158.23" dyno=web.1 connect=0ms service=6ms status=200 bytes=44027
+2015-11-08T09:56:14.286394+00:00 heroku[router]: at=info method=GET path="/js/main-min.js" host=nextep.herokuapp.com request_id=d557aa7f-c00f-4819-bc1b-64148e95c385 fwd="115.66.158.23" dyno=web.1 connect=0ms service=8ms status=200 bytes=59507
+2015-11-08T09:56:15.429801+00:00 heroku[router]: at=info method=GET path="/socket.io/1/?t=1446976575292" host=nextep.herokuapp.com request_id=c885889a-9b15-4bf0-957e-ef4f98f75fe0 fwd="115.66.158.23" dyno=web.1 connect=0ms service=1ms status=200 bytes=344
+2015-11-08T09:56:16.515121+00:00 heroku[router]: sock=client at=warning code=H27 desc="Client Request Interrupted" method=GET path="/asset/lobby_long.mp3" host=nextep.herokuapp.com request_id=9f93fe2e-d040-409d-9ed3-617d4c2edaa7 fwd="115.66.158.23" dyno=web.1 connect=0ms service=256ms status=499 bytes=4215
+2015-11-08T09:56:16.525337+00:00 app[web.1]: Traceback (most recent call last):
+2015-11-08T09:56:16.525403+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/gevent/pywsgi.py", line 508, in handle_one_response
+2015-11-08T09:56:16.525468+00:00 app[web.1]:     self.run_application()
+2015-11-08T09:56:16.525494+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/gevent/pywsgi.py", line 495, in run_application
+2015-11-08T09:56:16.525666+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/gevent/pywsgi.py", line 376, in write
+2015-11-08T09:56:16.525567+00:00 app[web.1]:     self.process_result()
+2015-11-08T09:56:16.525975+00:00 app[web.1]:     self._write(data)
+2015-11-08T09:56:16.526259+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/gevent/pywsgi.py", line 355, in _sendall
+2015-11-08T09:56:16.525596+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/gevent/pywsgi.py", line 486, in process_result
+2015-11-08T09:56:16.526072+00:00 app[web.1]:     self._sendall(data)
+2015-11-08T09:56:16.525639+00:00 app[web.1]:     self.write(data)
+2015-11-08T09:56:16.526303+00:00 app[web.1]:     self.socket.sendall(data)
+2015-11-08T09:56:16.526372+00:00 app[web.1]:     data_sent += self.send(_get_memory(data, data_sent), flags)
+2015-11-08T09:56:16.531038+00:00 app[web.1]:  'HTTP_ACCEPT': '*/*',
+2015-11-08T09:56:16.531040+00:00 app[web.1]:  'HTTP_ACCEPT_ENCODING': 'identity',
+2015-11-08T09:56:16.531040+00:00 app[web.1]:  'HTTP_ACCEPT_LANGUAGE': 'en-us',
+2015-11-08T09:56:16.531042+00:00 app[web.1]:  'HTTP_CONNECT_TIME': '0',
+2015-11-08T09:56:16.531045+00:00 app[web.1]:  'HTTP_HOST': 'nextep.herokuapp.com',
+2015-11-08T09:56:16.526587+00:00 app[web.1]: error: [Errno 104] Connection reset by peer
+2015-11-08T09:56:16.531034+00:00 app[web.1]: {'GATEWAY_INTERFACE': 'CGI/1.1',
+2015-11-08T09:56:16.526465+00:00 app[web.1]:     return sock.send(data, flags)
+2015-11-08T09:56:16.531041+00:00 app[web.1]:  'HTTP_CONNECTION': 'close',
+2015-11-08T09:56:16.526003+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/gevent/pywsgi.py", line 369, in _write
+2015-11-08T09:56:16.526329+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/gevent/socket.py", line 460, in sendall
+2015-11-08T09:56:16.526422+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/gevent/socket.py", line 445, in send
+2015-11-08T09:56:16.531044+00:00 app[web.1]:  'HTTP_COOKIE': 'heroku-session-affinity=ACaDaANoA2IAAAWnYgAAGn5iAAAZJmEBbAAAAAFtAAAABXdlYi4xasqU0qSLKMQUcMZ9FfL3R8j+JfhG',
+2015-11-08T09:56:16.531045+00:00 app[web.1]:  'HTTP_RANGE': 'bytes=0-1',
+2015-11-08T09:56:16.531049+00:00 app[web.1]:  'HTTP_USER_AGENT': 'Mozilla/5.0 (iPhone; CPU iPhone OS 8_1_2 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) Mobile/12B440 [FBAN/FBIOS;FBAV/39.0.0.36.31;FBBV/14703842;FBDV/iPhone7,2;FBMD/iPhone;FBSN/iPhone OS;FBSV/8.1.2;FBSS/2; FBCR/Singtel;FBID/phone;FBLC/en_US;FBOP/5]',
+2015-11-08T09:56:16.531051+00:00 app[web.1]:  'HTTP_X_FORWARDED_PORT': '80',
+2015-11-08T09:56:16.531050+00:00 app[web.1]:  'HTTP_VIA': '1.1 vegur',
+2015-11-08T09:56:16.531057+00:00 app[web.1]:  'REMOTE_ADDR': '10.61.199.233',
+2015-11-08T09:56:16.531050+00:00 app[web.1]:  'HTTP_X_FORWARDED_FOR': '115.66.158.23',
+2015-11-08T09:56:16.531053+00:00 app[web.1]:  'HTTP_X_PLAYBACK_SESSION_ID': '0A125D46-B818-4754-A0F5-EF24CBDA7611',
+2015-11-08T09:56:16.531046+00:00 app[web.1]:  'HTTP_REFERER': 'http://nextep.herokuapp.com/',
+2015-11-08T09:56:16.531047+00:00 app[web.1]:  'HTTP_TOTAL_ROUTE_TIME': '0',
+2015-11-08T09:56:16.531053+00:00 app[web.1]:  'HTTP_X_REQUEST_ID': '9f93fe2e-d040-409d-9ed3-617d4c2edaa7',
+2015-11-08T09:56:16.531055+00:00 app[web.1]:  'PATH_INFO': '/asset/lobby_long.mp3',
+2015-11-08T09:56:16.531054+00:00 app[web.1]:  'HTTP_X_REQUEST_START': '1446976576256',
+2015-11-08T09:56:16.531051+00:00 app[web.1]:  'HTTP_X_FORWARDED_PROTO': 'http',
+2015-11-08T09:56:16.531056+00:00 app[web.1]:  'RAW_URI': '/asset/lobby_long.mp3',
+2015-11-08T09:56:16.531057+00:00 app[web.1]:  'REMOTE_PORT': '60411',
+2015-11-08T09:56:16.531055+00:00 app[web.1]:  'QUERY_STRING': '',
+2015-11-08T09:56:16.531059+00:00 app[web.1]:  'SCRIPT_NAME': '',
+2015-11-08T09:56:16.531060+00:00 app[web.1]:  'SERVER_PORT': '28833',
+2015-11-08T09:56:16.531061+00:00 app[web.1]:  'SERVER_PROTOCOL': 'HTTP/1.1',
+2015-11-08T09:56:16.531062+00:00 app[web.1]:  'SERVER_SOFTWARE': 'gevent/1.0 Python/2.7',
+2015-11-08T09:56:16.531060+00:00 app[web.1]:  'SERVER_NAME': '9ec1676e-4d5b-4830-837e-7f8121285af0.prvt.dyno.rt.heroku.com',
+2015-11-08T09:56:16.531058+00:00 app[web.1]:  'REQUEST_METHOD': 'GET',
+2015-11-08T09:56:16.531062+00:00 app[web.1]:  'gunicorn.sock': <socket at 0x7f43b5d51ad0 fileno=13 sock=172.17.38.70:28833>,
+2015-11-08T09:56:16.531063+00:00 app[web.1]:  'wsgi.errors': <open file '<stderr>', mode 'w' at 0x7f43c130b1e0>,
+2015-11-08T09:56:16.531064+00:00 app[web.1]:  'wsgi.input': <gevent.pywsgi.Input object at 0x7f43b5d74990>,
+2015-11-08T09:56:16.531065+00:00 app[web.1]:  'wsgi.multiprocess': False,
+2015-11-08T09:56:16.531065+00:00 app[web.1]:  'wsgi.multithread': False,
+2015-11-08T09:56:16.531066+00:00 app[web.1]:  'wsgi.run_once': False,
+2015-11-08T09:56:16.531067+00:00 app[web.1]:  'wsgi.url_scheme': 'http',
+2015-11-08T09:56:16.531067+00:00 app[web.1]:  'wsgi.version': (1, 0)} failed with error
+2015-11-08T09:56:16.531068+00:00 app[web.1]: 
+2015-11-08T09:56:17.217316+00:00 heroku[router]: at=info method=GET path="/asset/lobby_long.mp3" host=nextep.herokuapp.com request_id=de450078-6a95-44c1-b330-58d59065689f fwd="115.66.158.23" dyno=web.1 connect=0ms service=321ms status=200 bytes=3081343
+2015-11-08T09:56:34.572977+00:00 heroku[router]: at=info method=GET path="/socket.io/1/websocket/0123548173095" host=nextep.herokuapp.com request_id=2d071b5b-26b8-470d-9c0f-69c41b4acb56 fwd="115.66.158.23" dyno=web.1 connect=0ms service=18235ms status=101 bytes=369
+2015-11-08T09:58:53.312706+00:00 heroku[router]: at=info method=GET path="/" host=nextep.herokuapp.com request_id=d35160af-c04c-40ec-a079-74c4fb1a9d9b fwd="31.205.16.185" dyno=web.1 connect=2ms service=4ms status=200 bytes=14752
+2015-11-08T09:58:53.540882+00:00 heroku[router]: at=info method=GET path="/js/main-min.js" host=nextep.herokuapp.com request_id=54718276-857b-48c9-aede-a126165437bc fwd="31.205.16.185" dyno=web.1 connect=5ms service=21ms status=200 bytes=59507
+2015-11-08T09:58:53.515403+00:00 heroku[router]: at=info method=GET path="/js/socketio.js" host=nextep.herokuapp.com request_id=cfc4d00e-24a3-4b38-a33e-3faac0d113b1 fwd="31.205.16.185" dyno=web.1 connect=1ms service=12ms status=200 bytes=44027
+2015-11-08T09:58:53.804096+00:00 heroku[router]: at=info method=GET path="/socket.io/1/?t=1446976834115" host=nextep.herokuapp.com request_id=82fecfb4-60c4-48e8-8348-de9675ee4e65 fwd="31.205.16.185" dyno=web.1 connect=1ms service=2ms status=200 bytes=343
+2015-11-08T09:59:00.350168+00:00 heroku[router]: at=info method=GET path="/favicon.ico" host=nextep.herokuapp.com request_id=143795c4-26fa-4898-ac04-2d07b90283fd fwd="31.205.16.185" dyno=web.1 connect=1ms service=2ms status=404 bytes=96
+2015-11-08T09:59:00.624025+00:00 heroku[router]: at=info method=GET path="/asset/lobby_long.mp3" host=nextep.herokuapp.com request_id=f89605eb-3a24-4388-a4d4-074cb2971e45 fwd="31.205.16.185" dyno=web.1 connect=1ms service=307ms status=200 bytes=3081343
+2015-11-08T09:59:13.674589+00:00 app[web.1]: [ message  ->  Dan ]
+2015-11-08T09:59:13.682144+00:00 app[web.1]: [ start_game_failure  ->  Dan ]
+2015-11-08T09:59:23.748817+00:00 heroku[router]: at=info method=GET path="/socket.io/1/websocket/628084456895" host=nextep.herokuapp.com request_id=b7154044-d9f7-4b55-88a5-9f5fdb634106 fwd="31.205.16.185" dyno=web.1 connect=1ms service=29743ms status=101 bytes=764
+2015-11-08T09:59:27.523217+00:00 heroku[router]: at=info method=GET path="/" host=nextep.herokuapp.com request_id=f5ef45f2-1221-46b1-906d-f9c3a0369cd7 fwd="31.205.16.185" dyno=web.1 connect=1ms service=6ms status=200 bytes=14752
+2015-11-08T09:59:27.723228+00:00 heroku[router]: at=info method=GET path="/js/main-min.js" host=nextep.herokuapp.com request_id=17b9a7d7-fb61-4968-beab-f3540afe1fc3 fwd="31.205.16.185" dyno=web.1 connect=1ms service=18ms status=200 bytes=59507
+2015-11-08T09:59:27.710861+00:00 heroku[router]: at=info method=GET path="/js/socketio.js" host=nextep.herokuapp.com request_id=9b2cdc06-be97-4ccd-ad74-11caca45d2a3 fwd="31.205.16.185" dyno=web.1 connect=1ms service=7ms status=200 bytes=44027
+2015-11-08T09:59:28.025798+00:00 heroku[router]: at=info method=GET path="/socket.io/1/?t=1446976868305" host=nextep.herokuapp.com request_id=c7b8ee09-7ea3-4341-8cfe-b5abe733dba5 fwd="31.205.16.185" dyno=web.1 connect=5ms service=2ms status=200 bytes=343
+2015-11-08T09:59:29.305004+00:00 heroku[router]: at=info method=GET path="/asset/lobby_long.mp3" host=nextep.herokuapp.com request_id=276b9136-6629-447a-9b48-9983714ee58d fwd="31.205.16.185" dyno=web.1 connect=4ms service=344ms status=20
+0 bytes=3081343
+2015-11-08T09:59:38.417648+00:00 heroku[router]: at=info method=GET path="/socket.io/1/websocket/886148992057" host=nextep.herokuapp.com request_id=ab37f7b9-dccf-4377-b7d9-fa49335ab985 fwd="31.205.16.185" dyno=web.1 connect=1ms service=10202ms status=101 bytes=547
+2015-11-08T10:06:51.825765+00:00 heroku[router]: at=info method=GET path="/" host=nextep.herokuapp.com request_id=4e8d4ab8-b4dc-478f-a6e4-9ee60cb0fa49 fwd="116.87.71.212" dyno=web.1 connect=1ms service=3ms status=200 bytes=14752
+2015-11-08T10:06:52.357382+00:00 heroku[router]: at=info method=GET path="/js/socketio.js" host=nextep.herokuapp.com request_id=697e9e2e-4c05-41ef-9194-30363e63e202 fwd="116.87.71.212" dyno=web.1 connect=0ms service=6ms status=200 bytes=44027
+2015-11-08T10:06:52.409231+00:00 heroku[router]: at=info method=GET path="/js/main-min.js" host=nextep.herokuapp.com request_id=8b63bf9f-8e3d-47a8-917c-351354677544 fwd="116.87.71.212" dyno=web.1 connect=1ms service=9ms status=200 bytes=59507
+2015-11-08T10:06:53.901162+00:00 heroku[router]: at=info method=GET path="/asset/lobby_long.mp3" host=nextep.herokuapp.com request_id=5d171b44-e57d-4155-928e-440d140d0b8a fwd="116.87.71.212" dyno=web.1 connect=6ms service=390ms status=200 bytes=3081343
+2015-11-08T10:06:54.326990+00:00 heroku[router]: at=info method=GET path="/favicon.ico" host=nextep.herokuapp.com request_id=e4f3742d-361e-4d25-883a-4d253486ecdd fwd="116.87.71.212" dyno=web.1 connect=1ms service=3ms status=404 bytes=96
+2015-11-08T10:09:15.921051+00:00 heroku[router]: at=info method=GET path="/" host=nextep.herokuapp.com request_id=2e1cfdee-6979-45a3-9ca4-191d6e92a6f2 fwd="155.69.160.117" dyno=web.1 connect=1ms service=3ms status=200 bytes=14752
+2015-11-08T10:09:16.423597+00:00 heroku[router]: at=info method=GET path="/js/main-min.js" host=nextep.herokuapp.com request_id=4c812276-ff20-4c95-b350-992aab127a1b fwd="155.69.160.117" dyno=web.1 connect=0ms service=7ms status=200 bytes=59507
+2015-11-08T10:09:16.401427+00:00 heroku[router]: at=info method=GET path="/js/socketio.js" host=nextep.herokuapp.com request_id=5e95193c-dd47-4c11-b27e-944bf28146d7 fwd="155.69.160.117" dyno=web.1 connect=1ms service=6ms status=200 bytes=44027
+2015-11-08T10:09:17.424228+00:00 heroku[router]: at=info method=GET path="/socket.io/1/?t=1446977369359" host=nextep.herokuapp.com request_id=3a83c936-a9df-4b67-ae5e-91168f43eb98 fwd="155.69.160.117" dyno=web.1 connect=3ms service=2ms status=200 bytes=344
+2015-11-08T10:09:17.723158+00:00 heroku[router]: at=info method=GET path="/asset/lobby_long.mp3" host=nextep.herokuapp.com request_id=6faee317-e54f-4177-9c72-996954d29663 fwd="155.69.160.117" dyno=web.1 connect=1ms service=314ms status=200 bytes=3081343
+2015-11-08T10:09:18.131675+00:00 heroku[router]: at=info method=GET path="/favicon.ico" host=nextep.herokuapp.com request_id=6879a1e0-161c-4bdd-b69c-60abbcc5d785 fwd="155.69.160.117" dyno=web.1 connect=1ms service=1ms status=404 bytes=96
+2015-11-08T10:09:18.386630+00:00 heroku[router]: at=info method=GET path="/favicon.ico" host=nextep.herokuapp.com request_id=f2873fb7-ee7b-4d89-9de1-06f95020c73f fwd="155.69.160.117" dyno=web.1 connect=1ms service=2ms status=404 bytes=96
+2015-11-08T10:09:33.996537+00:00 heroku[router]: at=info method=GET path="/" host=nextep.herokuapp.com request_id=786eea85-e439-4819-97f8-bf707c0b28a5 fwd="134.169.86.73" dyno=web.1 connect=0ms service=3ms status=200 bytes=14752
+2015-11-08T10:09:34.289488+00:00 heroku[router]: at=info method=GET path="/js/socketio.js" host=nextep.herokuapp.com request_id=566ce544-bddb-43b0-8ddc-2fc6ab1c7590 fwd="134.169.86.73" dyno=web.1 connect=0ms service=6ms status=200 bytes=44027
+2015-11-08T10:09:34.296837+00:00 heroku[router]: at=info method=GET path="/js/main-min.js" host=nextep.herokuapp.com request_id=69caba2b-ead5-4f7a-aec4-f1a8e74c0640 fwd="134.169.86.73" dyno=web.1 connect=0ms service=6ms status=200 bytes=59507
+2015-11-08T10:09:34.645736+00:00 heroku[router]: at=info method=GET path="/socket.io/1/?t=1446977378631" host=nextep.herokuapp.com request_id=f60c4768-36c7-43d9-8808-9893f6d16f12 fwd="134.169.86.73" dyno=web.1 connect=0ms service=2ms status=200 bytes=343
+2015-11-08T10:09:34.957060+00:00 heroku[router]: sock=client at=warning code=H27 desc="Client Request Interrupted" method=GET path="/asset/lobby_long.mp3" host=nextep.herokuapp.com request_id=1740969b-4856-4efd-aa38-01b0deffb334 fwd="134.169.86.73" dyno=web.1 connect=0ms service=103ms status=499 bytes=1448
+2015-11-08T10:09:34.958282+00:00 app[web.1]: Traceback (most recent call last):
+2015-11-08T10:09:34.958288+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/gevent/pywsgi.py", line 508, in handle_one_response
+2015-11-08T10:09:34.958338+00:00 app[web.1]:     self.run_application()
+2015-11-08T10:09:34.958373+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/gevent/pywsgi.py", line 495, in run_application
+2015-11-08T10:09:34.958399+00:00 app[web.1]:     self.process_result()
+2015-11-08T10:09:34.958413+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/gevent/pywsgi.py", line 486, in process_result
+2015-11-08T10:09:34.958436+00:00 app[web.1]:     self.write(data)
+2015-11-08T10:09:34.958453+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/gevent/pywsgi.py", line 376, in write
+2015-11-08T10:09:34.958496+00:00 app[web.1]:     self._write(data)
+2015-11-08T10:09:34.958521+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/gevent/pywsgi.py", line 369, in _write
+2015-11-08T10:09:34.958570+00:00 app[web.1]:     self._sendall(data)
+2015-11-08T10:09:34.958573+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/gevent/pywsgi.py", line 355, in _sendall
+2015-11-08T10:09:34.958608+00:00 app[web.1]:     self.socket.sendall(data)
+2015-11-08T10:09:34.958622+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/gevent/socket.py", line 460, in sendall
+2015-11-08T10:09:34.958646+00:00 app[web.1]:     data_sent += self.send(_get_memory(data, data_sent), flags)
+2015-11-08T10:09:34.958648+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/gevent/socket.py", line 445, in send
+2015-11-08T10:09:34.958667+00:00 app[web.1]:     return sock.send(data, flags)
+2015-11-08T10:09:34.958688+00:00 app[web.1]: error: [Errno 104] Connection reset by peer
+2015-11-08T10:09:34.961407+00:00 app[web.1]: {'GATEWAY_INTERFACE': 'CGI/1.1',
+2015-11-08T10:09:34.961409+00:00 app[web.1]:  'HTTP_ACCEPT': '*/*',
+2015-11-08T10:09:34.961410+00:00 app[web.1]:  'HTTP_ACCEPT_ENCODING': 'identity',
+2015-11-08T10:09:34.961411+00:00 app[web.1]:  'HTTP_CONNECTION': 'close',
+2015-11-08T10:09:34.961410+00:00 app[web.1]:  'HTTP_ACCEPT_LANGUAGE': 'en-us',
+2015-11-08T10:09:34.961411+00:00 app[web.1]:  'HTTP_CONNECT_TIME': '0',
+2015-11-08T10:09:34.961412+00:00 app[web.1]:  'HTTP_COOKIE': 'heroku-session-affinity=ACaDaANoA2IAAAWnYgAAHZ5iAABWHWEBbAAAAAFtAAAABXdlYi4xauEJ/cPKdVZfE5p/Vt2CSkgrcAFR',
+2015-11-08T10:09:34.961412+00:00 app[web.1]:  'HTTP_HOST': 'nextep.herokuapp.com',
+2015-11-08T10:09:34.961412+00:00 app[web.1]:  'HTTP_RANGE': 'bytes=0-1',
+2015-11-08T10:09:34.961413+00:00 app[web.1]:  'HTTP_REFERER': 'http://nextep.herokuapp.com/',
+2015-11-08T10:09:34.961414+00:00 app[web.1]:  'HTTP_TOTAL_ROUTE_TIME': '0',
+2015-11-08T10:09:34.961415+00:00 app[web.1]:  'HTTP_USER_AGENT': 'Mozilla/5.0 (iPad; CPU OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13B143 [FBAN/FBIOS;FBAV/43.0.0.26.314;FBBV/17000587;FBDV/iPad5,3;FBMD/iPad;FBSN/iPhone OS;FBSV/9.1;FBSS/2; FBCR/;FBID/tablet;FBLC/en_US;FBOP/1]',
+2015-11-08T10:09:34.961415+00:00 app[web.1]:  'HTTP_VIA': '1.1 vegur',
+2015-11-08T10:09:34.961415+00:00 app[web.1]:  'HTTP_X_FORWARDED_FOR': '134.169.86.73',
+2015-11-08T10:09:34.961416+00:00 app[web.1]:  'HTTP_X_FORWARDED_PORT': '80',
+2015-11-08T10:09:34.961417+00:00 app[web.1]:  'HTTP_X_FORWARDED_PROTO': 'http',
+2015-11-08T10:09:34.961417+00:00 app[web.1]:  'HTTP_X_PLAYBACK_SESSION_ID': '29DCBD38-82EC-441E-8AA5-000DD0AD2DB2',
+2015-11-08T10:09:34.961418+00:00 app[web.1]:  'HTTP_X_REQUEST_ID': '1740969b-4856-4efd-aa38-01b0deffb334',
+2015-11-08T10:09:34.961418+00:00 app[web.1]:  'HTTP_X_REQUEST_START': '1446977374852',
+2015-11-08T10:09:34.961419+00:00 app[web.1]:  'PATH_INFO': '/asset/lobby_long.mp3',
+2015-11-08T10:09:34.961419+00:00 app[web.1]:  'QUERY_STRING': '',
+2015-11-08T10:09:34.961420+00:00 app[web.1]:  'RAW_URI': '/asset/lobby_long.mp3',
+2015-11-08T10:09:34.961420+00:00 app[web.1]:  'REMOTE_ADDR': '10.169.232.240',
+2015-11-08T10:09:34.961421+00:00 app[web.1]:  'REMOTE_PORT': '19794',
+2015-11-08T10:09:34.961421+00:00 app[web.1]:  'REQUEST_METHOD': 'GET',
+2015-11-08T10:09:34.961421+00:00 app[web.1]:  'SCRIPT_NAME': '',
+2015-11-08T10:09:34.961422+00:00 app[web.1]:  'SERVER_NAME': '9ec1676e-4d5b-4830-837e-7f8121285af0.prvt.dyno.rt.heroku.com',
+2015-11-08T10:09:34.961422+00:00 app[web.1]:  'SERVER_PORT': '28833',
+2015-11-08T10:09:34.961423+00:00 app[web.1]:  'SERVER_PROTOCOL': 'HTTP/1.1',
+2015-11-08T10:09:34.961423+00:00 app[web.1]:  'SERVER_SOFTWARE': 'gevent/1.0 Python/2.7',
+2015-11-08T10:09:34.961423+00:00 app[web.1]:  'gunicorn.sock': <socket at 0x7f43b5d4bb10 fileno=14 sock=172.17.38.70:28833>,
+2015-11-08T10:09:34.961424+00:00 app[web.1]:  'wsgi.errors': <open file '<stderr>', mode 'w' at 0x7f43c130b1e0>,
+2015-11-08T10:09:34.961424+00:00 app[web.1]:  'wsgi.input': <gevent.pywsgi.Input object at 0x7f43b5d70c90>,
+2015-11-08T10:09:34.961426+00:00 app[web.1]:  'wsgi.url_scheme': 'http',
+2015-11-08T10:09:34.961425+00:00 app[web.1]:  'wsgi.multiprocess': False,
+2015-11-08T10:09:34.961425+00:00 app[web.1]:  'wsgi.multithread': False,
+2015-11-08T10:09:34.961426+00:00 app[web.1]:  'wsgi.version': (1, 0)} failed with error
+2015-11-08T10:09:34.961425+00:00 app[web.1]:  'wsgi.run_once': False,
+2015-11-08T10:09:34.961427+00:00 app[web.1]: 
+2015-11-08T10:10:02.451892+00:00 app[web.1]: [ message  ->  asdf ]
+2015-11-08T10:10:02.453357+00:00 app[web.1]: [ start_game_failure  ->  asdf ]
+2015-11-08T10:10:02.862244+00:00 heroku[router]: at=info method=GET path="/socket.io/1/websocket/847348477318" host=nextep.herokuapp.com request_id=da6d94da-114a-4f51-bca3-0133dabc2df9 fwd="134.169.86.73" dyno=web.1 connect=0ms service=27983ms status=101 bytes=700
+2015-11-08T10:10:06.992792+00:00 heroku[router]: at=info method=GET path="/socket.io/1/websocket/0963739565407" host=nextep.herokuapp.com request_id=5916a7f4-2251-45e1-aa53-3db73aa94351 fwd="155.69.160.117" dyno=web.1 connect=1ms service=48669ms status=101 bytes=901
+2015-11-08T10:27:50.226555+00:00 heroku[router]: at=info method=GET path="/" host=nextep.herokuapp.com request_id=f643bb32-7086-42d2-956d-5f6f6b134631 fwd="115.66.147.152" dyno=web.1 connect=1ms service=4ms status=200 bytes=14752
+2015-11-08T10:27:50.768470+00:00 heroku[router]: at=info method=GET path="/js/socketio.js" host=nextep.herokuapp.com request_id=2ddc42a5-0783-41d4-a1b7-16275573ac7f fwd="115.66.147.152" dyno=web.1 connect=1ms service=7ms status=200 bytes=44027
+2015-11-08T10:27:50.742141+00:00 heroku[router]: at=info method=GET path="/js/main-min.js" host=nextep.herokuapp.com request_id=ab85e697-50f5-40ef-8d8a-32dbee6c46f4 fwd="115.66.147.152" dyno=web.1 connect=1ms service=8ms status=200 bytes=59507
+2015-11-08T10:27:52.070314+00:00 heroku[router]: at=info method=GET path="/socket.io/1/?t=1446978471953" host=nextep.herokuapp.com request_id=25408621-d627-4055-b82f-143bb5ea9274 fwd="115.66.147.152" dyno=web.1 connect=1ms service=2ms status=200 bytes=343
+2015-11-08T10:27:55.292627+00:00 heroku[router]: at=info method=GET path="/favicon.ico" host=nextep.herokuapp.com request_id=1bcd478c-bce9-4d71-bca7-dd599cae334e fwd="115.66.147.152" dyno=web.1 connect=1ms service=2ms status=404 bytes=96
+2015-11-08T10:29:32.667511+00:00 heroku[router]: at=info method=GET path="/asset/lobby_long.mp3" host=nextep.herokuapp.com request_id=da31a5bd-75d8-4630-9920-934ba758965f fwd="115.66.147.152" dyno=web.1 connect=1ms service=315ms status=200 bytes=3081343
+2015-11-08T10:29:55.256618+00:00 app[web.1]: [ message  ->  Laradus ]
+2015-11-08T10:29:55.258412+00:00 app[web.1]: [ start_game_failure  ->  Laradus ]
+2015-11-08T10:30:00.556121+00:00 heroku[router]: at=info method=GET path="/socket.io/1/websocket/569001186024" host=nextep.herokuapp.com request_id=86027254-5304-4d8d-bcb0-fb899cba9339 fwd="115.66.147.152" dyno=web.1 connect=2ms service=127977ms status=101 bytes=716
+2015-11-08T10:37:51.368695+00:00 heroku[router]: at=info method=GET path="/" host=nextep.herokuapp.com request_id=c7760d3c-7958-4f37-9545-d00bb0a17e95 fwd="204.102.226.23" dyno=web.1 connect=0ms service=3ms status=200 bytes=14752
+2015-11-08T10:37:52.115196+00:00 heroku[router]: at=info method=GET path="/js/socketio.js" host=nextep.herokuapp.com request_id=b27f98fd-22af-451b-a997-6983423ad57f fwd="204.102.226.23" dyno=web.1 connect=0ms service=6ms status=200 bytes=44027
+2015-11-08T10:37:52.120532+00:00 heroku[router]: at=info method=GET path="/js/main-min.js" host=nextep.herokuapp.com request_id=e01bd77d-5837-4656-b7ac-aeacb120f1c4 fwd="204.102.226.23" dyno=web.1 connect=0ms service=7ms status=200 bytes=59507
+2015-11-08T10:37:52.515152+00:00 heroku[router]: at=info method=GET path="/socket.io/1/?t=1446979072618" host=nextep.herokuapp.com request_id=5c1050a9-b3e2-48c6-8a30-207e06df691f fwd="204.102.226.23" dyno=web.1 connect=0ms service=1ms status=200 bytes=343
+2015-11-08T10:37:52.899117+00:00 heroku[router]: sock=client at=warning code=H27 desc="Client Request Interrupted" method=GET path="/asset/lobby_long.mp3" host=nextep.herokuapp.com request_id=db2cd741-8412-4088-af8a-12d1842f10b9 fwd="204.102.226.23" dyno=web.1 connect=1ms service=103ms status=499 bytes=44279
+2015-11-08T10:37:52.901804+00:00 app[web.1]: Traceback (most recent call last):
+2015-11-08T10:37:52.901808+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/gevent/pywsgi.py", line 508, in handle_one_response
+2015-11-08T10:37:52.901814+00:00 app[web.1]:     self.run_application()
+2015-11-08T10:37:52.901815+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/gevent/pywsgi.py", line 495, in run_application
+2015-11-08T10:37:52.901843+00:00 app[web.1]:     self.process_result()
+2015-11-08T10:37:52.901844+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/gevent/pywsgi.py", line 486, in process_result
+2015-11-08T10:37:52.901847+00:00 app[web.1]:     self.write(data)
+2015-11-08T10:37:52.901868+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/gevent/pywsgi.py", line 376, in write
+2015-11-08T10:37:52.901871+00:00 app[web.1]:     self._write(data)
+2015-11-08T10:37:52.901873+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/gevent/pywsgi.py", line 369, in _write
+2015-11-08T10:37:52.901890+00:00 app[web.1]:     self._sendall(data)
+2015-11-08T10:37:52.901891+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/gevent/pywsgi.py", line 355, in _sendall
+2015-11-08T10:37:52.901909+00:00 app[web.1]:     self.socket.sendall(data)
+2015-11-08T10:37:52.901910+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/gevent/socket.py", line 460, in sendall
+2015-11-08T10:37:52.901924+00:00 app[web.1]:     data_sent += self.send(_get_memory(data, data_sent), flags)
+2015-11-08T10:37:52.901927+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/gevent/socket.py", line 445, in send
+2015-11-08T10:37:52.901941+00:00 app[web.1]:     return sock.send(data, flags)
+2015-11-08T10:37:52.901955+00:00 app[web.1]: error: [Errno 104] Connection reset by peer
+2015-11-08T10:37:52.904120+00:00 app[web.1]: {'GATEWAY_INTERFACE': 'CGI/1.1',
+2015-11-08T10:37:52.904123+00:00 app[web.1]:  'HTTP_ACCEPT': '*/*',
+2015-11-08T10:37:52.904124+00:00 app[web.1]:  'HTTP_ACCEPT_ENCODING': 'identity',
+2015-11-08T10:37:52.904125+00:00 app[web.1]:  'HTTP_ACCEPT_LANGUAGE': 'ja-jp',
+2015-11-08T10:37:52.904126+00:00 app[web.1]:  'HTTP_CONNECTION': 'close',
+2015-11-08T10:37:52.904126+00:00 app[web.1]:  'HTTP_CONNECT_TIME': '1',
+2015-11-08T10:37:52.904128+00:00 app[web.1]:  'HTTP_COOKIE': 'heroku-session-affinity=ACaDaANoA2IAAAWnYgAAJEBiAAB1
+GWEBbAAAAAFtAAAABXdlYi4xamRn/wq0gz2YL4ILGqehR66Q0c2D',
+2015-11-08T10:37:52.904129+00:00 app[web.1]:  'HTTP_HOST': 'nextep.herokuapp.com',
+2015-11-08T10:37:52.904130+00:00 app[web.1]:  'HTTP_RANGE': 'bytes=0-1',
+2015-11-08T10:37:52.904131+00:00 app[web.1]:  'HTTP_REFERER': 'http://nextep.herokuapp.com/',
+2015-11-08T10:37:52.904131+00:00 app[web.1]:  'HTTP_TOTAL_ROUTE_TIME': '0',
+2015-11-08T10:37:52.904133+00:00 app[web.1]:  'HTTP_USER_AGENT': 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13B143 [FBAN/FBIOS;FBAV/43.0.0.26.314;FBBV/17000587;FBDV/iPhone7,2;FBMD/iPhone;FBSN/iPhone OS;FBSV/9.1;FBSS/2; FBCR/cricket;FBID/phone;FBLC/ja_JP;FBOP/5]',
+2015-11-08T10:37:52.904134+00:00 app[web.1]:  'HTTP_VIA': '1.1 vegur',
+2015-11-08T10:37:52.904134+00:00 app[web.1]:  'HTTP_X_FORWARDED_FOR': '204.102.226.23',
+2015-11-08T10:37:52.904135+00:00 app[web.1]:  'HTTP_X_FORWARDED_PORT': '80',
+2015-11-08T10:37:52.904136+00:00 app[web.1]:  'HTTP_X_FORWARDED_PROTO': 'http',
+2015-11-08T10:37:52.904137+00:00 app[web.1]:  'HTTP_X_PLAYBACK_SESSION_ID': '3349D696-07A0-4DDC-A208-ABBB6C39940E',
+2015-11-08T10:37:52.904137+00:00 app[web.1]:  'HTTP_X_REQUEST_ID': 'db2cd741-8412-4088-af8a-12d1842f10b9',
+2015-11-08T10:37:52.904138+00:00 app[web.1]:  'HTTP_X_REQUEST_START': '1446979072794',
+2015-11-08T10:37:52.904139+00:00 app[web.1]:  'PATH_INFO': '/asset/lobby_long.mp3',
+2015-11-08T10:37:52.904139+00:00 app[web.1]:  'QUERY_STRING': '',
+2015-11-08T10:37:52.904140+00:00 app[web.1]:  'RAW_URI': '/asset/lobby_long.mp3',
+2015-11-08T10:37:52.904141+00:00 app[web.1]:  'REMOTE_ADDR': '10.45.79.55',
+2015-11-08T10:37:52.904141+00:00 app[web.1]:  'REMOTE_PORT': '50823',
+2015-11-08T10:37:52.904142+00:00 app[web.1]:  'REQUEST_METHOD': 'GET',
+2015-11-08T10:37:52.904143+00:00 app[web.1]:  'SCRIPT_NAME': '',
+2015-11-08T10:37:52.904143+00:00 app[web.1]:  'SERVER_NAME': '9ec1676e-4d5b-4830-837e-7f8121285af0.prvt.dyno.rt.heroku.com',
+2015-11-08T10:37:52.904144+00:00 app[web.1]:  'SERVER_PORT': '28833',
+2015-11-08T10:37:52.904145+00:00 app[web.1]:  'SERVER_PROTOCOL': 'HTTP/1.1',
+2015-11-08T10:37:52.904145+00:00 app[web.1]:  'SERVER_SOFTWARE': 'gevent/1.0 Python/2.7',
+2015-11-08T10:37:52.904146+00:00 app[web.1]:  'gunicorn.sock': <socket at 0x7f43b5d65d90 fileno=13 sock=172.17.38.70:28833>,
+2015-11-08T10:37:52.904147+00:00 app[web.1]:  'wsgi.errors': <open file '<stderr>', mode 'w' at 0x7f43c130b1e0>,
+2015-11-08T10:37:52.904147+00:00 app[web.1]:  'wsgi.input': <gevent.pywsgi.Input object at 0x7f43b5d0c510>,
+2015-11-08T10:37:52.904148+00:00 app[web.1]:  'wsgi.multiprocess': False,
+2015-11-08T10:37:52.904149+00:00 app[web.1]:  'wsgi.multithread': False,
+2015-11-08T10:37:52.904149+00:00 app[web.1]:  'wsgi.run_once': False,
+2015-11-08T10:37:52.904150+00:00 app[web.1]:  'wsgi.url_scheme': 'http',
+2015-11-08T10:37:52.904151+00:00 app[web.1]:  'wsgi.version': (1, 0)} failed with error
+2015-11-08T10:37:52.904151+00:00 app[web.1]: 
+2015-11-08T10:38:16.284052+00:00 heroku[router]: at=info method=GET path="/" host=nextep.herokuapp.com request_id=048a7840-0ec9-4d06-8d05-2ee4f551d572 fwd="180.214.233.30" dyno=web.1 connect=0ms service=4ms status=200 bytes=14752
+2015-11-08T10:38:23.986680+00:00 heroku[router]: at=info method=GET path="/js/socketio.js" host=nextep.herokuapp.com request_id=48385d57-897a-40c3-8838-9ca6a80f0a20 fwd="180.214.233.30" dyno=web.1 connect=1ms service=15ms status=200 bytes=44027
+2015-11-08T10:38:24.066664+00:00 heroku[router]: at=info method=GET path="/js/main-min.js" host=nextep.herokuapp.com request_id=a2d46ed7-7a19-4c2f-9465-3dd84edb6964 fwd="180.214.233.28" dyno=web.1 connect=1ms service=11ms status=200 bytes=59507
+2015-11-08T10:38:34.311177+00:00 app[web.1]: [ message  ->  Lawrence ]
+2015-11-08T10:38:34.330789+00:00 app[web.1]: [ start_game_failure  ->  Lawrence ]
+2015-11-08T10:38:51.781913+00:00 heroku[router]: at=info method=GET path="/socket.io/1/websocket/632718887647" host=nextep.herokuapp.com request_id=5eddd438-762b-4ac3-8e2a-3279147296af fwd="204.102.226.23" dyno=web.1 connect=1ms service=58976ms status=101 bytes=702
+2015-11-08T10:39:04.751120+00:00 heroku[router]: at=info method=GET path="/socket.io/1/?t=1446979153253" host=nextep.herokuapp.com request_id=8a6f5d26-0334-4afb-a3ee-e82b5b512c5d fwd="180.214.233.30" dyno=web.1 connect=1ms service=2ms status=200 bytes=343
+2015-11-08T10:39:18.551904+00:00 heroku[router]: at=info method=GET path="/favicon.ico" host=nextep.herokuapp.com request_id=e9b17d52-8be8-4914-a28c-d0f283139094 fwd="180.214.233.30" dyno=web.1 connect=1ms service=1ms status=404 bytes=96
+2015-11-08T10:39:24.322809+00:00 heroku[router]: at=info method=GET path="/favicon.ico" host=nextep.herokuapp.com request_id=6606971c-2958-4248-9e09-dc73d70b439a fwd="180.214.233.30" dyno=web.1 connect=1ms service=1ms status=404 bytes=96
+2015-11-08T10:39:51.287049+00:00 heroku[router]: at=info method=GET path="/asset/lobby_long.mp3" host=nextep.herokuapp.com request_id=1c4bd42a-b3c6-4fdd-ab63-48a7f4a769a1 fwd="180.214.233.30" dyno=web.1 connect=1ms service=316ms status=200 bytes=3081343
+2015-11-08T10:40:15.334717+00:00 heroku[router]: at=info method=GET path="/socket.io/1/websocket/767993370751" host=nextep.herokuapp.com request_id=a48345df-4ae9-44d2-96ea-f391e5865424 fwd="180.214.233.30" dyno=web.1 connect=1ms service=60004ms status=101 bytes=129
+2015-11-08T10:41:07.398818+00:00 heroku[router]: at=info method=GET path="/socket.io/1/?t=1446979276255" host=nextep.herokuapp.com request_id=f83a2c47-81ab-4db7-810f-b641f2c8bc0c fwd="180.214.233.30" dyno=web.1 connect=0ms service=1ms status=200 bytes=343
+2015-11-08T10:41:22.079383+00:00 heroku[router]: sock=client at=warning code=H27 desc="Client Request Interrupted" method=GET path="/asset/lobby_long.mp3" host=nextep.herokuapp.com request_id=7a588bc8-4156-4f1b-bd13-749036c0872a fwd="180.214.233.30" dyno=web.1 connect=0ms service=257ms status=499 bytes=4215
+2015-11-08T10:41:22.638723+00:00 heroku[router]: at=info method=GET path="/asset/lobby_long.mp3" host=nextep.herokuapp.com request_id=29c16716-b3d8-4171-b367-9f9f76973181 fwd="180.214.233.30" dyno=web.1 connect=0ms service=305ms status=200 bytes=3081343
+2015-11-08T10:42:08.381126+00:00 heroku[router]: at=info method=GET path="/socket.io/1/websocket/590535760973" host=nextep.herokuapp.com request_id=b9e2ae19-2632-4fff-a09b-a944fc13cdf4 fwd="180.214.233.30" dyno=web.1 connect=0ms service=60003ms status=101 bytes=129
+2015-11-08T10:50:32.146127+00:00 heroku[router]: at=info method=GET path="/" host=nextep.herokuapp.com request_id=12aeed87-cf48-4703-a88e-3b2e13f02a6b fwd="172.23.187.40,137.132.250.12" dyno=web.1 connect=1ms service=3ms status=200 bytes=14752
+2015-11-08T10:50:32.824441+00:00 heroku[router]: at=info method=GET path="/js/socketio.js" host=nextep.herokuapp.com request_id=80f00ad8-700d-4e5f-b560-3ed3f9d825a1 fwd="172.23.187.40,137.132.250.12" dyno=web.1 connect=1ms service=6ms status=200 bytes=44027
+2015-11-08T10:50:33.070562+00:00 heroku[router]: at=info method=GET path="/js/main-min.js" host=nextep.herokuapp.com request_id=4142a0b5-e072-4038-a9f6-0ea7b694c1dd fwd="172.23.187.40,137.132.3.8" dyno=web.1 connect=0ms service=6ms status=200 bytes=59507
+2015-11-08T10:50:34.205407+00:00 heroku[router]: at=info method=GET path="/socket.io/1/?t=1446979833291" host=nextep.herokuapp.com request_id=0eb13505-8b0c-4cd4-921f-0b71ac14894f fwd="172.23.187.40,137.132.250.12" dyno=web.1 connect=1ms service=1ms status=200 bytes=345
+2015-11-08T10:50:35.487147+00:00 heroku[router]: at=info method=GET path="/asset/lobby_long.mp3" host=nextep.herokuapp.com request_id=c8802473-158a-4f26-8701-12f7d40ff70e fwd="172.23.187.40,137.132.3.8" dyno=web.1 connect=0ms service=321ms status=200 bytes=3081343
+2015-11-08T10:51:18.582249+00:00 heroku[router]: at=info method=GET path="/socket.io/1/websocket/00107566064858" host=nextep.herokuapp.com request_id=caf9e5f2-9cba-49ff-825d-9dda9ba4254c fwd="172.23.187.40,137.132.250.12" dyno=web.1 connect=1ms service=43565ms status=101 bytes=382
+2015-11-08T11:23:43.526104+00:00 heroku[web.1]: Idling
+2015-11-08T11:23:43.526104+00:00 heroku[web.1]: State changed from up to down
+2015-11-08T11:23:43.526104+00:00 heroku[web.1]: State changed from down to starting
+2015-11-08T11:23:45.907158+00:00 heroku[web.1]: Starting process with command `gunicorn -k socketio.sgunicorn.GeventSocketIOWorker --log-file=- --timeout=120 server:service`
+2015-11-08T11:23:47.567531+00:00 app[web.1]: 2015-11-08 11:23:47 [3] [INFO] Starting gunicorn 0.16.1
+2015-11-08T11:23:47.571903+00:00 app[web.1]: 2015-11-08 11:23:47 [3] [INFO] Listening at: http://0.0.0.0:20969 (3)
+2015-11-08T11:23:47.575955+00:00 app[web.1]: 2015-11-08 11:23:47 [7] [INFO] Booting worker with pid: 7
+2015-11-08T11:23:47.572042+00:00 app[web.1]: 2015-11-08 11:23:47 [3] [INFO] Using worker: socketio.sgunicorn.GeventSocketIOWorker
+2015-11-08T11:23:48.080771+00:00 heroku[web.1]: State changed from starting to up
+2015-11-08T11:23:48.510842+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2015-11-08T11:23:49.941158+00:00 app[web.1]: 2015-11-08 11:23:49 [7] [INFO] Worker exiting (pid: 7)
+2015-11-08T11:23:50.142338+00:00 app[web.1]: 2015-11-08 11:23:50 [3] [INFO] Handling signal: term
+2015-11-08T11:23:50.546127+00:00 app[web.1]: 2015-11-08 11:23:50 [3] [INFO] Shutting down: Master
+2015-11-08T11:23:52.093852+00:00 heroku[web.1]: Process exited with status 0
+2015-11-08T11:25:42.619889+00:00 heroku[router]: at=info method=GET path="/" host=nextep.herokuapp.com request_id=54307be1-2e00-4ef1-a8db-a5c15f7d80d8 fwd="172.24.169.24,137.132.250.12" dyno=web.1 connect=1ms service=6ms status=200 bytes=14752
+2015-11-08T11:25:43.150545+00:00 heroku[router]: at=info method=GET path="/js/socketio.js" host=nextep.herokuapp.com request_id=6201c070-5671-4b64-8320-26c590e4813b fwd="172.24.169.24,137.132.250.12" dyno=web.1 connect=1ms service=7ms status=200 bytes=44027
+2015-11-08T11:25:43.411142+00:00 heroku[router]: at=info method=GET path="/js/main-min.js" host=nextep.herokuapp.com request_id=a513e367-63e2-4b67-bb80-0d165b2bafbe fwd="172.24.169.24,137.132.250.12" dyno=web.1 connect=1ms service=9ms status=200 bytes=59507
+2015-11-08T11:25:44.642144+00:00 heroku[router]: at=info method=GET path="/socket.io/1/?t=1446981943311" host=nextep.herokuapp.com request_id=8fc2f642-11a6-42de-b3b6-a5f28eed1f0c fwd="172.24.169.24,137.132.250.12" dyno=web.1 connect=1ms service=2ms status=200 bytes=343
+2015-11-08T11:25:45.206398+00:00 heroku[router]: at=info method=GET path="/asset/lobby_long.mp3" host=nextep.herokuapp.com request_id=fdfcfb3d-8ad7-40ee-8d78-0066865c580f fwd="172.24.169.24,137.132.250.12" dyno=web.1 connect=1ms service=324ms status=200 bytes=3081343
+2015-11-08T11:25:45.177603+00:00 heroku[router]: at=info method=GET path="/favicon.ico" host=nextep.herokuapp.com request_id=88ddca3d-c0a9-4d12-b7ad-cacdba25f210 fwd="172.24.169.24,137.132.250.12" dyno=web.1 connect=2ms service=2ms status=404 bytes=96
+2015-11-08T11:25:45.454149+00:00 heroku[router]: at=info method=GET path="/asset/lobby_long.mp3" host=nextep.herokuapp.com request_id=383a648e-0dd5-4efd-9950-70a807ae5e1f fwd="172.24.169.24,137.132.250.12" dyno=web.1 connect=1ms service=301ms status=200 bytes=3081343
+2015-11-08T11:26:12.471238+00:00 heroku[router]: at=info method=GET path="/socket.io/1/websocket/700089619719" host=nextep.herokuapp.com request_id=7a90900b-b677-48be-9b2f-b2434c040609 fwd="172.24.169.24,137.132.250.12" dyno=web.1 connect=1ms service=27259ms status=101 bytes=370
+2015-11-08T11:35:01.203455+00:00 heroku[router]: at=info method=GET path="/" host=nextep.herokuapp.com request_id=401f00e7-0456-4c32-b80f-76c130752622 fwd="203.213.43.130" dyno=web.1 connect=1ms service=4ms status=200 bytes=14752
+2015-11-08T11:35:01.584653+00:00 heroku[router]: at=info method=GET path="/js/socketio.js" host=nextep.herokuapp.com request_id=76cb3edc-bd71-45d8-a073-1466141c172a fwd="203.213.43.130" dyno=web.1 connect=1ms service=9ms status=200 bytes=44027
+2015-11-08T11:35:01.824771+00:00 heroku[router]: at=info method=GET path="/js/main-min.js" host=nextep.herokuapp.com request_id=6c40d493-1ade-40ba-92e1-181b458f021e fwd="203.213.43.130" dyno=web.1 connect=1ms service=8ms status=200 bytes=59507
+2015-11-08T11:35:04.818975+00:00 heroku[router]: at=info method=GET path="/socket.io/1/?t=1446982511451" host=nextep.herokuapp.com request_id=24768cbe-3aa1-4e8f-b44a-d5b85e203a99 fwd="203.213.43.130" dyno=web.1 connect=1ms service=2ms status=200 bytes=343
+2015-11-08T11:35:08.428731+00:00 heroku[router]: at=info method=GET path="/favicon.ico" host=nextep.herokuapp.com request_id=b9a33b06-3d92-4334-be32-1dfa557f2038 fwd="203.213.43.130" dyno=web.1 connect=1ms service=2ms status=404 bytes=96
+2015-11-08T11:35:12.746993+00:00 heroku[router]: at=info method=GET path="/asset/lobby_long.mp3" host=nextep.herokuapp.com request_id=5abd6321-e7ec-444d-b1c2-8f7ef03a852b fwd="203.213.43.130" dyno=web.1 connect=1ms service=324ms status=200 bytes=3081343
+2015-11-08T11:35:30.927551+00:00 app[web.1]: [ start_game_failure  ->  erwin ]
+2015-11-08T11:35:30.925703+00:00 app[web.1]: [ message  ->  erwin ]
+2015-11-08T11:35:42.417694+00:00 heroku[router]: at=info method=GET path="/" host=nextep.herokuapp.com request_id=f34fd4d8-7685-4bc0-81ad-988bce2167d5 fwd="129.31.200.157" dyno=web.1 connect=0ms service=3ms status=200 bytes=14752
+2015-11-08T11:35:42.587855+00:00 heroku[router]: at=info method=GET path="/js/socketio.js" host=nextep.herokuapp.com request_id=3752ea32-66b8-4cbf-9086-9d236449a3e0 fwd="129.31.200.157" dyno=web.1 connect=0ms service=6ms status=200 bytes=44027
+2015-11-08T11:35:42.602026+00:00 heroku[router]: at=info method=GET path="/js/main-min.js" host=nextep.herokuapp.com request_id=eccecec8-5658-4507-94d2-0b42dc327447 fwd="129.31.200.157" dyno=web.1 connect=0ms service=6ms status=200 bytes=59507
+2015-11-08T11:35:42.974795+00:00 heroku[router]: at=info method=GET path="/socket.io/1/?t=1446982536596" host=nextep.herokuapp.com request_id=d1d90cfa-c357-4215-8d87-3324a679698b fwd="129.31.200.157" dyno=web.1 connect=0ms service=1ms status=200 bytes=343
+2015-11-08T11:35:43.463016+00:00 heroku[router]: at=info method=GET path="/asset/lobby_long.mp3" host=nextep.herokuapp.com request_id=873571ce-e156-4f72-96a3-d3ed311bbedc fwd="129.31.200.157" dyno=web.1 connect=1ms service=319ms status=200 bytes=3081343
+2015-11-08T11:35:43.616010+00:00 heroku[router]: at=info method=GET path="/favicon.ico" host=nextep.herokuapp.com request_id=380c2a0a-1600-4ae0-8e88-305d486841d2 fwd="129.31.200.157" dyno=web.1 connect=2ms service=1ms status=404 bytes=96
+2015-11-08T11:35:49.126048+00:00 app[web.1]: [ message  ->  erwin ]
+2015-11-08T11:35:49.127936+00:00 app[web.1]: [ start_game_failure  ->  erwin ]
+2015-11-08T11:35:52.613723+00:00 heroku[router]: at=info method=GET path="/socket.io/1/websocket/896242158445" host=nextep.herokuapp.com request_id=9360e77f-8daf-41f2-a75b-1982d44c2f6c fwd="129.31.200.157" dyno=web.1 connect=0ms service=9370ms status=101 bytes=138
+2015-11-08T11:35:58.840789+00:00 heroku[router]: at=info method=GET path="/socket.io/1/websocket/965626022106" host=nextep.herokuapp.com request_id=0c785533-2dd7-4eb3-8262-cf709eeaa28f fwd="203.213.43.130" dyno=web.1 connect=1ms service=53054ms status=101 bytes=1213
+2015-11-08T12:10:27.112933+00:00 heroku[web.1]: Idling
+2015-11-08T12:10:27.112933+00:00 heroku[web.1]: State changed from up to down
+2015-11-08T12:10:28.459302+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2015-11-08T12:10:28.834142+00:00 app[web.1]: 2015-11-08 12:10:28 [7] [INFO] Worker exiting (pid: 7)
+2015-11-08T12:10:28.846996+00:00 app[web.1]: 2015-11-08 12:10:28 [3] [INFO] Handling signal: term
+2015-11-08T12:10:29.247923+00:00 app[web.1]: 2015-11-08 12:10:29 [3] [INFO] Shutting down: Master
+2015-11-08T12:10:29.929680+00:00 heroku[web.1]: Process exited with status 0
+2015-11-08T12:22:21.168347+00:00 heroku[web.1]: Unidling
+2015-11-08T12:22:21.168697+00:00 heroku[web.1]: State changed from down to starting
+2015-11-08T12:22:23.566204+00:00 heroku[web.1]: Starting process with command `gunicorn -k socketio.sgunicorn.GeventSocketIOWorker --log-file=- --timeout=120 server:service`
+2015-11-08T12:22:25.624950+00:00 app[web.1]: 2015-11-08 12:22:25 [3] [INFO] Listening at: http://0.0.
+0.0:40465 (3)
+2015-11-08T12:22:25.625105+00:00 app[web.1]: 2015-11-08 12:22:25 [3] [INFO] Using worker: socketio.sgunicorn.GeventSocketIOWorker
+2015-11-08T12:22:25.630296+00:00 app[web.1]: 2015-11-08 12:22:25 [7] [INFO] Booting worker with pid: 7
+2015-11-08T12:22:25.620209+00:00 app[web.1]: 2015-11-08 12:22:25 [3] [INFO] Starting gunicorn 0.16.1
+2015-11-08T12:22:27.141871+00:00 heroku[web.1]: State changed from starting to up
+2015-11-08T12:22:28.278228+00:00 heroku[router]: at=info method=GET path="/" host=nextep.herokuapp.com request_id=3a502a52-35f9-409b-946b-1ebd55a9b800 fwd="155.69.160.104" dyno=web.1 connect=0ms service=3ms status=200 bytes=14752
+2015-11-08T12:22:28.591418+00:00 heroku[router]: at=info method=GET path="/js/socketio.js" host=nextep.herokuapp.com request_id=61acd7e7-5c3c-41df-a70f-833fb6de8579 fwd="155.69.160.104" dyno=web.1 connect=1ms service=6ms status=200 bytes=44027
+2015-11-08T12:22:28.743320+00:00 heroku[router]: at=info method=GET path="/js/main-min.js" host=nextep.herokuapp.com request_id=75afdd8b-2e25-4515-af92-4eb0b7b95298 fwd="155.69.160.104" dyno=web.1 connect=0ms service=8ms status=200 bytes=59507
+2015-11-08T12:22:29.459973+00:00 heroku[router]: at=info method=GET path="/socket.io/1/?t=1446985349102" host=nextep.herokuapp.com request_id=5c841f4a-5633-45c6-a4cf-6fc0ad6cedf9 fwd="155.69.160.104" dyno=web.1 connect=1ms service=2ms status=200 bytes=343
+2015-11-08T12:22:31.450934+00:00 heroku[router]: at=info method=GET path="/asset/lobby_long.mp3" host=nextep.herokuapp.com request_id=4cd6fb70-c753-4d0a-b43e-cc9169a1619a fwd="155.69.160.104" dyno=web.1 connect=1ms service=312ms status=200 bytes=3081343
+2015-11-08T12:22:32.098173+00:00 heroku[router]: at=info method=GET path="/favicon.ico" host=nextep.herokuapp.com request_id=41b451ca-ac7f-4eaa-b6b4-441422b3b429 fwd="155.69.160.104" dyno=web.1 connect=0ms service=1ms status=404 bytes=96
+2015-11-08T12:23:14.301524+00:00 app[web.1]: [ start_game_failure  ->  kurni ]
+2015-11-08T12:23:14.300393+00:00 app[web.1]: [ message  ->  kurni ]
+2015-11-08T12:23:31.428710+00:00 heroku[router]: at=info method=GET path="/socket.io/1/websocket/556863433244" host=nextep.herokuapp.com request_id=01b11dfc-de4d-475e-b843-71c221a4018f fwd="155.69.160.104" dyno=web.1 connect=0ms service=61507ms status=101 bytes=697
+2015-11-08T12:41:24.100951+00:00 heroku[router]: at=info method=GET path="/" host=nextep.herokuapp.com request_id=e9242e81-5028-4a9c-857d-f1691a2303a6 fwd="146.179.203.174" dyno=web.1 connect=0ms service=3ms status=200 bytes=14752
+2015-11-08T12:41:24.420866+00:00 heroku[router]: at=info method=GET path="/js/main-min.js" host=nextep.herokuapp.com request_id=22199589-1c6d-474b-a7a9-556961ce0091 fwd="146.179.203.174" dyno=web.1 connect=0ms service=9ms status=200 bytes=59507
+2015-11-08T12:41:24.298537+00:00 heroku[router]: at=info method=GET path="/js/socketio.js" host=nextep.herokuapp.com request_id=5812cd58-f76d-4de4-81a0-84089f313503 fwd="146.179.203.174" dyno=web.1 connect=1ms service=6ms status=200 bytes=44027
+2015-11-08T12:41:24.685943+00:00 heroku[router]: at=info method=GET path="/socket.io/1/?t=1446986484622" host=nextep.herokuapp.com request_id=633d7c72-646f-474d-9d41-b87943f5b16a fwd="146.179.203.174" dyno=web.1 connect=2ms service=1ms status=200 bytes=343
+2015-11-08T12:41:31.583248+00:00 heroku[router]: at=info method=GET path="/asset/lobby_long.mp3" host=nextep.herokuapp.com request_id=2386797c-3940-47e1-b06c-5bc7d3e4447c fwd="146.179.203.174" dyno=web.1 connect=1ms service=304ms status=200 bytes=3081343
+2015-11-08T12:41:31.701930+00:00 heroku[router]: at=info method=GET path="/favicon.ico" host=nextep.herokuapp.com request_id=5326b1ba-c045-4a6f-a22f-71871c8277bd fwd="146.179.203.174" dyno=web.1 connect=0ms service=2ms status=404 bytes=96
+2015-11-08T12:41:41.950918+00:00 heroku[router]: at=info method=GET path="/socket.io/1/websocket/109697041482" host=nextep.herokuapp.com request_id=31b94683-8fe6-42ab-80ed-29451950d00c fwd="146.179.203.174" dyno=web.1 connect=1ms service=10935ms status=101 bytes=369
+2015-11-08T12:41:50.369711+00:00 heroku[router]: at=info method=GET path="/" host=nextep.herokuapp.com request_id=8968bd17-445a-412d-b037-6ba9c1f64163 fwd="146.179.203.174,66.249.93.252" dyno=web.1 connect=0ms service=4ms status=200 bytes=14752
+2015-11-08T12:41:50.628150+00:00 heroku[router]: at=info method=GET path="/favicon.ico" host=nextep.herokuapp.com request_id=eb238f7e-1fac-41bf-8f51-0f81e84750d7 fwd="146.179.203.174,66.249.93.131" dyno=web.1 connect=0ms service=2ms status=404 bytes=96
+2015-11-08T12:57:08.691293+00:00 heroku[router]: at=info method=GET path="/" host=nextep.herokuapp.com request_id=c985edbe-0438-44db-b7bc-eb8f12f9ab01 fwd="129.31.200.167" dyno=web.1 connect=1ms service=3ms status=200 bytes=14752
+2015-11-08T12:57:08.912646+00:00 heroku[router]: at=info method=GET path="/js/socketio.js" host=nextep.herokuapp.com request_id=9c14ef19-e21d-4f12-a513-bb2656093485 fwd="129.31.200.167" dyno=web.1 connect=1ms service=6ms status=200 bytes=44027
+2015-11-08T12:57:08.917996+00:00 heroku[router]: at=info method=GET path="/js/main-min.js" host=nextep.herokuapp.com request_id=4cf52982-9529-46ee-a27f-22e37b259301 fwd="129.31.200.167" dyno=web.1 connect=1ms service=8ms status=200 bytes=59507
+2015-11-08T12:57:09.265998+00:00 heroku[router]: at=info method=GET path="/socket.io/1/?t=1446987429247" host=nextep.herokuapp.com request_id=986dd003-06d9-4a1e-b720-1d59aff56f2a fwd="129.31.200.167" dyno=web.1 connect=1ms service=5ms status=200 bytes=343
+2015-11-08T12:57:09.701569+00:00 heroku[router]: at=info method=GET path="/asset/lobby_long.mp3" host=nextep.herokuapp.com request_id=49e5b739-07c8-4106-a230-5caf16aa532f fwd="129.31.200.167" dyno=web.1 connect=2ms service=327ms status=200 bytes=3081343
+2015-11-08T12:57:14.106204+00:00 heroku[router]: at=info method=GET path="/socket.io/1/websocket/600385119949" host=nextep.herokuapp.com request_id=30c202df-401d-4f15-b8a0-13aac32e6d2a fwd="129.31.200.167" dyno=web.1 connect=1ms service=4648ms status=101 bytes=365
