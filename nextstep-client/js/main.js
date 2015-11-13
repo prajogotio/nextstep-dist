@@ -643,8 +643,8 @@ function displayWaitingRoom() {
 	document.getElementById('lobby_layer').style.display = 'none';
 	document.getElementById('room_loading').style.display = 'block';
 	document.getElementById('waiting_room_chat_input').focus();
-	client.currentRoom.status = 'ready';
 	if (client.currentRoom) {
+		client.currentRoom.status = 'ready';
 		for (var i = 0; i < client.currentRoom.exitedMember.length; ++i) {
 			removeMemberFromRoomList(client.currentRoom.exitedMember[i]);
 		}
